@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Travela - Tourism Website Template</title>
+    <title>{{ config('app.name') . ' || ' }} @yield('title')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -43,15 +43,15 @@
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="{{ @$settings['twitter'] }}"><i
                             class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="{{ @$settings['facebook'] }}"><i
                             class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="{{ @$settings['linkedin'] }}"><i
                             class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="{{ @$settings['instagram'] }}"><i
                             class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="{{ @$settings['youtube'] }}"><i
                             class="fab fa-youtube fw-normal"></i></a>
                 </div>
             </div>
@@ -82,6 +82,7 @@
         @include('layouts.site.nav')
         @yield('carousel')
     </div>
+    @yield('page-header')
     {{-- NAV END --}}
     @yield('search-box')
 

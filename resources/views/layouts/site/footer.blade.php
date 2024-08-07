@@ -1,12 +1,13 @@
   <!-- Subscribe Start -->
-  <div class="container-fluid subscribe py-5">
+  <div class="container-fluid subscribe py-5" style="background-image: url(https://img.freepik.com/premium-photo/business-woman-show-smart-city-technology-mobile-phone_35927-428.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid);">
       <div class="container text-center py-5">
           <div class="mx-auto text-center" style="max-width: 900px;">
               <h5 class="subscribe-title px-3">Subscribe</h5>
               <h1 class="text-white mb-4">Our Newsletter</h1>
-              <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam,
-                  architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium
-                  fugiat corrupti eum cum repellat a laborum quasi.
+              <p class="text-white mb-5">Stay updated with the latest news, exclusive offers, and insightful content
+                  delivered straight to your inbox. Our newsletter brings you valuable updates and tips you won’t want
+                  to miss. Join our community today and be the first to know about new releases, special promotions, and
+                  much more. Subscribe now to stay connected!
               </p>
               <div class="position-relative mx-auto">
                   <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text"
@@ -26,20 +27,21 @@
               <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="footer-item d-flex flex-column">
                       <h4 class="mb-4 text-white">Get In Touch</h4>
-                      <a href=""><i class="fas fa-home me-2"></i> 123 Street, New York, USA</a>
-                      <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                      <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                      <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                      <a href=""><i class="fas fa-home me-2"></i> {{ @$settings['address'] }}</a>
+                      <a href="mailto:{{ @$settings['email'] }}""><i class="fas fa-envelope me-2"></i>
+                          {{ @$settings['email'] }}</a>
+                      <a href="><i class="fas fa-phone me-2"></i> {{ @$settings['phone'] }}</a>
+                      <a href="" class="mb-3 d-none"><i class="fas fa-print me-2"></i> +012 345 67890</a>
                       <div class="d-flex align-items-center">
                           <i class="fas fa-share fa-2x text-white me-2"></i>
-                          <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
-                                  class="fab fa-facebook-f"></i></a>
-                          <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
-                                  class="fab fa-twitter"></i></a>
-                          <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
-                                  class="fab fa-instagram"></i></a>
-                          <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
-                                  class="fab fa-linkedin-in"></i></a>
+                          <a class="btn-square btn btn-primary rounded-circle mx-1"
+                              href="{{ @$settings['facebook'] }}"><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn-square btn btn-primary rounded-circle mx-1"
+                              href="{{ @$settings['twitter'] }}"><i class="fab fa-twitter"></i></a>
+                          <a class="btn-square btn btn-primary rounded-circle mx-1"
+                              href="{{ @$settings['instagram'] }}"><i class="fab fa-instagram"></i></a>
+                          <a class="btn-square btn btn-primary rounded-circle mx-1"
+                              href="{{ @$settings['linkedin'] }}"><i class="fab fa-linkedin-in"></i></a>
                       </div>
                   </div>
               </div>
