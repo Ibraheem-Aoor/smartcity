@@ -41,7 +41,12 @@ class PageController extends BaseAdminController
     public function update(Request $request, $slug)
     {
         $page = Page::query()->whereSlug($slug)->first();
-        $page->update($request->all());
+        $data = $request->toArray();
+        if($request->hasFile('main_image'))
+        {
+            $data['main_image'] = saveImage('pages' , $request->file('main_image'));
+        }
+        $page->update($data);
         return generateApiResoponse(true, 200, message: __('response.success_updated'), data: $page);
     }
 

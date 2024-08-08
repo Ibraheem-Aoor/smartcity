@@ -14,10 +14,13 @@ return new class extends Migration
         Schema::create('pages', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('intro_image')->nullable();
             $table->string('slug')->unique();
+            $table->string('theme')->nullable();
             $table->longText('content');
             $table->string('meta_title')->nullable();
-            $table->text('meta_desciption')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->text('meta_image')->nullable();
             $table->timestamps();
         });
     }

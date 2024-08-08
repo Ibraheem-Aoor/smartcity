@@ -12,39 +12,46 @@
 
         <ul class="sidebar-menu">
             <li class="">
-                <a href="{{ route('admin.dashboard') }}"><i class="ti ti-home me-2"></i>{{ __('general.dashboard') }}</a>
+                <a href="{{ route('admin.dashboard') }}"><i
+                        class="ti ti-home me-2"></i>DASHBOARD</a>
+            </li>
+            <li class="d-none">
+                <a href="{{ route('admin.service.index') }}"><i
+                        class="ti ti-browser  me-2"></i>SERVICES</a>
             </li>
             <li class="">
-                <a href="{{ route('admin.service.index') }}"><i class="ti ti-browser  me-2"></i>{{ __('general.services') }}</a>
+                <a href="{{ route('admin.team.index') }}"><i
+                        class="ti ti-user me-2"></i>TEAM MEMBERS</a>
             </li>
             <li class="">
-                <a href="{{ route('admin.team.index') }}"><i class="ti ti-user me-2"></i>{{ __('general.barbers') }}</a>
-            </li>
-            <li class="">
-                <a href="{{ route('admin.booking.index') }}"><i class="ti ti-shopping-cart me-2"></i>{{ __('general.bookings') }}</a>
-            </li>
-            <li class="">
-                <a href="{{ route('admin.contacts.index') }}"><i class="ti ti-mail-opened me-2"></i>{{ __('general.contacts') }}</a>
+                <a href="{{ route('admin.contacts.index') }}"><i
+                        class="ti ti-mail-opened me-2"></i>CONTACTS</a>
             </li>
             <li class="sidebar-dropdown">
-                <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>{{ __('general.pages') }}</a>
+                <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>PAGES</a>
                 <div class="sidebar-submenu">
                     <ul>
-                        <li><a href="{{ route('admin.page.edit', ['slug' => 'home']) }}">{{ __('general.home') }}</a></li>
-                        <li><a href="{{ route('admin.page.edit', ['slug' => 'about']) }}">{{ __('general.about') }}</a></li>
+                        {{-- <li><a href="{{ route('admin.page.edit', ['slug' => 'home']) }}">{{ __('general.home') }}</a></li> --}}
+                        <li><a
+                                href="{{ route('admin.page.edit', ['slug' => 'about']) }}">ABOUT</a>
+                        </li>
+                        @foreach ($admin_sidebar_pages as $title => $slug)
+                            <li><a href="{{ route('admin.page.edit', ['slug' => $slug]) }}">{{ $title }}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </li>
             <li class="sidebar-dropdown" id="test">
-                <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>{{ __('general.settings') }}</a>
+                <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>SETTINGS</a>
                 <div class="sidebar-submenu">
                     <ul>
-                        <li><a href="{{ route('admin.work_hour.edit') }}">{{ __('general.working_hours') }}</a></li>
+                        {{-- <li><a href="{{ route('admin.work_hour.edit') }}">{{ __('general.working_hours') }}</a></li> --}}
                         <li><a href="{{ route('admin.setting.edit') }}">{{ __('general.site_settings') }}</a></li>
                     </ul>
                 </div>
             </li>
-            <li class="sidebar-dropdown d-none">
+            {{-- <li class="sidebar-dropdown d-none">
                 <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>{{ __('general.example') }}</a>
                 <div class="sidebar-submenu">
                     <ul>
@@ -54,7 +61,7 @@
                         <li><a href="thankyou.html">{{ __('general.thankyou') }}</a></li>
                     </ul>
                 </div>
-            </li>
+            </li> --}}
         </ul>
         <!-- sidebar-menu  -->
     </div>

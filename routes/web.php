@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class , 'index'])->name('home');
 Route::prefix('site')->as('site.')->group(function(){
     Route::get('/about' , [HomeController::class , 'about'])->name('about');
+    Route::get('/services' , [HomeController::class , 'services'])->name('core_services');
+    Route::get('/apply' , [HomeController::class , 'apply'])->name('apply');
+    Route::get('/contact' , [HomeController::class , 'contact'])->name('contact');
 });
+Route::get('/{slug}' , [HomeController::class , 'page'])->name('page');
 
 

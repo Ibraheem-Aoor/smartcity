@@ -24,13 +24,13 @@
                             </p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5"
-                                    href="#">Discover Now</a>
+                                    href="#services">Discover Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 {{-- <div class="carousel-item">
-                    <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
+                    <img src="{{  asset('assets/site/im')img/carousel-1.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
+                    <img src="{{  asset('assets/site/im')img/carousel-3.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
@@ -82,7 +82,7 @@
 <!-- About End -->
 
 <!-- Services Start -->
-<div class="container-fluid bg-light service py-5">
+<div class="container-fluid bg-light service py-5" id="services">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 900px;">
             <h5 class="section-title px-3">Services</h5>
@@ -204,7 +204,7 @@
             </div>
             <div class="col-12">
                 <div class="text-center">
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Service More</a>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="/core-services">Service More</a>
                 </div>
             </div>
         </div>
@@ -213,406 +213,216 @@
 <!-- Services End -->
 
 
-<!-- Destination Start -->
-<div class="container-fluid destination py-5">
+
+<!-- Explore Tour Start -->
+<div class="container-fluid ExploreTour py-5">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-            <h5 class="section-title px-3">Destination</h5>
-            <h1 class="mb-0">Popular Destination</h1>
+            <h5 class="section-title px-3">Explore Smart City</h5>
+            <h1 class="mb-4">The New World</h1>
+            <p class="mb-0">Explore our smart city solutions, where advanced AI technology meets virtual and academic
+                services. Discover how our innovative platform enhances urban life with intelligent virtual tools and
+                cutting-edge educational resources. Whether you're looking for AI-driven insights or virtual academic
+                support, our services are designed to elevate your experience and provide solutions for the modern
+                world. Embrace the future with our smart city services that blend technology and education seamlessly.
+            </p>
         </div>
         <div class="tab-class text-center">
             <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
                 <li class="nav-item">
                     <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
-                        data-bs-toggle="pill" href="#tab-1">
-                        <span class="text-dark" style="width: 150px;">All</span>
+                        data-bs-toggle="pill" href="#NationalTab-1">
+                        <span class="text-dark" style="width: 250px;">National Tour Category</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-2">
-                        <span class="text-dark" style="width: 150px;">USA</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-3">
-                        <span class="text-dark" style="width: 150px;">Canada</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-4">
-                        <span class="text-dark" style="width: 150px;">Europe</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-5">
-                        <span class="text-dark" style="width: 150px;">China</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-6">
-                        <span class="text-dark" style="width: 150px;">Singapore</span>
+                        href="#InternationalTab-2">
+                        <span class="text-dark" style="width: 250px;">International tour Category</span>
                     </a>
                 </li>
             </ul>
             <div class="tab-content">
-                <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div id="NationalTab-1" class="tab-pane fade show p-0 active">
                     <div class="row g-4">
-                        <div class="col-xl-8">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100"
-                                            src="{{ asset('assets/site/img/destination-1.jpg') }}" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#"
-                                                class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                                Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">New York City</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="{{ asset('assets/site/img/destination-1.jpg') }}"
-                                                data-lightbox="destination-1"><i
-                                                    class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="national-item">
+                                <img src="{{ asset('assets/site/img/explore-tour-1.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Weekend Tour</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100"
-                                            src="{{ asset('assets/site/img/destination-2.jpg') }}" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#"
-                                                class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                                Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">Las vegas</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="{{ asset('assets/site/img/destination-2.jpg') }}"
-                                                data-lightbox="destination-2"><i
-                                                    class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
+                                <div class="national-plus-icon">
+                                    <a href="#" class="my-auto"><i
+                                            class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="national-item">
+                                <img src="{{ asset('assets/site/img/explore-tour-2.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Holiday Tour</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100"
-                                            src="{{ asset('assets/site/img/destination-7.jpg') }}" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#"
-                                                class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                                Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="{{ asset('assets/site/img/destination-7.jpg') }}"
-                                                data-lightbox="destination-7"><i
-                                                    class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
+                                <div class="national-plus-icon">
+                                    <a href="#" class="my-auto"><i
+                                            class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="national-item">
+                                <img src="{{ asset('assets/site/img/explore-tour-3.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Road Trip</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100"
-                                            src="{{ asset('assets/site/img/destination-8.jpg') }}" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#"
-                                                class="btn btn-primary text-white rounded-pill border py-2 px-3">20
-                                                Photos</a>
-                                            <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="{{ asset('assets/site/img/destination-8.jpg') }}"
-                                                data-lightbox="destination-8"><i
-                                                    class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
+                                <div class="tour-offer bg-info">15% Off</div>
+                                <div class="national-plus-icon">
+                                    <a href="#" class="my-auto"><i
+                                            class="fas fa-link fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="national-item">
+                                <img src="{{ asset('assets/site/img/explore-tour-4.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Historical Trip</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="destination-img h-100">
-                                <img class="img-fluid rounded w-100 h-100"
-                                    src="{{ asset('assets/site/img/destination-9.jpg') }}"
-                                    style="object-fit: cover; min-height: 300px;" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-9.jpg') }}"
-                                        data-lightbox="destination-4"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                <div class="national-plus-icon">
+                                    <a href="#" class="my-auto"><i
+                                            class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-4.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="national-item">
+                                <img src="{{ asset('assets/site/img/explore-tour-5.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Family Tour</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
                                 </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-4.jpg') }}"
-                                        data-lightbox="destination-4"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-5.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-5.jpg') }}"
-                                        data-lightbox="destination-5"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                <div class="tour-offer bg-warning">50% Off</div>
+                                <div class="national-plus-icon">
+                                    <a href="#" class="my-auto"><i
+                                            class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-6.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">Los angelas</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="national-item">
+                                <img src="{{ asset('assets/site/img/explore-tour-6.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Beach Tour</h5>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
                                 </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-6.jpg') }}"
-                                        data-lightbox="destination-6"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                                <div class="national-plus-icon">
+                                    <a href="#" class="my-auto"><i
+                                            class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="tab-2" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-5.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-5.jpg') }}"
-                                        data-lightbox="destination-5"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                <div id="InternationalTab-2" class="tab-pane fade show p-0">
+                    <div class="InternationalTour-carousel owl-carousel">
+                        <div class="international-item">
+                            <img src="{{ asset('assets/site/img/explore-tour-1.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="international-content">
+                                <div class="international-info">
+                                    <h5 class="text-white text-uppercase mb-2">Australia</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 8 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>143+ Tour Places</span></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-6.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-6.jpg') }}"
-                                        data-lightbox="destination-6"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                </div>
+                            <div class="tour-offer bg-success">30% Off</div>
+                            <div class="international-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="tab-3" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-5.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-5.jpg') }}"
-                                        data-lightbox="destination-5"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                        <div class="international-item">
+                            <img src="{{ asset('assets/site/img/explore-tour-2.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="international-content">
+                                <div class="international-info">
+                                    <h5 class="text-white text-uppercase mb-2">Germany</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 12 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>21+ Tour Places</span></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-6.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-6.jpg') }}"
-                                        data-lightbox="destination-6"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                </div>
+                            <div class="international-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="tab-4" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-5.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-5.jpg') }}"
-                                        data-lightbox="destination-5"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                        <div class="international-item">
+                            <img src="{{ asset('assets/site/img/explore-tour-3.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="international-content">
+                                <div class="tour-offer bg-warning">45% Off</div>
+                                <div class="international-info">
+                                    <h5 class="text-white text-uppercase mb-2">Spain</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 9 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>133+ Tour Places</span></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-6.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-6.jpg') }}"
-                                        data-lightbox="destination-6"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                </div>
+                            <div class="international-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="tab-5" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-5.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-5.jpg') }}"
-                                        data-lightbox="destination-5"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                        <div class="international-item">
+                            <img src="{{ asset('assets/site/img/explore-tour-4.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="international-content">
+                                <div class="international-info">
+                                    <h5 class="text-white text-uppercase mb-2">Japan</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 8 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>137+ Tour Places</span></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-6.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-6.jpg') }}"
-                                        data-lightbox="destination-6"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                </div>
+                            <div class="international-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="tab-6" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-5.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-5.jpg') }}"
-                                        data-lightbox="destination-5"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
+                        <div class="international-item">
+                            <img src="{{ asset('assets/site/img/explore-tour-5.jpg')}}" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="international-content">
+                                <div class="tour-offer bg-info">70% Off</div>
+                                <div class="international-info">
+                                    <h5 class="text-white text-uppercase mb-2">London</h5>
+                                    <a href="#" class="btn-hover text-white me-4"><i
+                                            class="fas fa-map-marker-alt me-1"></i> 17 Cities</a>
+                                    <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
+                                        <span>26+ Tour Places</span></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="destination-img">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('assets/site/img/destination-6.jpg') }}" alt="">
-                                <div class="destination-overlay p-4">
-                                    <a href="#"
-                                        class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
-                                    <h4 class="text-white mb-2 mt-3">San francisco</h4>
-                                    <a href="#" class="btn-hover text-white">View All Place <i
-                                            class="fa fa-arrow-right ms-2"></i></a>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="{{ asset('assets/site/img/destination-6.jpg') }}"
-                                        data-lightbox="destination-6"><i
-                                            class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                </div>
+                            <div class="international-plus-icon">
+                                <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                             </div>
                         </div>
                     </div>
@@ -621,10 +431,10 @@
         </div>
     </div>
 </div>
-<!-- Destination End -->
+<!-- Explore Tour Start -->
 
 <!-- Explore Tour Start -->
-<div class="container-fluid ExploreTour py-5">
+<div class="container-fluid ExploreTour py-5 d-none">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 900px;">
             <h5 class="section-title px-3">Explore Tour</h5>
@@ -855,28 +665,23 @@
 <div class="container-fluid packages py-5">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-            <h5 class="section-title px-3">Packages</h5>
-            <h1 class="mb-0">Awesome Packages</h1>
+            <h5 class="section-title px-3">Programs</h5>
+            <h1 class="mb-0">Explore Our Programs</h1>
         </div>
         <div class="packages-carousel owl-carousel">
             <div class="packages-item">
                 <div class="packages-img">
-                    <img src="{{ asset('assets/site/img/packages-4.jpg') }}" class="img-fluid w-100 rounded-top"
-                        alt="Image">
-                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                        <small class="flex-fill text-center border-end py-2"><i
-                                class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3
-                            days</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    <img src="https://via.placeholder.com/800x400?text=Academic+and+Research+Hub" class="img-fluid w-100 rounded-top" alt="Academic and Research Hub">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-book me-2"></i>Academic Hub</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-university me-2"></i>Research & Studies</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-graduation-cap me-2"></i>Undergraduate & Postgraduate</small>
                     </div>
-                    <div class="packages-price py-2 px-4">$349.00</div>
                 </div>
                 <div class="packages-content bg-light">
                     <div class="p-4 pb-0">
-                        <h5 class="mb-0">Venice - Italy</h5>
-                        <small class="text-uppercase">Hotel Deals</small>
+                        <h5 class="mb-0">Academic & Research Hub</h5>
+                        <small class="text-uppercase">University Programs</small>
                         <div class="mb-3">
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
@@ -884,37 +689,23 @@
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
                         </div>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                            quae illum aperiam fugiat voluptatem repellat</p>
-                    </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
-                        <div class="col-6 text-start px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
-                        </div>
-                        <div class="col-6 text-end px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
-                        </div>
+                        <p class="mb-4">Explore our comprehensive academic programs and research facilities, including undergraduate, postgraduate, and doctoral studies. Connect with top international and local universities, and utilize state-of-the-art academic venues.</p>
                     </div>
                 </div>
             </div>
             <div class="packages-item">
                 <div class="packages-img">
-                    <img src="{{ asset('assets/site/img/packages-2.jpg') }}" class="img-fluid w-100 rounded-top"
-                        alt="Image">
-                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                        <small class="flex-fill text-center border-end py-2"><i
-                                class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3
-                            days</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    <img src="https://via.placeholder.com/800x400?text=Business+and+Innovation" class="img-fluid w-100 rounded-top" alt="Business and Innovation">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-rocket me-2"></i>Business & Innovation</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-building me-2"></i>Incubators & Consultancies</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-globe me-2"></i>Global Partnerships</small>
                     </div>
-                    <div class="packages-price py-2 px-4">$449.00</div>
                 </div>
                 <div class="packages-content bg-light">
                     <div class="p-4 pb-0">
-                        <h5 class="mb-0">The New California</h5>
-                        <small class="text-uppercase">Hotel Deals</small>
+                        <h5 class="mb-0">Business & Innovation Ecosystem</h5>
+                        <small class="text-uppercase">Startup Support</small>
                         <div class="mb-3">
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
@@ -922,37 +713,23 @@
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
                         </div>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                            quae illum aperiam fugiat voluptatem repellat</p>
-                    </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
-                        <div class="col-6 text-start px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
-                        </div>
-                        <div class="col-6 text-end px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
-                        </div>
+                        <p class="mb-4">Dive into our business and innovation ecosystem that supports startups, fosters entrepreneurship, and drives growth through incubators and consulting services. Explore opportunities for global collaboration and business partnerships.</p>
                     </div>
                 </div>
             </div>
             <div class="packages-item">
                 <div class="packages-img">
-                    <img src="{{ asset('assets/site/img/packages-3.jpg') }}" class="img-fluid w-100 rounded-top"
-                        alt="Image">
-                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                        <small class="flex-fill text-center border-end py-2"><i
-                                class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3
-                            days</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    <img src="https://via.placeholder.com/800x400?text=Smart+Training+Programs" class="img-fluid w-100 rounded-top" alt="Smart Training Programs">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-laptop me-2"></i>Smart Training</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-certificate me-2"></i>Accredited Programs</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-calendar me-2"></i>Professional Development</small>
                     </div>
-                    <div class="packages-price py-2 px-4">$549.00</div>
                 </div>
                 <div class="packages-content bg-light">
                     <div class="p-4 pb-0">
-                        <h5 class="mb-0">Discover Japan</h5>
-                        <small class="text-uppercase">Hotel Deals</small>
+                        <h5 class="mb-0">Smart Training Programs</h5>
+                        <small class="text-uppercase">E-Training & Certification</small>
                         <div class="mb-3">
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
@@ -960,37 +737,23 @@
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
                         </div>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                            quae illum aperiam fugiat voluptatem repellat</p>
-                    </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
-                        <div class="col-6 text-start px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
-                        </div>
-                        <div class="col-6 text-end px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
-                        </div>
+                        <p class="mb-4">Advance your career with our smart training programs offering conventional, professional, and accredited courses. Access high-quality e-training platforms designed for your personal and professional development.</p>
                     </div>
                 </div>
             </div>
             <div class="packages-item">
                 <div class="packages-img">
-                    <img src="{{ asset('assets/site/img/packages-1.jpg') }}" class="img-fluid w-100 rounded-top"
-                        alt="Image">
-                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                        style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                        <small class="flex-fill text-center border-end py-2"><i
-                                class="fa fa-map-marker-alt me-2"></i>Thayland</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3
-                            days</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
+                    <img src="https://via.placeholder.com/800x400?text=Global+Engagement" class="img-fluid w-100 rounded-top" alt="Global Engagement">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-globe me-2"></i>Global Engagement</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-network-wired me-2"></i>International Partnerships</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-users me-2"></i>Collaborative Projects</small>
                     </div>
-                    <div class="packages-price py-2 px-4">$649.00</div>
                 </div>
                 <div class="packages-content bg-light">
                     <div class="p-4 pb-0">
-                        <h5 class="mb-0">Thayland Trip</h5>
-                        <small class="text-uppercase">Hotel Deals</small>
+                        <h5 class="mb-0">Global Engagement Opportunities</h5>
+                        <small class="text-uppercase">International Collaborations</small>
                         <div class="mb-3">
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
@@ -998,16 +761,7 @@
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
                         </div>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                            quae illum aperiam fugiat voluptatem repellat</p>
-                    </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
-                        <div class="col-6 text-start px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
-                        </div>
-                        <div class="col-6 text-end px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
-                        </div>
+                        <p class="mb-4">Engage with our global network through international business partnerships, collaborative research projects, and global outreach programs. Connect with a world of opportunities to expand your horizons.</p>
                     </div>
                 </div>
             </div>
@@ -1016,8 +770,9 @@
 </div>
 <!-- Packages End -->
 
+
 <!-- Gallery Start -->
-<div class="container-fluid gallery py-5 my-5">
+<div class="container-fluid gallery py-5 my-5 d-none">
     <div class="mx-auto text-center mb-5" style="max-width: 900px;">
         <h5 class="section-title px-3">Our Gallery</h5>
         <h1 class="mb-4">Tourism & Traveling Gallery.</h1>
@@ -1392,12 +1147,12 @@
 <!-- Gallery End -->
 
 <!-- Tour Booking Start -->
-<div class="container-fluid booking py-5">
+<div class="container-fluid booking py-5 d-none">
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-                <h5 class="section-booking-title pe-3">Booking</h5>
-                <h1 class="text-white mb-4">Online Booking</h1>
+                <h5 class="section-booking-title pe-3">Join The Community</h5>
+                <h1 class="text-white mb-4">Online Applying</h1>
                 <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime
                     ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium?
                     Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.
@@ -1409,9 +1164,9 @@
                 <a href="#" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Read More</a>
             </div>
             <div class="col-lg-6">
-                <h1 class="text-white mb-3">Book A Tour Deals</h1>
-                <p class="text-white mb-4">Get <span class="text-warning">50% Off</span> On Your First Adventure
-                    Trip With Travela. Get More Deal Offers Here.</p>
+                <h1 class="text-white mb-3">Become Part Of Our Community</h1>
+                {{-- <p class="text-white mb-4">Get <span class="text-warning">50% Off</span> On Your First Adventure
+                    Trip With Travela. Get More Deal Offers Here.</p> --}}
                 <form>
                     <div class="row g-3">
                         <div class="col-md-6">
@@ -1474,7 +1229,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
+                            <button class="btn btn-primary text-white w-100 py-3" type="submit">Apply Now</button>
                         </div>
                     </div>
                 </form>
@@ -1484,125 +1239,12 @@
 </div>
 <!-- Tour Booking End -->
 
-<!-- Travel Guide Start -->
-<div class="container-fluid guide py-5">
-    <div class="container py-5">
-        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-            <h5 class="section-title px-3">Travel Guide</h5>
-            <h1 class="mb-0">Meet Our Guide</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="guide-item">
-                    <div class="guide-img">
-                        <div class="guide-img-efects">
-                            <img src="{{ asset('assets/site/img/guide-1.jpg') }}"
-                                class="img-fluid w-100 rounded-top" alt="Image">
-                        </div>
-                        <div class="guide-icon rounded-pill p-2">
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="guide-title text-center rounded-bottom p-4">
-                        <div class="guide-title-inner">
-                            <h4 class="mt-3">Full Name</h4>
-                            <p class="mb-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="guide-item">
-                    <div class="guide-img">
-                        <div class="guide-img-efects">
-                            <img src="{{ asset('assets/site/img/guide-2.jpg') }}"
-                                class="img-fluid w-100 rounded-top" alt="Image">
-                        </div>
-                        <div class="guide-icon rounded-pill p-2">
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="guide-title text-center rounded-bottom p-4">
-                        <div class="guide-title-inner">
-                            <h4 class="mt-3">Full Name</h4>
-                            <p class="mb-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="guide-item">
-                    <div class="guide-img">
-                        <div class="guide-img-efects">
-                            <img src="{{ asset('assets/site/img/guide-3.jpg') }}"
-                                class="img-fluid w-100 rounded-top" alt="Image">
-                        </div>
-                        <div class="guide-icon rounded-pill p-2">
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="guide-title text-center rounded-bottom p-4">
-                        <div class="guide-title-inner">
-                            <h4 class="mt-3">Full Name</h4>
-                            <p class="mb-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="guide-item">
-                    <div class="guide-img">
-                        <div class="guide-img-efects">
-                            <img src="{{ asset('assets/site/img/guide-4.jpg') }}"
-                                class="img-fluid w-100 rounded-top" alt="Image">
-                        </div>
-                        <div class="guide-icon rounded-pill p-2">
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="guide-title text-center rounded-bottom p-4">
-                        <div class="guide-title-inner">
-                            <h4 class="mt-3">Full Name</h4>
-                            <p class="mb-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Travel Guide End -->
+<!-- Team Start -->
+@include('site.partials.team')
+<!-- Team End -->
 
 <!-- Blog Start -->
-<div class="container-fluid blog py-5">
+<div class="container-fluid blog py-5 d-none">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 900px;">
             <h5 class="section-title px-3">Our Blog</h5>
