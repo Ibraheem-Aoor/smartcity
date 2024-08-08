@@ -21,9 +21,9 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $data = [
-        //     'admin_sidebar_pages' => Page::query()->pluck('slug' , 'title')->toArray(),
-        // ];
-        // View::share($data);
+        $data = [
+            'admin_sidebar_pages' => Page::query()->pluck('slug' , 'title')->toArray(),
+        ];
+        View::share($data);
     }
 }
