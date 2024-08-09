@@ -4,7 +4,7 @@
 
 @push('css')
     <!-- include summernote css/js -->
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
     <style>
         .note-toolbar {
             background-color: #343a40;
@@ -75,6 +75,9 @@
             opacity: 0;
             display: none;
         }
+        .note-btn-group i , .note-current-fontname {
+            color: black !important;
+        }
     </style>
 @endpush
 
@@ -87,7 +90,8 @@
     ])
 
     {{-- START FORM --}}
-    <form action="{{ route('admin.page.update', ['slug' => $page->slug]) }}" method="POST" class="custom-form" enctype="multipart/form-data">
+    <form action="{{ route('admin.page.update', ['slug' => $page->slug]) }}" method="POST" class="custom-form"
+        enctype="multipart/form-data">
         @csrf
 
         <!-- Avatar Picture Card -->
@@ -102,7 +106,7 @@
                             <i>
                                 <img src="{{ asset('assets/common/edit.svg') }}" alt="" class="img-fluid">
                             </i>
-                            <input type="file" name="main_image" id="changeImg" accept=".png, .jpg, .jpeg">
+                            <input type="file" name="intro_image" id="changeImg" accept=".png, .jpg, .jpeg">
                             <input type="button" value="Upload" id="uploadButton">
                         </label>
                         <small class="p-5">Page Intro Image</small>
@@ -134,26 +138,14 @@
 @push('js')
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#summernote').summernote({
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'clear']],
-                    ['fontname', ['fontname']],
-                    ['color', ['color']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen', 'codeview', 'help']]
-                ],
-                callbacks: {
-                    onInit: function() {
-                        $('.note-toolbar').addClass('bg-dark');
-                    }
-                }
-            });
+            $('#summernote').summernote();
+            var noteBar = $('.note-toolbar');
+        noteBar.find('[data-toggle]').each(function() {
+            $(this).attr('data-bs-toggle', $(this).attr('data-toggle')).removeAttr('data-toggle');
+        });
 
             // Set the content of the editor
             $('#summernote').summernote('code', {!! json_encode($page->content) !!});
@@ -175,4 +167,10 @@
             });
         });
     </script>
+    @isset($page->intro_image)
+        <script>
+            var intro_image = "{{ getImageUrl($page->intro_image) }}";
+            $('.image-input-wrapper').css('background-image', 'url("' + intro_image + '")');
+        </script>
+    @endisset
 @endpush

@@ -23,7 +23,7 @@ class PageSeeder extends Seeder
         return [
             // 1- about page
             [
-                'title' => 'About ' . config('app.name'),
+                'title' => 'About',
                 'slug' => 'about',
                 'content' => file_get_contents(public_path('html/about.html')),
             ],

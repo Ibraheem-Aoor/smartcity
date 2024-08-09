@@ -32,9 +32,6 @@
                 <div class="sidebar-submenu">
                     <ul>
                         {{-- <li><a href="{{ route('admin.page.edit', ['slug' => 'home']) }}">{{ __('general.home') }}</a></li> --}}
-                        <li><a
-                                href="{{ route('admin.page.edit', ['slug' => 'about']) }}">ABOUT</a>
-                        </li>
                         @foreach ($admin_sidebar_pages as $title => $slug)
                             <li><a href="{{ route('admin.page.edit', ['slug' => $slug]) }}">{{ $title }}</a>
                             </li>

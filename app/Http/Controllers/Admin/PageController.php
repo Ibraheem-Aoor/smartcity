@@ -42,9 +42,9 @@ class PageController extends BaseAdminController
     {
         $page = Page::query()->whereSlug($slug)->first();
         $data = $request->toArray();
-        if($request->hasFile('main_image'))
+        if($request->hasFile('intro_image'))
         {
-            $data['main_image'] = saveImage('pages' , $request->file('main_image'));
+            $data['intro_image'] = saveImage('pages' , $request->file('intro_image'));
         }
         $page->update($data);
         return generateApiResoponse(true, 200, message: __('response.success_updated'), data: $page);

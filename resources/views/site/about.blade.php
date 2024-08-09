@@ -2,9 +2,12 @@
 @section('title', $about_section->title)
 @section('content')
 @section('page-header')
+@php
+        $main_image = isset($about_section->intro_image) ? getImageUrl($about_section->intro_image) : asset('https://img.freepik.com/free-photo/business-people-futuristic-business-environment_23-2150970218.jpg?t=st=1722886674~exp=1722890274~hmac=a804d3c39a6daf24955b7867c6630263a485e13c1e95930a80e38c17dcb9c93b&w=1060');
+    @endphp
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb"
-        style="background-image: url(https://img.freepik.com/premium-photo/minimalist-pop-art-single-massive-japanese-skyscraper_579873-15193.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid);">
+        style="background-image: url({{$main_image}});">
         <div class="container text-center py-5" style="max-width: 900px;">
             <h3 class="text-white display-3 mb-4">{{ $about_section->title }}</h1>
                 <ol class="breadcrumb justify-content-center mb-0">

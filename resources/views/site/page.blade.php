@@ -3,7 +3,7 @@
 @section('content')
 @section('page-header')
     @php
-        $main_image = isset($page->main_image) ? getImageUrl($page->main_image) : asset('https://img.freepik.com/free-photo/business-people-futuristic-business-environment_23-2150970218.jpg?t=st=1722886674~exp=1722890274~hmac=a804d3c39a6daf24955b7867c6630263a485e13c1e95930a80e38c17dcb9c93b&w=1060');
+        $main_image = isset($page->intro_image) ? getImageUrl($page->intro_image) : asset('https://img.freepik.com/free-photo/business-people-futuristic-business-environment_23-2150970218.jpg?t=st=1722886674~exp=1722890274~hmac=a804d3c39a6daf24955b7867c6630263a485e13c1e95930a80e38c17dcb9c93b&w=1060');
     @endphp
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb" style="background-image: url({{ $main_image }});">
