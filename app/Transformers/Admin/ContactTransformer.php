@@ -25,17 +25,17 @@ class ContactTransformer extends TransformerAbstract
     }
 
 
-    #<img loading="lazy" width="10" height="10" src="' . asset('assets/user/libs/feather-icons/icons/edit.svg') . '">
+    #<img loading="lazy" width="10" height="10" src="' . asset('assets/admin/libs/feather-icons/icons/edit.svg') . '">
     public function getActions($contact)
     {
         return '<div class="text-end p-3">
         <a data-method="POST"  data-bs-toggle="modal"
             data-header-title="Contact Message: #' . $contact->id . '"
-            data-bs-target="#contact-modal" data-message="'.$contact->message.'" class="btn btn-sm btn-soft-primary"><img loading="lazy" width="10" height="10" src="' . asset('assets/user/libs/feather-icons/icons/eye-line.svg') . '"></a>
+            data-bs-target="#contact-modal" data-message="'.$contact->message.'" class="btn btn-sm btn-soft-primary"><img loading="lazy" width="10" height="10" src="' . asset('assets/admin/libs/feather-icons/icons/eye-line.svg') . '"></a>
 
         <a data-bs-toggle="modal" data-bs-target="#delete-modal" data-delete-url="' . route('admin.contacts.destroy', encrypt($contact->id)) . '"
         data-message="' . __('general.confirm_delete') . '" data-name="' . $contact->name . '" id="row-' . $contact->id . '"
-        href="#" class="btn btn-sm btn-danger ms-2"><img loading="lazy" width="10" height="10" src="' . asset('assets/user/libs/feather-icons/icons/trash.svg') . '"><i class="fa fa-eye"></i></a>
+        href="#" class="btn btn-sm btn-danger ms-2"><img loading="lazy" width="10" height="10" src="' . asset('assets/admin/libs/feather-icons/icons/trash.svg') . '"><i class="fa fa-eye"></i></a>
         </div>';
     }
 

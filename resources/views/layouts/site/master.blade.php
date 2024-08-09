@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>{{ config('app.name') . ' || ' }} @yield('title')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="{{ csrf_token() }}" name="csrf">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
@@ -26,6 +27,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/site/css/style.css') }}" rel="stylesheet">
+    @stack('css')
 </head>
 
 <body>
@@ -108,6 +110,8 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('assets/site/js/main.js') }}"></script>
+
+    @stack('js')
 </body>
 
 </html>
