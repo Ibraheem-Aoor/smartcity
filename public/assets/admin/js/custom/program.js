@@ -31,7 +31,7 @@ function renderDataTable() {
         ajax: table_data_url,
         columns: getTableColumns(),
         order: [[
-            3,
+            4,
             'desc'
         ]],
     });
@@ -48,6 +48,12 @@ function getTableColumns() {
         {
             data: 'name',
             name: 'name',
+            searchable: true,
+            orderable: true,
+        },
+        {
+            data: 'category',
+            name: 'category.name',
             searchable: true,
             orderable: true,
         },
@@ -71,17 +77,6 @@ function getTableColumns() {
         },
     ];
 }
-
-/**
- * Project Info modal
- */
-
-$('#team-modal').on('show.bs.modal', function (e) {
-    var btn = e.relatedTarget;
-    $(this).find('textarea').text(btn.getAttribute('data-message'));
-});
-
-// Quick Toggle is Active status from the table row
 function toggleStatus(input) {
     var id = input.data('id');
     var route = input.data('route');
@@ -102,7 +97,7 @@ function toggleStatus(input) {
  * Project Info modal
  */
 
-$('#team-modal').on('show.bs.modal', function (e) {
+$(modal).on('show.bs.modal', function (e) {
     var btn = e.relatedTarget;
     var action = btn.getAttribute('data-action');
     var method = btn.getAttribute('data-method');
@@ -114,6 +109,8 @@ $('#team-modal').on('show.bs.modal', function (e) {
         $("#modal-title").text(btn.getAttribute('data-header-title'));
         $('.image-input-wrapper').css('background-image', 'url("' + btn.getAttribute('data-image') + '")');
         $('form[class="custom-form"]')[0].reset();
+        $(this).find('#quick_description').text('');
+        $(this).find('#description').text('');
         // Get the file input element
         var fileInput = document.getElementById('changeImg');
 
@@ -124,13 +121,19 @@ $('#team-modal').on('show.bs.modal', function (e) {
         $("#modal-title").text(btn.getAttribute('data-header-title'));
         $('.image-input-wrapper').css('background-image', 'url("' + btn.getAttribute('data-image') + '")');
         $(this).find('#name').val(btn.getAttribute('data-name'));
-        $(this).find('#designation').val(btn.getAttribute('data-designation'));
-        $(this).find('#facebook').val(btn.getAttribute('data-facebook'));
-        $(this).find('#twitter').val(btn.getAttribute('data-twitter'));
-        $(this).find('#linkedin').val(btn.getAttribute('data-linkedin'));
-        $(this).find('#instagram').val(btn.getAttribute('data-instagram'));
+        $(this).find('#feature_1').val(btn.getAttribute('data-feature_1'));
+        $(this).find('#feature_2').val(btn.getAttribute('data-feature_2'));
+        $(this).find('#feature_3').val(btn.getAttribute('data-feature_3'));
+        $(this).find('#quick_description').text(btn.getAttribute('data-quick_description'));
+        $(this).find('#description').text(btn.getAttribute('data-description'));
+        $(this).find('#category_id').val(btn.getAttribute('data-category_id'));
+        $(this).find('#theme').val(btn.getAttribute('data-theme'));
         var status = btn.getAttribute('data-status') == 1 ? true : false;
         $(this).find('#status').prop('checked', status);
     }
 });
+
+
+
+
 

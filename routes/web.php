@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Site\ContactController;
+use App\Http\Controllers\Site\SmartTrainingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,9 @@ Route::prefix('site')->as('site.')->group(function(){
     Route::get('/apply' , [HomeController::class , 'apply'])->name('apply');
     Route::get('/contact' , [HomeController::class , 'contact'])->name('contact');
     Route::post('contact-submit', [ContactController::class, 'store'])->name('contact.submit');
+    Route::prefix('smart-training')->as('smart_training.')->group(function(){
+        Route::get('/{theme}' , [SmartTrainingController::class, 'index'])->name('index');
+    });
 
 });
 Route::get('/{slug}' , [HomeController::class , 'page'])->name('page');

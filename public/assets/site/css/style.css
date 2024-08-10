@@ -1245,3 +1245,9 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+@media(max-width:1024px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 8px !important;
+        padding: 20px 5px !important;
+    }
+}

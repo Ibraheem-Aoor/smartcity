@@ -125,4 +125,13 @@ abstract class BaseModelService
     {
         return $this->allow_all_records;
     }
+
+    public function getModel()
+    {
+        return $this->model;
+    }
+    public function getModal(): string
+    {
+        return str_replace('#', '', $this->getModel()->modal);
+    }
 }

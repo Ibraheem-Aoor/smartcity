@@ -29,10 +29,10 @@ class PageSeeder extends Seeder
             ],
             // ACADEMIC AND RESEARCH HUB Dropdown
             [
-                'title' => 'Core Services',
-                'slug' => 'core-services',
+                'title' => 'Our Branches',
+                'slug' => 'our-branches',
                 'content' => file_get_contents(public_path('html/core-services.html')),
-                'meta_title' => 'Core Services',
+                'meta_title' => 'Our Branches',
                 'meta_description' => 'Explore our core services including academic support, research facilities, and more.',
                 'theme' => 'ACADEMIC AND RESEARCH HUB',
             ],
@@ -99,7 +99,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/remote-freelancing-platform.html')),
                 'meta_title' => 'Remote Freelancing Platform',
                 'meta_description' => 'Discover our remote freelancing platform and its features.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART TRAINING',
             ],
             [
                 'title' => 'SMART Training and Development',
@@ -107,7 +107,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/smart-training-development.html')),
                 'meta_title' => 'SMART Training and Development',
                 'meta_description' => 'Find out more about our SMART Training and Development programs.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART TRAINING',
             ],
             // GLOBAL ENGAGEMENT Dropdown
             [

@@ -11,10 +11,13 @@ use App\Http\Controllers\Admin\DashbaordController;
 use App\Http\Controllers\Admin\AccountTreeController;
 use App\Http\Controllers\Admin\BookingController;
 use App\Http\Controllers\Admin\ContactController as UserContactController;
+use App\Http\Controllers\Admin\HomePageTestmonialController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\TeamMemberController;
+use App\Http\Controllers\Admin\TrainingProgramCategoryController;
+use App\Http\Controllers\Admin\TrainingProgramController;
 use App\Http\Controllers\Admin\WorkHoursController;
 use App\Http\Requests\Site\IntresetedStudentRegisterRequest;
 
@@ -47,18 +50,42 @@ Route::middleware('auth:admin')
             Route::get('edit/home', [PageController::class, 'editHomePage'])->name('edit_home');
             Route::get('edit/{slug}', [PageController::class, 'edit'])->name('edit');
             Route::post('update/{slug}', [PageController::class, 'update'])->name('update');
-            Route::post('update/home/page', [PageController::class, 'updateHomePage'])->name('update_home');
+            Route::prefix('home')->as('home.')->group(function () {
+                // Home Page Testmonial
+                Route::prefix('testmonials')->as('testmonials.')->group(function () {
+                    Route::get('index', [HomePageTestmonialController::class, 'index'])->name('index');
+                    Route::post('store', [HomePageTestmonialController::class, 'store'])->name('store');
+                    Route::post('/{service}/update', [HomePageTestmonialController::class, 'update'])->name('update');
+                    Route::delete('/{service}/delete', [HomePageTestmonialController::class, 'destroy'])->name('destroy');
+                    Route::get('/status-toggle', [HomePageTestmonialController::class, 'toggleStatus'])->name('toggle_status');
+                    Route::get('/table-data', [HomePageTestmonialController::class, 'getTableData'])->name('table');
+
+
+                });
+            });
         });
-        // Services
-        Route::prefix('services')->name('service.')->group(function () {
-            Route::get('', [ServiceController::class, 'index'])->name('index');
-            Route::post('store', [ServiceController::class, 'store'])->name('store');
-            Route::post('/{service}/update', [ServiceController::class, 'update'])->name('update');
-            Route::delete('/{service}/delete', [ServiceController::class, 'destroy'])->name('destroy');
-            Route::get('/status-toggle', [ServiceController::class, 'toggleStatus'])->name('toggle_status');
-            Route::get('/table-data', [ServiceController::class, 'getTableData'])->name('table');
+        // SMART TRAINING
+        Route::prefix('trainings')->name('training.')->group(function () {
+            // Program Category
+            Route::prefix('progtam-category')->as('program_category.')->group(function () {
+                Route::get('', [TrainingProgramCategoryController::class, 'index'])->name('index');
+                Route::post('store', [TrainingProgramCategoryController::class, 'store'])->name('store');
+                Route::post('/{service}/update', [TrainingProgramCategoryController::class, 'update'])->name('update');
+                Route::delete('/{service}/delete', [TrainingProgramCategoryController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [TrainingProgramCategoryController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [TrainingProgramCategoryController::class, 'getTableData'])->name('table');
+            });
+            // Program
+            Route::prefix('program')->as('program.')->group(function () {
+                Route::get('', [TrainingProgramController::class, 'index'])->name('index');
+                Route::post('store', [TrainingProgramController::class, 'store'])->name('store');
+                Route::post('/{service}/update', [TrainingProgramController::class, 'update'])->name('update');
+                Route::delete('/{service}/delete', [TrainingProgramController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [TrainingProgramController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [TrainingProgramController::class, 'getTableData'])->name('table');
+            });
         });
-        // Barbers
+        // Team
         Route::prefix('team')->name('team.')->group(function () {
             Route::get('', [TeamMemberController::class, 'index'])->name('index');
             Route::post('store', [TeamMemberController::class, 'store'])->name('store');

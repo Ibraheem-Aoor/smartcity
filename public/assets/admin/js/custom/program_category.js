@@ -71,17 +71,6 @@ function getTableColumns() {
         },
     ];
 }
-
-/**
- * Project Info modal
- */
-
-$('#team-modal').on('show.bs.modal', function (e) {
-    var btn = e.relatedTarget;
-    $(this).find('textarea').text(btn.getAttribute('data-message'));
-});
-
-// Quick Toggle is Active status from the table row
 function toggleStatus(input) {
     var id = input.data('id');
     var route = input.data('route');
@@ -102,7 +91,7 @@ function toggleStatus(input) {
  * Project Info modal
  */
 
-$('#team-modal').on('show.bs.modal', function (e) {
+$(modal).on('show.bs.modal', function (e) {
     var btn = e.relatedTarget;
     var action = btn.getAttribute('data-action');
     var method = btn.getAttribute('data-method');
@@ -124,11 +113,6 @@ $('#team-modal').on('show.bs.modal', function (e) {
         $("#modal-title").text(btn.getAttribute('data-header-title'));
         $('.image-input-wrapper').css('background-image', 'url("' + btn.getAttribute('data-image') + '")');
         $(this).find('#name').val(btn.getAttribute('data-name'));
-        $(this).find('#designation').val(btn.getAttribute('data-designation'));
-        $(this).find('#facebook').val(btn.getAttribute('data-facebook'));
-        $(this).find('#twitter').val(btn.getAttribute('data-twitter'));
-        $(this).find('#linkedin').val(btn.getAttribute('data-linkedin'));
-        $(this).find('#instagram').val(btn.getAttribute('data-instagram'));
         var status = btn.getAttribute('data-status') == 1 ? true : false;
         $(this).find('#status').prop('checked', status);
     }

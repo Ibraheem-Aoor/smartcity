@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HomePageTestmonial;
 use App\Models\Page;
 use App\Models\TeamMember;
+use App\Models\TrainingProgram;
 use App\Services\SettingService;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -35,7 +37,9 @@ class HomeController extends Controller
     public function index()
     {
         $data['about_page'] = $this->about_page;
+        $data['programs'] = TrainingProgram::query()->get();
         $data['team'] = $this->team;
+        $data['testmonials'] = HomePageTestmonial::query()->status(1)->get();
         return view('home' , $data);
     }
 

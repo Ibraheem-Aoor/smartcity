@@ -12,20 +12,36 @@
 
         <ul class="sidebar-menu">
             <li class="">
-                <a href="{{ route('admin.dashboard') }}"><i
-                        class="ti ti-home me-2"></i>DASHBOARD</a>
+                <a href="{{ route('admin.dashboard') }}"><i class="ti ti-home me-2"></i>DASHBOARD</a>
             </li>
-            <li class="d-none">
-                <a href="{{ route('admin.service.index') }}"><i
-                        class="ti ti-browser  me-2"></i>SERVICES</a>
+            {{-- <li class="d-none">
+                <a href="{{ route('admin.service.index') }}"><i class="ti ti-browser  me-2"></i>SERVICES</a>
+            </li> --}}
+            <li class="">
+                <a href="{{ route('admin.team.index') }}"><i class="ti ti-user me-2"></i>TEAM MEMBERS</a>
             </li>
             <li class="">
-                <a href="{{ route('admin.team.index') }}"><i
-                        class="ti ti-user me-2"></i>TEAM MEMBERS</a>
+                <a href="{{ route('admin.contacts.index') }}"><i class="ti ti-mail-opened me-2"></i>CONTACTS</a>
             </li>
-            <li class="">
-                <a href="{{ route('admin.contacts.index') }}"><i
-                        class="ti ti-mail-opened me-2"></i>CONTACTS</a>
+            <li class="sidebar-dropdown">
+                <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>HOME PAGE</a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li><a href="{{ route('admin.page.home.testmonials.index') }}">Testmonials</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar-dropdown">
+                <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>SMART TRAINING</a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li><a href="{{ route('admin.training.program_category.index') }}">Program Categories</a>
+                        </li>
+                        <li><a href="{{ route('admin.training.program.index') }}">Programs</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="sidebar-dropdown">
                 <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>PAGES</a>

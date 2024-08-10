@@ -80,4 +80,12 @@ return [
     'meta_title' => 'Meta Title',
     "meta_description" => 'Meta Description',
     'meta_keywords' => 'Meta Keywords',
+    'home_page_testmonial' => 'Home Page Testmonial',
+    'create_new_testmonial' => 'Create New Testmonial',
+    'update_testmonial' =>'Update Testmonial',
+    'training' => [
+        'program_category' => 'Program Categories',
+        'create_new_program_category' => 'Create New Program Category',
+        'update_program_category' => 'Update Program Category',
+    ],
 ];
