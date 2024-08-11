@@ -34,8 +34,8 @@
                     <a href="{{ route('page', 'academic-venues') }}"
                         class="dropdown-item {{ $currentSlug === 'academic-venues' ? 'active' : '' }}">Academic
                         Venues</a>
-                    <a href="{{ route('page', 'graduate-school-of-business-entrepreneurship') }}"
-                        class="dropdown-item {{ $currentSlug === 'graduate-school-of-business-entrepreneurship' ? 'active' : '' }}">Graduate
+                    <a href="{{ route('page', 'graduate-school-business-entrepreneurship') }}"
+                        class="dropdown-item {{ $currentSlug === 'graduate-school-business-entrepreneurship' ? 'active' : '' }}">Graduate
                         School of Business & Entrepreneurship</a>
                     <a href="{{ route('page', 'british-fam-college') }}"
                         class="dropdown-item {{ $currentSlug === 'british-fam-college' ? 'active' : '' }}">British FAM
