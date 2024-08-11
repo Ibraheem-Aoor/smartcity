@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Site\AcademicAndResearchController;
 use App\Http\Controllers\Site\ContactController;
 use App\Http\Controllers\Site\SmartTrainingController;
 use Illuminate\Support\Facades\Route;
@@ -16,18 +17,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class , 'index'])->name('home');
-Route::prefix('site')->as('site.')->group(function(){
-    Route::get('/about' , [HomeController::class , 'about'])->name('about');
-    Route::get('/services' , [HomeController::class , 'services'])->name('core_services');
-    Route::get('/apply' , [HomeController::class , 'apply'])->name('apply');
-    Route::get('/contact' , [HomeController::class , 'contact'])->name('contact');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::prefix('site')->as('site.')->group(function () {
+    Route::get('/about', [HomeController::class, 'about'])->name('about');
+    Route::get('/services', [HomeController::class, 'services'])->name('core_services');
+    Route::get('/apply', [HomeController::class, 'apply'])->name('apply');
+    Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
     Route::post('contact-submit', [ContactController::class, 'store'])->name('contact.submit');
-    Route::prefix('smart-training')->as('smart_training.')->group(function(){
-        Route::get('/{theme}' , [SmartTrainingController::class, 'index'])->name('index');
+    // Academic & Research Training
+    Route::prefix('academic-and-research')->as('academic_and_research.')->group(function () {
+        Route::prefix('branches')->as('branch.')->group(function () {
+            Route::get('/{theme}', [AcademicAndResearchController::class, 'branch'])->name('index');
+        });
+    });
+    // Smart Training
+    Route::prefix('smart-training')->as('smart_training.')->group(function () {
+        Route::get('/{theme}', [SmartTrainingController::class, 'index'])->name('index');
     });
 
 });
-Route::get('/{slug}' , [HomeController::class , 'page'])->name('page');
+Route::get('/{slug}', [HomeController::class, 'page'])->name('page');
 
 

@@ -35,6 +35,15 @@
                 </div>
             </li>
             <li class="sidebar-dropdown">
+                <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>ACADEMIC & RESEARCH HUB</a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li><a href="{{ route('admin.academic_and_research.branch.index') }}">Our Branches</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar-dropdown">
                 <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>SMART TRAINING</a>
                 <div class="sidebar-submenu">
                     <ul>

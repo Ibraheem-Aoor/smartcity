@@ -89,4 +89,7 @@ return [
         'update_program_category' => 'Update Program Category',
     ],
     'show_in_home' => 'Show In Home',
+    'academic_and_research' => [
+        'branch' => 'Branches',
+    ],
 ];

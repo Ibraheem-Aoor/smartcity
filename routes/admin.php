@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\Academic\BranchController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Site\ContactController;
 use App\Http\Controllers\Site\CrfCourseController;
@@ -90,6 +91,28 @@ Route::middleware('auth:admin')
                 Route::get('/table-data', [TrainingProgramController::class, 'getTableData'])->name('table');
             });
         });
+
+        // Academic & Research hub
+        Route::prefix('academic-and-research')->name('academic_and_research.')->group(function () {
+            // Program Category
+            Route::prefix('branches')->as('branch.')->group(function () {
+                Route::get('', [BranchController::class, 'index'])->name('index');
+                Route::post('store', [BranchController::class, 'store'])->name('store');
+                Route::post('/{id}/update', [BranchController::class, 'update'])->name('update');
+                Route::delete('/{id}/delete', [BranchController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [BranchController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [BranchController::class, 'getTableData'])->name('table');
+            });
+            // Program
+            Route::prefix('program')->as('program.')->group(function () {
+                Route::get('', [TrainingProgramController::class, 'index'])->name('index');
+                Route::post('store', [TrainingProgramController::class, 'store'])->name('store');
+                Route::post('/{service}/update', [TrainingProgramController::class, 'update'])->name('update');
+                Route::delete('/{service}/delete', [TrainingProgramController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [TrainingProgramController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [TrainingProgramController::class, 'getTableData'])->name('table');
+            });
+        });
         // Team
         Route::prefix('team')->name('team.')->group(function () {
             Route::get('', [TeamMemberController::class, 'index'])->name('index');
@@ -99,18 +122,7 @@ Route::middleware('auth:admin')
             Route::get('/status-toggle', [TeamMemberController::class, 'toggleStatus'])->name('toggle_status');
             Route::get('/table-data', [TeamMemberController::class, 'getTableData'])->name('table');
         });
-        // Work Hours
-        Route::prefix('work-hours')->name('work_hour.')->group(function () {
-            Route::get('edit', [WorkHoursController::class, 'edit'])->name('edit');
-            Route::post('store', [WorkHoursController::class, 'store'])->name('store');
-        });
-        // Bookings
-        Route::prefix('bookings')->name('booking.')->group(function () {
-            Route::get('', [BookingController::class, 'index'])->name('index');
-            Route::get('/table-data', [BookingController::class, 'getTableData'])->name('table');
-            Route::delete('/destroy/{id}', [BookingController::class, 'destroy'])->name('destroy');
-        });
-        // Work Hours
+        // Site Settings
         Route::prefix('site-settings')->name('setting.')->group(function () {
             Route::get('edit', [SettingController::class, 'edit'])->name('edit');
             Route::post('update', [SettingController::class, 'update'])->name('update');

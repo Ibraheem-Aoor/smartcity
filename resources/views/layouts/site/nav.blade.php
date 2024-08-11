@@ -20,7 +20,7 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle {{ $activeTheme === 'ACADEMIC AND RESEARCH HUB' ? 'active' : '' }}" data-bs-toggle="dropdown">ACADEMIC AND RESEARCH HUB</a>
                 <div class="dropdown-menu m-0 overflow-auto" style="max-height: 300px;">
-                    <a href="{{ route('page', 'our-branches') }}" class="dropdown-item {{ $currentSlug === 'our-branches' ? 'active' : '' }}">Our Branches</a>
+                    <a href="{{ route('site.academic_and_research.branch.index', 'our-branches') }}" class="dropdown-item {{ $currentSlug === 'our-branches' ? 'active' : '' }}">Our Branches</a>
                     <a href="{{ route('page', 'international-partnerships') }}" class="dropdown-item {{ $currentSlug === 'international-partnerships' ? 'active' : '' }}">International Partnerships</a>
                     <a href="{{ route('page', 'local-universities') }}" class="dropdown-item {{ $currentSlug === 'local-universities' ? 'active' : '' }}">Local Universities</a>
                     <a href="{{ route('page', 'academic-venues') }}" class="dropdown-item {{ $currentSlug === 'academic-venues' ? 'active' : '' }}">Academic Venues</a>
