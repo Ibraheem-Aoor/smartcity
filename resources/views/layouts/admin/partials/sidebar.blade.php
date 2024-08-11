@@ -40,6 +40,8 @@
                     <ul>
                         <li><a href="{{ route('admin.academic_and_research.branch.index') }}">Our Branches</a>
                         </li>
+                        <li><a href="{{ route('admin.academic_and_research.university.index') }}">Universities</a>
+                        </li>
                     </ul>
                 </div>
             </li>

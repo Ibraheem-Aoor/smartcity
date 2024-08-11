@@ -178,233 +178,86 @@
     <!-- Services End -->
 
 
-    <div class="container-fluid country overflow-hidden py-5">
-        <div class="container">
-            <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s"
-                style="margin-bottom: 70px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                <div class="sub-style">
-                    <h5 class="sub-title text-primary px-3">COUNTRIES WE OFFER</h5>
-                </div>
-                <h1 class="display-5 mb-4">Immigration &amp; visa services following Countries</h1>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque
-                    sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam
-                    necessitatibus saepe in ab? Repellat!</p>
-            </div>
-            <div class="row g-4 text-center">
-                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s"
-                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                    <div class="country-item">
-                        <div class="rounded overflow-hidden">
-                            <img src="https://demo.htmlcodex.com/3376/visa-immigration-website-template/img/country-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        </div>
-                        <div class="country-flag">
-                            <img src="https://demo.htmlcodex.com/3376/visa-immigration-website-template/img/brazil.jpg" class="img-fluid rounded-circle" alt="Image">
-                        </div>
-                        <div class="country-name">
-                            <a href="#" class="text-white fs-4">Brazil</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s"
-                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                    <div class="country-item">
-                        <div class="rounded overflow-hidden">
-                            <img src="https://demo.htmlcodex.com/3376/visa-immigration-website-template/img/country-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        </div>
-                        <div class="country-flag">
-                            <img src="https://demo.htmlcodex.com/3376/visa-immigration-website-template/img/india.jpg" class="img-fluid rounded-circle" alt="Image">
-                        </div>
-                        <div class="country-name">
-                            <a href="#" class="text-white fs-4">india</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s"
-                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                    <div class="country-item">
-                        <div class="rounded overflow-hidden">
-                            <img src="https://demo.htmlcodex.com/3376/visa-immigration-website-template/img/country-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        </div>
-                        <div class="country-flag">
-                            <img src="https://demo.htmlcodex.com/3376/visa-immigration-website-template/img/usa.jpg" class="img-fluid rounded-circle" alt="Image">
-                        </div>
-                        <div class="country-name">
-                            <a href="#" class="text-white fs-4">New York</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s"
-                    style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
-                    <div class="country-item">
-                        <div class="rounded overflow-hidden">
-                            <img src="https://demo.htmlcodex.com/3376/visa-immigration-website-template/img/country-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        </div>
-                        <div class="country-flag">
-                            <img src="https://demo.htmlcodex.com/3376/visa-immigration-website-template/img/italy.jpg" class="img-fluid rounded-circle" alt="Image">
-                        </div>
-                        <div class="country-name">
-                            <a href="#" class="text-white fs-4">Italy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s"
-                        href="#" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">More
-                        Countries</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Explore Tour Start -->
-    <div class="container-fluid ExploreTour py-5 ">
+    <div class="container-fluid ExploreTour py-5">
         <div class="container py-5">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Explore Tour</h5>
-                <h1 class="mb-4">Universities Around the World</h1>
-                <p class="mb-0">Explore some of the world's most prestigious universities and their unique offerings.
-                    Whether you're interested in local or international institutions, find out more about their programs and
-                    opportunities.</p>
+                <h1 class="mb-4">The World</h1>
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto
+                    doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti
+                    eum cum repellat a laborum quasi.
+                </p>
             </div>
             <div class="tab-class text-center">
                 <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
                     <li class="nav-item">
                         <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
-                            data-bs-toggle="pill" href="#LocalUniversitiesTab">
+                            data-bs-toggle="pill" href="#NationalTab-1">
                             <span class="text-dark" style="width: 250px;">Local Universities</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#InternationalUniversitiesTab">
+                            href="#InternationalTab-2">
                             <span class="text-dark" style="width: 250px;">International Universities</span>
                         </a>
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <div id="LocalUniversitiesTab" class="tab-pane fade show p-0 active">
+                    <div id="NationalTab-1" class="tab-pane fade show p-0 active">
                         <div class="row g-4">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="https://img.freepik.com/free-photo/collage-city-committed-education_23-2149887002.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid"
-                                        class="img-fluid w-100 rounded" alt="Local University 1">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Local University 1</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
+                            @foreach ($universities->where('type', 'local-universities') as $university)
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item">
+                                        <img src="{{ getImageUrl($university->image) }}" class="img-fluid w-100 rounded"
+                                            alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">{{ $university->name }}</h5>
+                                                <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="btn-hover text-white">View All Place <i
+                                                        class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="national-plus-icon">
+                                            <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="my-auto"><i
+                                                    class="fas fa-link fa-2x text-white"></i></a>
                                         </div>
                                     </div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i
-                                                class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="https://img.freepik.com/free-photo/collage-city-committed-education_23-2149887002.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid"
-                                        class="img-fluid w-100 rounded" alt="Local University 2">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Local University 2</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i
-                                                class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="national-item">
-                                    <img src="https://img.freepik.com/free-photo/collage-city-committed-education_23-2149887002.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid"
-                                        class="img-fluid w-100 rounded" alt="Local University 2">
-                                    <div class="national-content">
-                                        <div class="national-info">
-                                            <h5 class="text-white text-uppercase mb-2">Local University 2</h5>
-                                            <a href="#" class="btn-hover text-white">View All Place <i
-                                                    class="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="national-plus-icon">
-                                        <a href="#" class="my-auto"><i
-                                                class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Add more local universities if needed -->
+                            @endforeach
                         </div>
                     </div>
-                    <div id="InternationalUniversitiesTab" class="tab-pane fade show p-0">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-4">
+                    <div id="InternationalTab-2" class="tab-pane fade show p-0">
+                        <div class="InternationalTour-carousel owl-carousel">
+                            @foreach ($universities->where('type', 'international-partnerships') as $university)
                                 <div class="international-item">
-                                    <img src="https://img.freepik.com/free-photo/collage-city-committed-education_23-2149887002.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid"
-                                        class="img-fluid w-100 rounded" alt="International University 1">
+                                    <img src="{{ getImageUrl($university->image) }}" class="img-fluid w-100 rounded"
+                                        alt="Image">
                                     <div class="international-content">
                                         <div class="international-info">
-                                            <h5 class="text-white text-uppercase mb-2">Harvard University</h5>
-                                            <a href="#" class="btn-hover text-white me-4"><i
-                                                    class="fas fa-map-marker-alt me-1"></i> 1 Campus</a>
-                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
-                                                <span>50+ Programs</span></a>
+                                            <h5 class="text-white text-uppercase mb-2">{{ $university->name }}</h5>
+                                            <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="btn-hover text-white me-4 d-none"><i
+                                                    class="fas fa-map-marker-alt me-1"></i> 8 Cities</a>
+                                            <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="btn-hover text-white d-none"><i
+                                                    class="fa fa-eye ms-2"></i>
+                                                <span>143+ Tour Places</span></a>
                                         </div>
                                     </div>
+                                    <div class="tour-offer bg-success">NEW</div>
                                     <div class="international-plus-icon">
-                                        <a href="#" class="my-auto"><i
+                                        <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="my-auto"><i
                                                 class="fas fa-link fa-2x text-white"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="international-item">
-                                    <img src="https://img.freepik.com/free-photo/collage-city-committed-education_23-2149887002.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid"
-                                        class="img-fluid w-100 rounded" alt="International University 2">
-                                    <div class="international-content">
-                                        <div class="international-info">
-                                            <h5 class="text-white text-uppercase mb-2">University of Oxford</h5>
-                                            <a href="#" class="btn-hover text-white me-4"><i
-                                                    class="fas fa-map-marker-alt me-1"></i> 1 Campus</a>
-                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
-                                                <span>40+ Programs</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="international-plus-icon">
-                                        <a href="#" class="my-auto"><i
-                                                class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="international-item">
-                                    <img src="https://img.freepik.com/free-photo/collage-city-committed-education_23-2149887002.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid"
-                                        class="img-fluid w-100 rounded" alt="International University 1">
-                                    <div class="international-content">
-                                        <div class="international-info">
-                                            <h5 class="text-white text-uppercase mb-2">Harvard University</h5>
-                                            <a href="#" class="btn-hover text-white me-4"><i
-                                                    class="fas fa-map-marker-alt me-1"></i> 1 Campus</a>
-                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i>
-                                                <span>50+ Programs</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="international-plus-icon">
-                                        <a href="#" class="my-auto"><i
-                                                class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Add more international universities if needed -->
+                            @endforeach
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Explore Tour End -->
+
 
 
 

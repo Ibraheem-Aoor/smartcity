@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\Academic\BranchController;
+use App\Http\Controllers\Admin\Academic\UniversityController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Site\ContactController;
 use App\Http\Controllers\Site\CrfCourseController;
@@ -104,13 +105,13 @@ Route::middleware('auth:admin')
                 Route::get('/table-data', [BranchController::class, 'getTableData'])->name('table');
             });
             // Program
-            Route::prefix('program')->as('program.')->group(function () {
-                Route::get('', [TrainingProgramController::class, 'index'])->name('index');
-                Route::post('store', [TrainingProgramController::class, 'store'])->name('store');
-                Route::post('/{service}/update', [TrainingProgramController::class, 'update'])->name('update');
-                Route::delete('/{service}/delete', [TrainingProgramController::class, 'destroy'])->name('destroy');
-                Route::get('/status-toggle', [TrainingProgramController::class, 'toggleStatus'])->name('toggle_status');
-                Route::get('/table-data', [TrainingProgramController::class, 'getTableData'])->name('table');
+            Route::prefix('university')->as('university.')->group(function () {
+                Route::get('', [UniversityController::class, 'index'])->name('index');
+                Route::post('store', [UniversityController::class, 'store'])->name('store');
+                Route::post('/{university}/update', [UniversityController::class, 'update'])->name('update');
+                Route::delete('/{university}/delete', [UniversityController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [UniversityController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [UniversityController::class, 'getTableData'])->name('table');
             });
         });
         // Team

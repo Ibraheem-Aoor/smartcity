@@ -7,6 +7,7 @@ use App\Http\Requests\Site\ContactRequest;
 use App\Models\Contact;
 use App\Models\Page;
 use App\Services\Academic\BranchService;
+use App\Services\Academic\UniversityService;
 use App\Services\TrainingProgramCategoryService;
 use App\Services\TrainingProgramService;
 use Illuminate\Contracts\View\View;
@@ -18,6 +19,8 @@ class AcademicAndResearchController extends BaseSiteController
 
     public function __construct(
         protected BranchService $branch_service,
+        protected UniversityService $university_service,
+
     ) {
         $this->base_view_path = 'site.academic_and_research';
     }
@@ -30,5 +33,14 @@ class AcademicAndResearchController extends BaseSiteController
         );
         $data['page'] = Page::query()->select(['intro_image', 'title', 'theme'])->whereSlug($theme)->first();
         return view($this->base_view_path.'.branch.index', $data);
+    }
+    public function univisities(Request $request, $theme): View
+    {
+        $data['universities'] = $this->university_service->get(
+            paginate: 0,
+            conditions: [['status', '=', '1'] , ['type' , '=', $theme]],
+        );
+        $data['page'] = Page::query()->select(['intro_image', 'title', 'theme'])->whereSlug($theme)->first();
+        return view($this->base_view_path.'.university.index', $data);
     }
 }

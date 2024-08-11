@@ -91,5 +91,7 @@ return [
     'show_in_home' => 'Show In Home',
     'academic_and_research' => [
         'branch' => 'Branches',
+        'university' => 'Universities',
+        'create_new_university' => 'Create New University',
     ],
 ];

@@ -29,6 +29,9 @@ Route::prefix('site')->as('site.')->group(function () {
         Route::prefix('branches')->as('branch.')->group(function () {
             Route::get('/{theme}', [AcademicAndResearchController::class, 'branch'])->name('index');
         });
+        Route::prefix('univisities')->as('university.')->group(function () {
+            Route::get('/{theme}', [AcademicAndResearchController::class, 'univisities'])->name('index');
+        });
     });
     // Smart Training
     Route::prefix('smart-training')->as('smart_training.')->group(function () {
