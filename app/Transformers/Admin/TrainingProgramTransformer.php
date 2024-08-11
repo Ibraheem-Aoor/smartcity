@@ -20,7 +20,8 @@ class TrainingProgramTransformer extends TransformerAbstract
             'image' => '<img src="' . getImageUrl($teamMember->image) . '" width="100" height="100"/>',
             'name' => $teamMember->name,
             'category' => $teamMember->category->name,
-            'status' => $this->getStatusColumn($teamMember),
+            'status' => $this->getStatusColumn($teamMember , 'status'),
+            'show_in_home' => $this->getStatusColumn($teamMember , 'show_in_home'),
             'created_at' => $teamMember->created_at->format('Y-m-d H:i:s'),
             'actions' => $this->getActions($teamMember),
         ];
@@ -44,11 +45,11 @@ class TrainingProgramTransformer extends TransformerAbstract
         </div>';
     }
 
-    public function getStatusColumn(TrainingProgram $teamMember)
+    public function getStatusColumn(TrainingProgram $teamMember, string $bool_column)
     {
-        $is_checked = $teamMember->status ? 'checked' : null;
+        $is_checked = $teamMember->$bool_column ? 'checked' : null;
         $html = '<div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="status" ' . $is_checked . ' data-route="' . route('admin.training.program.toggle_status') . '" data-id="' . $teamMember->id . '" onclick="toggleStatus($(this));">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="'.$bool_column.'" ' . $is_checked . ' data-route="' . route('admin.training.program.toggle_status') . '" data-id="' . $teamMember->id . '" onclick="toggleStatus($(this));">
     </div>';
         return $html;
     }

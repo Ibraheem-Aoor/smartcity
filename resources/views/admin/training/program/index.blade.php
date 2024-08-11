@@ -144,7 +144,11 @@
                                     <th class="border-bottom p-3" style="min-width: 220px;">
                                         {{ __('general.category') }}</th>
                                     <th class="text-center border-bottom p-3" style="min-width: 200px;">
+                                        @if(Route::currentRouteName() == 'admin.training.program.index')
                                         {{ __('general.status') }}
+                                        @else
+                                        {{ __('general.show_in_home') }}
+                                        @endif
                                     </th>
                                     <th class="text-center border-bottom p-3">{{ __('general.date') }}</th>
                                     {{-- actions --}}
@@ -172,6 +176,7 @@
     <script>
         const table_data_url = "{{ $table_data_url }}";
         const modal = "#{{ $modal }}";
+        const currentRoute = "{{ Route::currentRouteName() }}";
     </script>
     @if (getCurrentLocale() == 'ar')
         <script src="{{ asset('assets/admin/js/datatable-ar.js') }}"></script>

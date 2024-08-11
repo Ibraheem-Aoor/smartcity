@@ -88,4 +88,5 @@ return [
         'create_new_program_category' => 'Create New Program Category',
         'update_program_category' => 'Update Program Category',
     ],
+    'show_in_home' => 'Show In Home',
 ];

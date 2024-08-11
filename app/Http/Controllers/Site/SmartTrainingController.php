@@ -23,7 +23,9 @@ class SmartTrainingController extends Controller
     }
     public function index(Request $request, $theme): View
     {
-        $data['programs_categories'] = $this->training_program_category_service->get(paginate:0 , relations:['programs']);
+        $data['programs_categories'] = $this->training_program_category_service->get(paginate:0 , relations:['programs' => function($query)use($theme){
+            $query->whereTheme($theme);
+        }]);
         $data['page'] = Page::query()->select(['intro_image' , 'title' , 'theme'])->whereSlug($theme)->first();
         return view('site.smart_training.index' , $data);
     }

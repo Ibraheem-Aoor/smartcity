@@ -38,6 +38,7 @@ function renderDataTable() {
 }
 
 function getTableColumns() {
+    var hide_cols = (currentRoute == 'admin.page.home.smart_training_programs.index');
     return [
         {
             data: 'image',
@@ -58,8 +59,8 @@ function getTableColumns() {
             orderable: true,
         },
         {
-            data: 'status',
-            name: 'status',
+            data: hide_cols ? 'show_in_home' : 'status',
+            name: hide_cols ? 'show_in_home' : 'status',
             searchable: true,
             orderable: true,
         },
@@ -74,6 +75,7 @@ function getTableColumns() {
             name: 'actions',
             searchable: false,
             orderable: false,
+            visible: hide_cols ? false : true,
         },
     ];
 }
@@ -81,9 +83,10 @@ function toggleStatus(input) {
     var id = input.data('id');
     var route = input.data('route');
     var status = input.prop('checked') == true ? 1 : 0;
+    var input_name = input.prop('name');
     $.get(route, {
         id: id,
-        status: status,
+        [input_name]: status,
     }, function (reseponse) {
         if (reseponse.status) {
             toastr.success(reseponse.message);

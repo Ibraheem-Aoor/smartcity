@@ -60,7 +60,12 @@ Route::middleware('auth:admin')
                     Route::get('/status-toggle', [HomePageTestmonialController::class, 'toggleStatus'])->name('toggle_status');
                     Route::get('/table-data', [HomePageTestmonialController::class, 'getTableData'])->name('table');
 
-
+                });
+                // Home Page Smart Training Programs
+                Route::prefix('smart-training-programs')->as('smart_training_programs.')->group(function () {
+                    Route::get('index', [TrainingProgramController::class, 'index'])->name('index');
+                    Route::get('/status-toggle', [TrainingProgramController::class, 'toggleStatus'])->name('toggle_status');
+                    Route::get('/table-data', [TrainingProgramController::class, 'getTableData'])->name('table');
                 });
             });
         });

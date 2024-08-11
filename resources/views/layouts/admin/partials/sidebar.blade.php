@@ -29,6 +29,8 @@
                     <ul>
                         <li><a href="{{ route('admin.page.home.testmonials.index') }}">Testmonials</a>
                         </li>
+                        <li><a href="{{ route('admin.page.home.smart_training_programs.index' , ['status' => true]) }}">Home Page Program</a>
+                        </li>
                     </ul>
                 </div>
             </li>

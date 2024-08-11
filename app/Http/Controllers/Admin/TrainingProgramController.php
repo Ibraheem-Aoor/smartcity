@@ -18,6 +18,7 @@ use App\Services\ServiceService;
 use App\Services\TrainingProgramCategoryService;
 use App\Services\TrainingProgramService;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\View\View;
 
 class TrainingProgramController extends BaseAdminController
 {
@@ -31,7 +32,7 @@ class TrainingProgramController extends BaseAdminController
     }
     public function index()
     {
-        $data['table_data_url'] = route("{$this->base_route_path}.table");
+        $data['table_data_url'] =  route("{$this->base_route_path}.table" , request()->query());
         $data['route'] = $this->base_route_path;
         $data['view'] = $this->base_view_path;
         $data['title'] =  $this->title;
@@ -41,6 +42,8 @@ class TrainingProgramController extends BaseAdminController
         $data['themes'] = TrainingProgramThemeEnum::cases();
         return view("{$this->base_view_path}.index", $data);
     }
+
+
 
     public function store(StoreTrainingProgramRequest $request)
     {

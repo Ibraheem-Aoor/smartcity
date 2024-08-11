@@ -42,8 +42,10 @@ class TrainingProgramService extends BaseModelService
     {
         try {
             $model = $this->find($id);
+            $data = request()->toArray();
+            $input = isset($data['status']) ? 'status' : 'show_in_home';
             $model->update([
-                'status' => !$model->status,
+                $input => !$model->$input,
             ]);
             $response = generateResponse(status: true, message: __('response.success_updated'));
         } catch (Throwable $e) {
@@ -78,7 +80,9 @@ class TrainingProgramService extends BaseModelService
      */
     public function getTableData(Request $request)
     {
-        $query = $this->model::query();
+        $query = $this->model::query()->when($request->has('status'), function ($query) use ($request) {
+            $query->where('status', $request->query('status'));
+        });
         return DataTables::of($query)
             ->setTransformer($this->model->transformer)
             ->make(true);

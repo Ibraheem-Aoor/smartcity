@@ -15,9 +15,10 @@ class TrainingProgram extends Model implements Translatable
     use HasFactory , HasStatus, TranslatableTriat;
     protected $fillable = [
         'image',
-        'status',
         'category_id',
         'theme',
+        'status',
+        'show_in_home',
     ];
     public $translatedAttributes = [
         'name',
