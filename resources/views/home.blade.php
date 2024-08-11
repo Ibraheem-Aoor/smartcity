@@ -16,10 +16,11 @@
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The
-                                World</h4>
-                            <h1 class="display-2 text-capitalize text-white mb-4">Let's The World Together!</h1>
-                            <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                FUTURE</h4>
+                            <h1 class="display-2 text-capitalize text-white mb-4">Unite for a Smarter Tomorrow</h1>
+                            <p class="mb-5 fs-5">Welcome to The British Smart Academic City, where innovation drives excellence.
+                                We advance education, support entrepreneurship, and build global connections to shape the
+                                future.
                             </p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5"
@@ -214,13 +215,14 @@
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">{{ $university->name }}</h5>
-                                                <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="btn-hover text-white">View All Place <i
+                                                <a href="{{ route('site.academic_and_research.university.index', $university->type) }}"
+                                                    class="btn-hover text-white">View All Place <i
                                                         class="fa fa-arrow-right ms-2"></i></a>
                                             </div>
                                         </div>
                                         <div class="national-plus-icon">
-                                            <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="my-auto"><i
-                                                    class="fas fa-link fa-2x text-white"></i></a>
+                                            <a href="{{ route('site.academic_and_research.university.index', $university->type) }}"
+                                                class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -236,17 +238,18 @@
                                     <div class="international-content">
                                         <div class="international-info">
                                             <h5 class="text-white text-uppercase mb-2">{{ $university->name }}</h5>
-                                            <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="btn-hover text-white me-4 d-none"><i
+                                            <a href="{{ route('site.academic_and_research.university.index', $university->type) }}"
+                                                class="btn-hover text-white me-4 d-none"><i
                                                     class="fas fa-map-marker-alt me-1"></i> 8 Cities</a>
-                                            <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="btn-hover text-white d-none"><i
-                                                    class="fa fa-eye ms-2"></i>
+                                            <a href="{{ route('site.academic_and_research.university.index', $university->type) }}"
+                                                class="btn-hover text-white d-none"><i class="fa fa-eye ms-2"></i>
                                                 <span>143+ Tour Places</span></a>
                                         </div>
                                     </div>
                                     <div class="tour-offer bg-success">NEW</div>
                                     <div class="international-plus-icon">
-                                        <a href="{{ route('site.academic_and_research.university.index' , $university->type) }}" class="my-auto"><i
-                                                class="fas fa-link fa-2x text-white"></i></a>
+                                        <a href="{{ route('site.academic_and_research.university.index', $university->type) }}"
+                                            class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                     </div>
                                 </div>
                             @endforeach

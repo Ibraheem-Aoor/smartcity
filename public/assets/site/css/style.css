@@ -1289,7 +1289,7 @@
     height: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,58,102,.7);
+    background: rgba(0, 58, 102, .7);
     border-radius: 10px;
     transition: .5s;
     z-index: 1
@@ -1306,8 +1306,8 @@
     border-radius: 50%;
     top: -45px;
     left: 50%;
-    transform:translateX(-50%);
-    transition:.5s;
+    transform: translateX(-50%);
+    transition: .5s;
     z-index: 2
 }
 
@@ -1326,7 +1326,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: .5s;
     opacity: 0;
     z-index: 3
@@ -1349,7 +1349,7 @@
 }
 
 .country .country-item .country-name a.fs-4:hover {
-    color: var(--bs-secondary)!important
+    color: var(--bs-secondary) !important
 }
 
 .testimonial .owl-carousel.testimonial-carousel {
@@ -1357,3 +1357,73 @@
 }
 
 
+.btn-play {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    width: 36px;
+    height: 46px;
+    border-radius: 100%;
+    border: none;
+    outline: none !important;
+    padding: 18px 20px 20px 28px;
+    background: var(--bs-primary);
+}
+
+.btn-play:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: var(--bs-primary);
+    border-radius: 100%;
+    animation: pulse-border 1500ms ease-out infinite !important;
+}
+
+.btn-play:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: var(--bs-primary);
+    border-radius: 100%;
+    transition: all 200ms;
+}
+
+.btn-play span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    left: 3px;
+    border-left: 30px solid #FFFFFF;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+        opacity: 0;
+    }
+}
+
+.fw-medium {
+    font-weight: 500;
+}

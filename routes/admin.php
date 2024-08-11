@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\Academic\BranchController;
+use App\Http\Controllers\Admin\BusinessInnovation\ConsultingServiceController;
 use App\Http\Controllers\Admin\Academic\UniversityController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Site\ContactController;
@@ -112,6 +113,18 @@ Route::middleware('auth:admin')
                 Route::delete('/{university}/delete', [UniversityController::class, 'destroy'])->name('destroy');
                 Route::get('/status-toggle', [UniversityController::class, 'toggleStatus'])->name('toggle_status');
                 Route::get('/table-data', [UniversityController::class, 'getTableData'])->name('table');
+            });
+        });
+        // Business And Innovation Ecosystem
+        Route::prefix('business-and-innovation-ecosystem')->name('business_and_innovatio_ecosystem.')->group(function () {
+            // Consulting Services.
+            Route::prefix('consulting-services')->as('consulting_services.')->group(function () {
+                Route::get('', [ConsultingServiceController::class, 'index'])->name('index');
+                Route::post('store', [ConsultingServiceController::class, 'store'])->name('store');
+                Route::post('/{id}/update', [ConsultingServiceController::class, 'update'])->name('update');
+                Route::delete('/{id}/delete', [ConsultingServiceController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [ConsultingServiceController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [ConsultingServiceController::class, 'getTableData'])->name('table');
             });
         });
         // Team

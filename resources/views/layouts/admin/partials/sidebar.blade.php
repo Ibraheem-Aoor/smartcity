@@ -46,6 +46,15 @@
                 </div>
             </li>
             <li class="sidebar-dropdown">
+                <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>BUSINESS & INNOVATION ECOSYSTEM</a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li><a href="{{ route('admin.business_and_innovatio_ecosystem.consulting_services.index') }}">Smart Conslutinces</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar-dropdown">
                 <a href="javascript:void(0)"><i class="ti ti-license me-2"></i>SMART TRAINING</a>
                 <div class="sidebar-submenu">
                     <ul>

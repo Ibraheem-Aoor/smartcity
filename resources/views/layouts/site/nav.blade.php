@@ -49,7 +49,7 @@
                     class="nav-link dropdown-toggle {{ $activeTheme === 'BUSINESS AND INNOVATION ECOSYSTEM' ? 'active' : '' }}"
                     data-bs-toggle="dropdown">BUSINESS AND INNOVATION ECOSYSTEM</a>
                 <div class="dropdown-menu m-0 overflow-auto" style="max-height: 300px;">
-                    <a href="{{ route('page', 'smart-consultancies') }}"
+                    <a href="{{ route('site.business_and_innovation_ecosystem.consulting_services.index', 'smart-consultancies') }}"
                         class="dropdown-item {{ $currentSlug === 'smart-consultancies' ? 'active' : '' }}">SMART
                         Consultancies</a>
                     <a href="{{ route('page', 'smart-incubators') }}"

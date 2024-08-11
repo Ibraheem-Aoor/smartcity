@@ -94,4 +94,8 @@ return [
         'university' => 'Universities',
         'create_new_university' => 'Create New University',
     ],
+    'business_and_innovation_ecosystem' => [
+        'consultinces' => 'Consulting Services',
+        'create_new_consulting_service' => 'Create New Consulting Service',
+    ],
 ];

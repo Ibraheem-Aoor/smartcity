@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Site\AcademicAndResearchController;
+use App\Http\Controllers\Site\BusinessAndInnovationController;
 use App\Http\Controllers\Site\ContactController;
 use App\Http\Controllers\Site\SmartTrainingController;
 use Illuminate\Support\Facades\Route;
@@ -31,6 +32,13 @@ Route::prefix('site')->as('site.')->group(function () {
         });
         Route::prefix('univisities')->as('university.')->group(function () {
             Route::get('/{theme}', [AcademicAndResearchController::class, 'univisities'])->name('index');
+        });
+    });
+
+    //Business And Innovation Ecosystem
+    Route::prefix('business-and-innovation-ecosystem')->as('business_and_innovation_ecosystem.')->group(function () {
+        Route::prefix('consulting-services')->as('consulting_services.')->group(function () {
+            Route::get('/{theme}', [BusinessAndInnovationController::class, 'consultingServices'])->name('index');
         });
     });
     // Smart Training
