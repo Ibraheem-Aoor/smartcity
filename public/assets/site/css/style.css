@@ -1427,3 +1427,157 @@
 .fw-medium {
     font-weight: 500;
 }
+
+/* SATRT RELATED TO FAM COLLEAGE PAGE */
+.about-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 30px;
+    overflow: hidden
+}
+
+.about-img::before {
+    content: "";
+    width: 100%;
+    height: 40%;
+    background: var(--bs-dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px
+}
+
+.about-img::after {
+    content: "";
+    width: 100%;
+    height: 60%;
+    background: var(--bs-primary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px
+}
+
+.rotate-left {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 28%;
+    left: -10%;
+    rotate: 25deg;
+    z-index: 2
+}
+
+.rotate-right {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 28%;
+    right: -10%;
+    rotate: -25deg;
+    z-index: 2
+}
+
+.about-img img {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px
+}
+
+.experiences {
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 35px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 3;
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes mymove {
+    from {
+        top: -202px
+    }
+
+    to {
+        top: 102%
+    }
+}
+
+@media(max-width: 425px) {
+    .fam-row-about .my-2 h6 {
+        font-size: 12px !important;
+    }
+
+}
+
+.case-item img {
+    transition: .5s
+}
+
+.case-item:hover img {
+    transform: scale(1.2)
+}
+
+.case-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(20, 24, 62, 0), var(--bs-dark));
+    z-index: 1
+}
+
+.case-overlay small {
+    display: inline-block;
+    padding: 3px 15px;
+    color: #fff;
+    background: rgba(20, 24, 62, .7);
+    border-radius: 25px;
+    margin-bottom: 15px
+}
+
+.case-overlay span.btn:hover {
+    color: var(--primary);
+    background: #fff;
+    border-color: #fff
+}
+
+.accordion .accordion-item {
+    border: none;
+    margin-bottom: 15px
+}
+
+.accordion .accordion-button {
+    background: var(--light);
+    border-radius: 2px
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    color: #fff;
+    background: var(--primary);
+    box-shadow: none
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNicgZmlsbD0nI2ZmZic+PHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBkPSdNMS42NDYgNC42NDZhLjUuNSAwIDAgMSAuNzA4IDBMOCAxMC4yOTNsNS42NDYtNS42NDdhLjUuNSAwIDAgMSAuNzA4LjcwOGwtNiA2YS41LjUgMCAwIDEtLjcwOCAwbC02LTZhLjUuNSAwIDAgMSAwLS43MDh6Jy8+PC9zdmc+)
+}
+
+.accordion .accordion-body {
+    padding: 15px 0 0
+}
+
+/* END RELATED  TO FAM COLLEAGE PAGE */
