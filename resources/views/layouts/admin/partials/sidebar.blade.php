@@ -42,6 +42,9 @@
                         </li>
                         <li><a href="{{ route('admin.academic_and_research.university.index') }}">Universities</a>
                         </li>
+                        <li><a href="{{ route('admin.fam_college.project_category.index') }}">FAM Project Categories</a>
+                        <li><a href="{{ route('admin.fam_college.project_category.index') }}">FAM Project Categories</a>
+                        </li>
                     </ul>
                 </div>
             </li>

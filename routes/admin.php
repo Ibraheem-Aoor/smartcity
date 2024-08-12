@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\DashbaordController;
 use App\Http\Controllers\Admin\AccountTreeController;
 use App\Http\Controllers\Admin\BookingController;
 use App\Http\Controllers\Admin\ContactController as UserContactController;
+use App\Http\Controllers\Admin\FAM\FamProjectCategoryController;
 use App\Http\Controllers\Admin\HomePageTestmonialController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\ServiceController;
@@ -125,6 +126,18 @@ Route::middleware('auth:admin')
                 Route::delete('/{id}/delete', [ConsultingServiceController::class, 'destroy'])->name('destroy');
                 Route::get('/status-toggle', [ConsultingServiceController::class, 'toggleStatus'])->name('toggle_status');
                 Route::get('/table-data', [ConsultingServiceController::class, 'getTableData'])->name('table');
+            });
+        });
+        // British FAM College
+        Route::prefix('fam-college')->name('fam_college.')->group(function () {
+            // Excellence Center Projects
+            Route::prefix('excellence-center-project-categoey')->as('project_category.')->group(function () {
+                Route::get('', [FamProjectCategoryController::class, 'index'])->name('index');
+                Route::post('store', [FamProjectCategoryController::class, 'store'])->name('store');
+                Route::post('/{id}/update', [FamProjectCategoryController::class, 'update'])->name('update');
+                Route::delete('/{id}/delete', [FamProjectCategoryController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [FamProjectCategoryController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [FamProjectCategoryController::class, 'getTableData'])->name('table');
             });
         });
         // Team
