@@ -99,6 +99,9 @@ return [
         'create_new_consulting_service' => 'Create New Consulting Service',
     ],
     'fam_college' =>[
+        'project' => 'project',
         'project_category' => 'Project Category',
+        'update_project' => 'Update Project',
+
     ],
 ];

@@ -144,11 +144,7 @@
                                     <th class="border-bottom p-3" style="min-width: 220px;">
                                         {{ __('general.category') }}</th>
                                     <th class="text-center border-bottom p-3" style="min-width: 200px;">
-                                        @if(Route::currentRouteName() == 'admin.training.program.index')
                                         {{ __('general.status') }}
-                                        @else
-                                        {{ __('general.show_in_home') }}
-                                        @endif
                                     </th>
                                     <th class="text-center border-bottom p-3">{{ __('general.date') }}</th>
                                     {{-- actions --}}
@@ -186,6 +182,6 @@
     <script src="https://cdn.datatables.net/2.0.0/js/dataTables.min.js"></script>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script> --}}
 
-    <script src="{{ asset('assets/admin/js/custom/program.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/custom/fam/project.js') }}"></script>
 
 @endpush

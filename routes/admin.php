@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\AccountTreeController;
 use App\Http\Controllers\Admin\BookingController;
 use App\Http\Controllers\Admin\ContactController as UserContactController;
 use App\Http\Controllers\Admin\FAM\FamProjectCategoryController;
+use App\Http\Controllers\Admin\FAM\FamProjectController;
 use App\Http\Controllers\Admin\HomePageTestmonialController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\ServiceController;
@@ -130,7 +131,7 @@ Route::middleware('auth:admin')
         });
         // British FAM College
         Route::prefix('fam-college')->name('fam_college.')->group(function () {
-            // Excellence Center Projects
+            // Excellence Center Project Categories
             Route::prefix('excellence-center-project-categoey')->as('project_category.')->group(function () {
                 Route::get('', [FamProjectCategoryController::class, 'index'])->name('index');
                 Route::post('store', [FamProjectCategoryController::class, 'store'])->name('store');
@@ -138,6 +139,15 @@ Route::middleware('auth:admin')
                 Route::delete('/{id}/delete', [FamProjectCategoryController::class, 'destroy'])->name('destroy');
                 Route::get('/status-toggle', [FamProjectCategoryController::class, 'toggleStatus'])->name('toggle_status');
                 Route::get('/table-data', [FamProjectCategoryController::class, 'getTableData'])->name('table');
+            });
+            // Excellence Center Projects
+            Route::prefix('excellence-center-project')->as('project.')->group(function () {
+                Route::get('', [FamProjectController::class, 'index'])->name('index');
+                Route::post('store', [FamProjectController::class, 'store'])->name('store');
+                Route::post('/{id}/update', [FamProjectController::class, 'update'])->name('update');
+                Route::delete('/{id}/delete', [FamProjectController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [FamProjectController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [FamProjectController::class, 'getTableData'])->name('table');
             });
         });
         // Team
