@@ -200,6 +200,24 @@ class PageSeeder extends Seeder
                 'meta_description' => 'Discover spaces available for remote freelancing.',
                 'theme' => 'REMOTE FREELANCING ARENA',
             ],
+            [
+                'title' => 'Exellence Center',
+                'slug' => 'exellence-center',
+                'content' => file_get_contents(public_path('html/exellence-center.html')),
+                'meta_title' => 'Spaces',
+                'meta_description' => 'Discover The British FAM Exellence Center',
+                'theme' => 'british-fam-college',
+                'parent_id' =>  Page::whereSlug('british-fam-college')->first()->id,
+            ],
+            [
+                'title' => 'Academic Programs',
+                'slug' => 'academic-programs',
+                'content' => file_get_contents(public_path('html/academic-programs.html')),
+                'meta_title' => 'Spaces',
+                'meta_description' => 'Discover The British FAM Academic Programs',
+                'theme' => 'british-fam-college',
+                'parent_id' =>  Page::whereSlug('british-fam-college')->first()->id,
+            ],
         ];
 
     }

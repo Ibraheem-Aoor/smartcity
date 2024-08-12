@@ -33,6 +33,10 @@ Route::prefix('site')->as('site.')->group(function () {
         Route::prefix('univisities')->as('university.')->group(function () {
             Route::get('/{theme}', [AcademicAndResearchController::class, 'univisities'])->name('index');
         });
+        Route::prefix('british-fam-college')->as('fam_college.')->group(function () {
+            Route::get('/exellence-center', [AcademicAndResearchController::class, 'exellenceCenter'])->name('exellence_center');
+            Route::get('/academic-programs', [AcademicAndResearchController::class, 'academicPrograms'])->name('academic_programs');
+        });
     });
 
     //Business And Innovation Ecosystem
