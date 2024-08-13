@@ -14,12 +14,13 @@ use App\Http\Requests\Admin\UpdateBarberRequest;
 use App\Models\Service;
 use App\Services\TeamService;
 use App\Services\ServiceService;
+use App\Services\TeamMemberCategoryService;
 use Illuminate\Support\Facades\Cache;
 
 class TeamMemberController extends BaseAdminController
 {
 
-    public function __construct(protected TeamService $service)
+    public function __construct(protected TeamService $service ,protected TeamMemberCategoryService $team_member_category_service)
     {
         $this->base_view_path = 'admin.team';
         $this->base_route_path = 'admin.team';
@@ -32,6 +33,7 @@ class TeamMemberController extends BaseAdminController
         $data['route'] = $this->base_route_path;
         $data['view'] = $this->base_view_path;
         $data['title'] =  $this->title;
+        $data['categories'] = $this->team_member_category_service->get(paginate:0);
         return view("{$this->base_view_path}.index", $data);
     }
 

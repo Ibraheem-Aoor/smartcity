@@ -137,6 +137,8 @@
                                         {{ __('general.image') }}</th>
                                     <th class="border-bottom p-3" style="min-width: 220px;">
                                         {{ __('general.name') }}</th>
+                                    <th class="border-bottom p-3" style="min-width: 220px;">
+                                        {{ __('general.category') }}</th>
                                     <th class="text-center border-bottom p-3" style="min-width: 200px;">
                                         {{ __('general.status') }}
                                     </th>

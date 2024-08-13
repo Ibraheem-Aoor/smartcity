@@ -52,6 +52,12 @@ function getTableColumns() {
             orderable: true,
         },
         {
+            data: 'category',
+            name: 'category.name',
+            searchable: true,
+            orderable: true,
+        },
+        {
             data: 'status',
             name: 'status',
             searchable: true,
@@ -124,6 +130,7 @@ $('#team-modal').on('show.bs.modal', function (e) {
         $("#modal-title").text(btn.getAttribute('data-header-title'));
         $('.image-input-wrapper').css('background-image', 'url("' + btn.getAttribute('data-image') + '")');
         $(this).find('#name').val(btn.getAttribute('data-name'));
+        $(this).find('#category_id').val(btn.getAttribute('data-category_id'));
         $(this).find('#designation').val(btn.getAttribute('data-designation'));
         $(this).find('#facebook').val(btn.getAttribute('data-facebook'));
         $(this).find('#twitter').val(btn.getAttribute('data-twitter'));

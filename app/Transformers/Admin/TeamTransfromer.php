@@ -17,6 +17,7 @@ class TeamTransfromer extends TransformerAbstract
             'id' => $teamMember->id,
             'image' => '<img src="' . getImageUrl($teamMember->image) . '" width="100" height="100"/>',
             'name' => $teamMember->name,
+            'category' => $teamMember->category->name,
             'status' => $this->getStatusColumn($teamMember),
             'created_at' => $teamMember->created_at->format('Y-m-d H:i:s'),
             'actions' => $this->getActions($teamMember),
@@ -28,7 +29,7 @@ class TeamTransfromer extends TransformerAbstract
         return '<div class="text-end p-3">
         <a data-method="POST" data-bs-toggle="modal"
             data-header-title="' . __('general.update_team_member') . ': ' . $teamMember->name . '"
-            data-bs-target="#team-modal" data-image="' . getImageUrl($teamMember->image) . '" data-name="' . $teamMember->name . '"
+            data-bs-target="#team-modal" data-image="' . getImageUrl($teamMember->image) . '" data-name="' . $teamMember->name . '"  data-category_id="' . $teamMember->category_id . '"
             data-designation="' . $teamMember->designation . '" data-facebook="' . $teamMember->facebook . '" data-twitter="' . $teamMember->twitter . '"
             data-linkedin="' . $teamMember->linkedin . '" data-instagram="' . $teamMember->instagram . '"
             data-status="' . $teamMember->status . '"

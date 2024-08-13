@@ -41,6 +41,19 @@
                             </div><!--end col-->
                             <div class="col-md-6">
                                 <div class="mb-3">
+                                    <label class="form-label">{{ __('general.category') }}<span
+                                            class="text-danger">*</span></label>
+                                    <div class="form-icon position-relative">
+                                        <select name="category_id" id="category_id" class="form-control">
+                                            @foreach ($categories as $category)
+                                                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                            <div class="col-md-6">
+                                <div class="mb-3">
                                     <label class="form-label">{{ __('general.designation') }}<span
                                             class="text-danger">*</span></label>
                                     <div class="form-icon position-relative">
@@ -89,8 +102,8 @@
                                 <div class="mb-3">
                                     <label class="form-label">{{ __('general.status') }}</label>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" id="status" name="status"
-                                            checked>
+                                        <input class="form-check-input" type="checkbox" id="status"
+                                            name="status" checked>
                                     </div>
                                 </div>
                             </div><!--end row-->
