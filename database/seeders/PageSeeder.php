@@ -16,6 +16,12 @@ class PageSeeder extends Seeder
                 'slug' => $page['slug'],
             ], $page);
         }
+        $sub_pages = $this->getSubPages();
+        foreach ($sub_pages as $page) {
+            Page::updateOrCreate([
+                'slug' => $page['slug'],
+            ], $page);
+        }
     }
 
     protected function getDataToSeed(): array
@@ -200,6 +206,13 @@ class PageSeeder extends Seeder
                 'meta_description' => 'Discover spaces available for remote freelancing.',
                 'theme' => 'REMOTE FREELANCING ARENA',
             ],
+
+        ];
+    }
+
+    private function getSubPages(): array
+    {
+        return [
             [
                 'title' => 'Exellence Center',
                 'slug' => 'exellence-center',
@@ -207,7 +220,7 @@ class PageSeeder extends Seeder
                 'meta_title' => 'Spaces',
                 'meta_description' => 'Discover The British FAM Exellence Center',
                 'theme' => 'british-fam-college',
-                'parent_id' =>  Page::whereSlug('british-fam-college')->first()->id,
+                'parent_id' => Page::whereSlug('british-fam-college')->first()->id,
             ],
             [
                 'title' => 'Academic Programs',
@@ -216,9 +229,8 @@ class PageSeeder extends Seeder
                 'meta_title' => 'Spaces',
                 'meta_description' => 'Discover The British FAM Academic Programs',
                 'theme' => 'british-fam-college',
-                'parent_id' =>  Page::whereSlug('british-fam-college')->first()->id,
+                'parent_id' => Page::whereSlug('british-fam-college')->first()->id,
             ],
         ];
-
     }
 }

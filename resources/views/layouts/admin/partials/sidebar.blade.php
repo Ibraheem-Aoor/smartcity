@@ -18,6 +18,9 @@
                 <a href="{{ route('admin.service.index') }}"><i class="ti ti-browser  me-2"></i>SERVICES</a>
             </li> --}}
             <li class="">
+                <a href="{{ route('admin.team.category.index') }}"><i class="ti ti-user me-2"></i>TEAM Category</a>
+            </li>
+            <li class="">
                 <a href="{{ route('admin.team.index') }}"><i class="ti ti-user me-2"></i>TEAM MEMBERS</a>
             </li>
             <li class="">

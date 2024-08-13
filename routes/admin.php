@@ -20,6 +20,7 @@ use App\Http\Controllers\Admin\HomePageTestmonialController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\TeamMemberCategoryController;
 use App\Http\Controllers\Admin\TeamMemberController;
 use App\Http\Controllers\Admin\TrainingProgramCategoryController;
 use App\Http\Controllers\Admin\TrainingProgramController;
@@ -158,6 +159,15 @@ Route::middleware('auth:admin')
             Route::delete('/{service}/delete', [TeamMemberController::class, 'destroy'])->name('destroy');
             Route::get('/status-toggle', [TeamMemberController::class, 'toggleStatus'])->name('toggle_status');
             Route::get('/table-data', [TeamMemberController::class, 'getTableData'])->name('table');
+            // Team Category
+            Route::prefix('category')->as('category.')->group(function () {
+                Route::get('', [TeamMemberCategoryController::class, 'index'])->name('index');
+                Route::post('store', [TeamMemberCategoryController::class, 'store'])->name('store');
+                Route::post('/{id}/update', [TeamMemberCategoryController::class, 'update'])->name('update');
+                Route::delete('/{id}/delete', [TeamMemberCategoryController::class, 'destroy'])->name('destroy');
+                Route::get('/status-toggle', [TeamMemberCategoryController::class, 'toggleStatus'])->name('toggle_status');
+                Route::get('/table-data', [TeamMemberCategoryController::class, 'getTableData'])->name('table');
+            });
         });
         // Site Settings
         Route::prefix('site-settings')->name('setting.')->group(function () {
