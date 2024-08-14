@@ -62,7 +62,7 @@ class TeamSeeder extends Seeder
 
             $members[] = [
                     'image' => '232',
-                    'name' => fake()->name('male')->len,
+                    'name' => fake()->name(),
                     'designation' => fake()->jobTitle(),
                     'facebook' => fake()->url(),
                     'instagram' => fake()->url(),
