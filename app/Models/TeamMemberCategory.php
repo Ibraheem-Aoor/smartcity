@@ -8,6 +8,8 @@ use Astrotomic\Translatable\Contracts\Translatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Astrotomic\Translatable\Translatable as TranslatableTriat;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+
 class TeamMemberCategory extends Model implements Translatable
 {
     use HasFactory , HasStatus , TranslatableTriat;
@@ -27,4 +29,9 @@ class TeamMemberCategory extends Model implements Translatable
         'tmc_id',
         'locale',
     ];
+
+    public function members() : HasMany
+    {
+        return $this->hasMany(TeamMember::class , 'category_id');
+    }
 }

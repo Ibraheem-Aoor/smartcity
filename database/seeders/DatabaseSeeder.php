@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Admin::factory(10)->create();
         $this->call([
             PageSeeder::class,
+            TeamSeeder::class,
         ]);
 
         // \App\Models\User::factory()->create([

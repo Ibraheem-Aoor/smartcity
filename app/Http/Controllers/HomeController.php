@@ -5,9 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\HomePageTestmonial;
 use App\Models\Page;
 use App\Models\TeamMember;
+use App\Models\TeamMemberCategory;
 use App\Models\TrainingProgram;
 use App\Services\Academic\UniversityService;
 use App\Services\SettingService;
+use App\Services\TeamMemberCategoryService;
+use App\Services\TeamService;
 use App\Services\TrainingProgramService;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -24,11 +27,11 @@ class HomeController extends Controller
         protected SettingService $setting_service,
         protected TrainingProgramService $training_program_service,
         protected UniversityService $university_service,
+        protected TeamMemberCategoryService $team_category_service,
     ) {
         $this->about_page = Page::query()->whereSlug('about')->first();
-        $this->team = TeamMember::query()->status(1)->get();
+        $this->team = $this->team_category_service->get(paginate:0 , relations:['members'], order:['order' , 'asc']);
         $settings = $this->setting_service->get(params: ['key', 'value'], paginate: 0)->pluck('value', 'key')->toArray();
-
         view()->share([
             'settings' => cacheAndGet('settings', now()->addDay(), $settings),
         ]);
