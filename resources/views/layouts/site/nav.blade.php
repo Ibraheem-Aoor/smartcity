@@ -14,7 +14,7 @@
 
             @php
                 $activeTheme = isset($page) ? $page->theme : ''; // Get the theme from the page if it exists
-                $currentSlug = request()->route('slug'); // Get the current route slug
+                $currentSlug = request()->route('slug') ?? request()->route('theme'); // Get the current route slug
             @endphp
 
             <!-- ACADEMIC AND RESEARCH HUB Dropdown -->
@@ -26,10 +26,9 @@
                     <a href="{{ route('site.academic_and_research.branch.index', 'our-branches') }}"
                         class="dropdown-item {{ $currentSlug === 'our-branches' ? 'active' : '' }}">Our Branches</a>
                     <a href="{{ route('site.academic_and_research.university.index', 'international-partnerships') }}"
-                        class="dropdown-item {{ $currentSlug === 'international-partnerships' ? 'active' : '' }}">International
-                        Partnerships</a>
+                        class="dropdown-item {{ $currentSlug === 'international-partnerships' ? 'active' : '' }}">Universities</a>
                     <a href="{{ route('site.academic_and_research.university.index', 'local-universities') }}"
-                        class="dropdown-item {{ $currentSlug === 'local-universities' ? 'active' : '' }}">Local
+                        class="dropdown-item {{ $currentSlug === 'local-universities' ? 'active' : '' }} d-none">Local
                         Universities</a>
                     <a href="{{ route('page', 'academic-venues') }}"
                         class="dropdown-item {{ $currentSlug === 'academic-venues' ? 'active' : '' }}">Academic

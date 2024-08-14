@@ -108,7 +108,7 @@
             </div>
             <div class="row g-4">
                 @foreach ($universities as $university)
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s"
+                    <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.5s"
                         style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                         <div class="service-item">
                             <div class="service-inner">
