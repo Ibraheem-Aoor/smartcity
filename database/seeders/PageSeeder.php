@@ -32,6 +32,7 @@ class PageSeeder extends Seeder
                 'title' => 'About',
                 'slug' => 'about',
                 'content' => file_get_contents(public_path('html/about.html')),
+                'theme' => 'ABOUT',
             ],
             // ACADEMIC AND RESEARCH HUB Dropdown
             [
@@ -205,6 +206,39 @@ class PageSeeder extends Seeder
                 'meta_title' => 'Spaces',
                 'meta_description' => 'Discover spaces available for remote freelancing.',
                 'theme' => 'REMOTE FREELANCING ARENA',
+            ],
+
+            [
+                'title' => 'Our History',
+                'slug' => 'history',
+                'content' => file_get_contents(public_path('html/our-history.html')),
+                'meta_title' => 'Our History',
+                'meta_description' => 'Explore the history of our organization.',
+                'theme' => 'ABOUT',
+            ],
+            [
+                'title' => 'Executive Team',
+                'slug' => 'executive-team',
+                'content' => file_get_contents(public_path('html/executive-team.html')),
+                'meta_title' => 'Executive Team',
+                'meta_description' => 'Meet the executive team behind our organization.',
+                'theme' => 'ABOUT',
+            ],
+            [
+                'title' => 'Board of Trustees',
+                'slug' => 'board-trustees',
+                'content' => file_get_contents(public_path('html/board-of-trustees.html')),
+                'meta_title' => 'Board of Trustees',
+                'meta_description' => 'Learn about the members of our Board of Trustees.',
+                'theme' => 'ABOUT',
+            ],
+            [
+                'title' => 'Board of Consultants',
+                'slug' => 'board-consultants',
+                'content' => file_get_contents(public_path('html/board-of-consultants.html')),
+                'meta_title' => 'Board of Consultants',
+                'meta_description' => 'Get to know our Board of Consultants.',
+                'theme' => 'ABOUT',
             ],
 
         ];

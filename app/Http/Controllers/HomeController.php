@@ -52,12 +52,6 @@ class HomeController extends Controller
         return view('home', $data);
     }
 
-    public function about(): View
-    {
-        $data['about_section'] = $this->about_page;
-        $data['team'] = $this->team;
-        return view('site.about', $data);
-    }
 
     public function services(): View
     {

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Site\AboutController;
 use App\Http\Controllers\Site\AcademicAndResearchController;
 use App\Http\Controllers\Site\BusinessAndInnovationController;
 use App\Http\Controllers\Site\ContactController;
@@ -20,7 +21,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::prefix('site')->as('site.')->group(function () {
-    Route::get('/about', [HomeController::class, 'about'])->name('about');
+    Route::prefix('about')->as('about.')->group(function(){
+        Route::get('/', [AboutController::class, 'index'])->name('index');
+        Route::get('/team/{theme}', [AboutController::class, 'team'])->name('team');
+    });
     Route::get('/services', [HomeController::class, 'services'])->name('core_services');
     Route::get('/apply', [HomeController::class, 'apply'])->name('apply');
     Route::get('/contact', [HomeController::class, 'contact'])->name('contact');

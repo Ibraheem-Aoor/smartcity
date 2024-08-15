@@ -41,7 +41,7 @@
         {!! $about_page->content !!}
         <div class="row">
             <div class="col-sm-12 text-center">
-                <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="{{ route('site.about') }}">Read More</a>
+                <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="{{ route('site.about.index') }}">Read More</a>
             </div>
         </div>
     </div>
@@ -902,7 +902,7 @@
     <!-- Tour Booking End -->
 
     <!-- Team Start -->
-    @include('site.partials.team')
+    {{-- @include('site.partials.team') --}}
     <!-- Team End -->
 
     <!-- Blog Start -->
