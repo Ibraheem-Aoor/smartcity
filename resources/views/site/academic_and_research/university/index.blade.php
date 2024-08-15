@@ -132,7 +132,7 @@
                                         <div class="px-4">
                                             <p class="mb-4">{{ $university->description }}</p>
                                             <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
-                                                href="#">Explore More</a>
+                                                href="{{ route('page' , $loop->first ? 'international-american-universities' :'international-british-universities') }}">Explore More</a>
                                         </div>
                                     </div>
                                 </div>

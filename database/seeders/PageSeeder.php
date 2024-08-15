@@ -240,6 +240,22 @@ class PageSeeder extends Seeder
                 'meta_description' => 'Get to know our Board of Consultants.',
                 'theme' => 'ABOUT',
             ],
+            [
+                'title' => 'International British Universities',
+                'slug' => 'international-british-universities',
+                'content' => file_get_contents(public_path('html/international-british-universities.html')),
+                'meta_title' => 'International British Universities',
+                'meta_description' => 'International British Universities',
+                'theme' => 'ACADEMIC AND RESEARCH HUB',
+            ],
+            [
+                'title' => 'International American Universities',
+                'slug' => 'international-american-universities',
+                'content' => file_get_contents(public_path('html/international-american-universities.html')),
+                'meta_title' => 'International american Universities',
+                'meta_description' => 'International American Universities',
+                'theme' => 'ACADEMIC AND RESEARCH HUB',
+            ],
 
         ];
     }
