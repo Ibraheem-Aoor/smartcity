@@ -191,21 +191,22 @@
             </div>
             <div class="tab-class text-center">
                 <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+
                     <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
-                            data-bs-toggle="pill" href="#NationalTab-1">
-                            <span class="text-dark" style="width: 250px;">Local Universities</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill active" data-bs-toggle="pill"
                             href="#InternationalTab-2">
                             <span class="text-dark" style="width: 250px;">International Universities</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill d-none"
+                            data-bs-toggle="pill" href="#NationalTab-1">
+                            <span class="text-dark" style="width: 250px;">Local Universities</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="tab-content">
-                    <div id="NationalTab-1" class="tab-pane fade show p-0 active">
+                    <div id="NationalTab-1" class="tab-pane fade show p-0 ">
                         <div class="row g-4">
                             @foreach ($universities->where('type', 'local-universities') as $university)
                                 <div class="col-md-6 col-lg-4">
@@ -229,7 +230,7 @@
                             @endforeach
                         </div>
                     </div>
-                    <div id="InternationalTab-2" class="tab-pane fade show p-0">
+                    <div id="InternationalTab-2" class="tab-pane fade show p-0 active">
                         <div class="InternationalTour-carousel owl-carousel">
                             @foreach ($universities->where('type', 'international-partnerships') as $university)
                                 <div class="international-item">

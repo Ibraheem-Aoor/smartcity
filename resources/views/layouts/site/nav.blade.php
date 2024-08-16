@@ -3,12 +3,13 @@
     $activeTheme = isset($page) ? $page->theme : (isset($theme) ? $theme : ''); // Get the theme from the page if it exists
     $currentSlug = request()->route('slug') ?? (isset($slug) ? $slug : request()->route('theme')); // Get the current route slug
 @endphp
+
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
     <a href="{{ route('home') }}" class="navbar-brand p-0">
-        <h1 class="m-0"><img src="{{ asset('assets/common/logo.png') }}" alt=""> {{ config('app.name') }}</h1>
+        <h1 class="m-0"><img src="{{ asset('assets/common/logo_dark.png') }}" alt=""></h1>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="fa fa-bars"></span>
+        <span class="fa fa-bars"></span> {{ config('app.name') }}
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
