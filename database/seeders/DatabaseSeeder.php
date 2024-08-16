@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             PageSeeder::class,
             TeamSeeder::class,
             UniverstySeeder::class,
+            TrainingProgramCategorySeeder::class
         ]);
 
         // \App\Models\User::factory()->create([
