@@ -281,6 +281,103 @@ class PageSeeder extends Seeder
                 'theme' => 'british-fam-college',
                 'parent_id' => Page::whereSlug('british-fam-college')->first()->id,
             ],
+            // --- START GLOBAL ENGAGEMENT RELATED PAGES ----
+            [
+                'title' => 'International Business Development',
+                'slug' => 'international-business-development',
+                'content' => file_get_contents(public_path('html/international-business-development.html')),
+                'meta_title' => 'international-business-development',
+                'meta_description' => 'Discover The international-business-development',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('business-partnerships')->first()->id,
+            ],
+            [
+                'title' => 'Export and Import Services',
+                'slug' => 'export-and-import-services',
+                'content' => file_get_contents(public_path('html/export-and-import-services.html')),
+                'meta_title' => 'export-and-import-services',
+                'meta_description' => 'Comprehensive support for businesses looking to expand internationally, including trade agreements, customs procedures, and financial assistance.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('business-partnerships')->first()->id,
+            ],
+            [
+                'title' => 'intellectual-property-protection',
+                'slug' => 'intellectual-property-protection',
+                'content' => file_get_contents(public_path('html/intellectual-property-protection.html')),
+                'meta_title' => 'intellectual-property-protection',
+                'meta_description' => 'Guidance on protecting intellectual property rights in international markets, including patent, trademark, and copyright registration, and dispute resolution mechanisms.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('business-partnerships')->first()->id,
+            ],
+            [
+                'title' => 'Language Training and Translation Services',
+                'slug' => 'language-training-and-translation-services',
+                'content' => file_get_contents(public_path('html/language-training-and-translation-services.html')),
+                'meta_title' => 'Language Training and Translation Services',
+                'meta_description' => 'Tailored language courses and professional translation services to support international students and businesses.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('communication-platforms')->first()->id,
+            ],
+            [
+                'title' => 'Cross-Cultural Training',
+                'slug' => 'cross-cultural-training',
+                'content' => file_get_contents(public_path('html/cross-cultural-training.html')),
+                'meta_title' => 'Cross-Cultural Training',
+                'meta_description' => 'Programs to enhance cultural awareness, communication skills, and etiquette for international interactions.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('communication-platforms')->first()->id,
+            ],
+            [
+                'title' => 'Virtual Collaboration Tools',
+                'slug' => 'virtual-collaboration-tools',
+                'content' => file_get_contents(public_path('html/virtual-collaboration-tools.html')),
+                'meta_title' => 'Virtual Collaboration Tools',
+                'meta_description' => 'Access to advanced communication and collaboration platforms, online meeting tools, and virtual classrooms.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('communication-platforms')->first()->id,
+            ],
+
+            [
+                'title' => 'International Research Partnerships',
+                'slug' => 'international-research-partnerships',
+                'content' => file_get_contents(public_path('html/international-research-partnerships.html')),
+                'meta_title' => 'International Research Partnerships',
+                'meta_description' => 'Explore opportunities for collaborative research with international institutions.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('global-collaborations')->first()->id,
+            ],
+            [
+                'title' => 'Student Exchange Programs',
+                'slug' => 'student-exchange-programs',
+                'content' => file_get_contents(public_path('html/student-exchange-programs.html')),
+                'meta_title' => 'Student Exchange Programs',
+                'meta_description' => 'Find out about partnerships, funding, and cultural immersion programs for students.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('global-collaborations')->first()->id,
+
+            ],
+            [
+                'title' => 'Faculty and Staff Exchange',
+                'slug' => 'faculty-and-staff-exchange',
+                'content' => file_get_contents(public_path('html/faculty-and-staff-exchange.html')),
+                'meta_title' => 'Faculty and Staff Exchange',
+                'meta_description' => 'Opportunities for faculty and staff to teach, research abroad, and professional development programs.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('global-collaborations')->first()->id,
+
+            ],
+            [
+                'title' => 'International Academic Conferences',
+                'slug' => 'international-academic-conferences',
+                'content' => file_get_contents(public_path('html/international-academic-conferences.html')),
+                'meta_title' => 'International Academic Conferences',
+                'meta_description' => 'Details on hosting and participating in international academic conferences and networking opportunities.',
+                'theme' => 'GLOBAL ENGAGEMENT',
+                'parent_id' => Page::whereSlug('global-collaborations')->first()->id,
+
+            ],
+            //---- END GLOBAL ENGAGEMENT RELATED PAGES ---
+
         ];
     }
 }

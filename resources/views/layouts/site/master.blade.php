@@ -38,7 +38,6 @@
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus modi sunt aut aliquam commodi, vero animi tempore. Quidem id possimus fuga necessitatibus atque dolores molestias!
     </div>
     <!-- Spinner End -->
 

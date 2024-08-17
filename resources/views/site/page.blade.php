@@ -15,6 +15,9 @@
                     @isset($page->theme)
                         <li class="breadcrumb-item"><a href="#">{{ $page->theme }}</a></li>
                     @endisset
+                    @isset($page->parent)
+                        <li class="breadcrumb-item"><a href="#">{{ $page->parent->title }}</a></li>
+                    @endisset
                     <li class="breadcrumb-item active text-white">{{ $page->title }}</li>
                 </ol>
         </div>
