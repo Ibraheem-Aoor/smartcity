@@ -1872,6 +1872,11 @@ start related to business partnership
     transition: all .5s ease
 }
 
+.text-justify
+{
+    text-align: justify !important;
+}
+
 /**
 end related to business partnership
 */

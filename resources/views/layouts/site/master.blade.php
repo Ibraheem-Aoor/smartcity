@@ -27,7 +27,7 @@
     <link href="{{ asset('assets/site/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{ asset('assets/site/css/style.css') }}?v=0.06" rel="stylesheet">
+    <link href="{{ asset('assets/site/css/style.css') }}?v=0.07" rel="stylesheet">
     @stack('css')
 </head>
 
