@@ -125,6 +125,109 @@
         .service .service-item:hover .service-content::after {
             height: 100%
         }
+
+        #home {
+            margin-bottom: 6rem;
+            background: url("{{ asset('assets/common/bg-header.png') }}") left top no-repeat;
+
+        }
+
+        .typed-cursor {
+            font-size: 30px;
+            color: var(--dark)
+        }
+
+        .btn-play {
+            position: relative;
+            display: block;
+            box-sizing: content-box;
+            width: 16px;
+            height: 26px;
+            border-radius: 100%;
+            border: none;
+            outline: none !important;
+            padding: 18px 20px 20px 28px;
+            background: var(--bs-primary)
+        }
+
+        .btn-play:before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: var(--bs-primary);
+            border-radius: 100%;
+            animation: pulse-border 1500ms ease-out infinite
+        }
+
+        .btn-play:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border-radius: 100%;
+            transition: all 200ms
+        }
+
+        .btn-play span {
+            display: block;
+            position: relative;
+            z-index: 3;
+            width: 0;
+            height: 0;
+            left: -1px;
+            border-left: 16px solid var(--bs-primary);
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent
+        }
+
+        @keyframes pulse-border {
+            0% {
+                transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+                opacity: 1
+            }
+
+            100% {
+                transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+                opacity: 0
+            }
+        }
+
+        .modal-video .modal-dialog {
+            position: relative;
+            max-width: 800px;
+            margin: 60px auto 0
+        }
+
+        .modal-video .modal-body {
+            position: relative;
+            padding: 0
+        }
+
+        .modal-video .close {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: 0;
+            top: -30px;
+            z-index: 999;
+            font-size: 30px;
+            font-weight: 400;
+            color: #fff;
+            background: #000;
+            opacity: 1
+        }
     </style>
 @endpush
 @section('title', $page->title)
@@ -203,4 +306,40 @@
     </div>
 
 
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">BIM Case Study</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="http://127.0.0.1:8080/assets/common/fam_bim.mp4"
+                            id="video" allowfullscreen="" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
+
+@push('js')
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if ($('.typed-text-output').length == 1) {
+        var typed_strings = $('.typed-text').text();
+        var typed = new Typed('.typed-text-output',{
+            strings: typed_strings.split(', '),
+            typeSpeed: 100,
+            backSpeed: 20,
+            smartBackspace: false,
+            loop: true
+        });
+    }
+        });
+    </script>
+@endpush
