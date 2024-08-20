@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\ConsultingService;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,7 +21,8 @@ class DatabaseSeeder extends Seeder
             PageSeeder::class,
             TeamSeeder::class,
             UniverstySeeder::class,
-            TrainingProgramCategorySeeder::class
+            TrainingProgramCategorySeeder::class,
+            ConsultingServiceSeeder::class,
         ]);
 
         // \App\Models\User::factory()->create([

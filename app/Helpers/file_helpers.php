@@ -46,6 +46,10 @@ function getImageUrl($image)
     if (is_null($image)) {
         return asset('assets/common/product-placeholder.webp');
     }
+    if(isValidUrl($image))
+    {
+        return $image;
+    }
     $exists = Storage::disk('public')->exists($image);
     if ($exists) {
         return Storage::url($image);
@@ -71,4 +75,8 @@ function downloadFile($path)
     if ($exists) {
         return Storage::disk('public')->download($path);
     }
+}
+
+function isValidUrl($url) {
+    return filter_var($url, FILTER_VALIDATE_URL) !== false;
 }

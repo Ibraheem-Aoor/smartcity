@@ -378,6 +378,46 @@ class PageSeeder extends Seeder
             ],
             //---- END GLOBAL ENGAGEMENT RELATED PAGES ---
 
+            //---- START SMART CONSULTING PAGES ---
+
+            [
+                'title' => 'Strategic Consulting',
+                'slug' => 'strategic-consulting',
+                'content' => file_get_contents(public_path('html/strategic-consulting.html')),
+                'meta_title' => 'Strategic Consulting',
+                'meta_description' => 'Expert guidance in business strategy development, market research, competitive intelligence, and operational efficiency.',
+                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
+            ],
+            [
+                'title' => 'Technology Consulting',
+                'slug' => 'technology-consulting',
+                'content' => file_get_contents(public_path('html/technology-consulting.html')),
+                'meta_title' => 'Technology Consulting',
+                'meta_description' => 'Assistance with digital transformation, IT strategy, cybersecurity, and data analytics.',
+                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
+            ],
+            [
+                'title' => 'Innovation Consulting',
+                'slug' => 'innovation-consulting',
+                'content' => file_get_contents(public_path('html/innovation-consulting.html')),
+                'meta_title' => 'Innovation Consulting',
+                'meta_description' => 'Support in innovation management, idea generation, intellectual property strategy, and technology commercialization.',
+                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
+            ],
+            [
+                'title' => 'Sustainability Consulting',
+                'slug' => 'sustainability-consulting',
+                'content' => file_get_contents(public_path('html/sustainability-consulting.html')),
+                'meta_title' => 'Sustainability Consulting',
+                'meta_description' => 'Guidance on adopting sustainable business practices, environmental impact assessments, and green technology solutions.',
+                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
+            ],
+            //---- END SMART CONSULTING PAGES ---
+
         ];
     }
 }

@@ -74,6 +74,9 @@
         .service .service-item:hover .service-inner .service-img img {
             transform: scale(1.3)
         }
+        .service-item {
+            background: var(--bs-primary) !important;
+        }
     </style>
 @endpush
 @section('title', $page->title)
@@ -106,17 +109,22 @@
             <h1 class="display-5 mb-0">What We Offer</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
-        <div class="row g-5">
+        <div class="row g-5" id="services">
             @foreach ($services as $service)
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="service-item bg-primary text-center p-5">
                         <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
                             style="width: 90px; height: 90px;">
-                            <img class="img-fluid rounded bg-light" src="{{ getImageUrl($service->image)  }}" alt="{{ $service->name }}" width="50" height="50">
+                            <img class=" rounded bg-light" src="{{ getImageUrl($service->image) }}"
+                                alt="{{ $service->name }}" width="100px" height="100px">
                         </div>
                         <h3 class="mb-3 text-white">{{ $service->name }}</h3>
                         <p class="mb-0 text-white">{{ $service->description }}</p>
+                        <div class="col-sm-12 text-center mt-3">
+                            <a class="btn btn-md btn-soft-primart" href="{{ route('page', str_replace(' ' ,'-',strtolower($service->name))) }}">Read more</a>
+                        </div>
                     </div>
+
                 </div>
             @endforeach
 
