@@ -12,7 +12,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Throwable;
 
-class SmartTrainingController extends Controller
+class SmartTrainingController extends BaseSiteController
 {
 
     public function __construct(
@@ -26,7 +26,7 @@ class SmartTrainingController extends Controller
         $data['programs_categories'] = $this->training_program_category_service->get(paginate:0 , relations:['programs' => function($query)use($theme){
             $query->whereTheme($theme);
         }]);
-        $data['page'] = Page::query()->select(['intro_image' , 'title' , 'theme'])->whereSlug($theme)->first();
+        $data['page'] = $this->getPageModel($theme);
         return view('site.smart_training.index' , $data);
     }
 }

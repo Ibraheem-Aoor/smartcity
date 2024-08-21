@@ -483,5 +483,273 @@ class TrainingProgramCategorySeeder extends Seeder
                 ]);
             }
         }
+
+        // Remote Freelancing Platforms
+
+
+        $categories = [
+            [
+                'name' => 'ACC | ACCOUNTING',
+                'image' => 'accounting.jpg',
+                'programs' => [
+                    [
+                        'image' => 'acc100.jpg',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'ACC 100 Principles of Financial Accounting',
+                            'quick_description' => 'Introduction to Financial Accounting.',
+                            'description' => 'This course covers the basics of financial accounting...',
+                            'feature_1' => 'Understand financial statements',
+                            'feature_2' => 'Learn accounting principles',
+                            'feature_3' => 'Practical applications of accounting'
+                        ]
+                    ],
+                    // Add other accounting programs here
+                ],
+            ],
+            [
+                'name' => 'CONSULTING | BUSINESS CONSULTING',
+                'image' => 'consulting.jpg',
+                'programs' => [
+                    [
+                        'image' => 'consulting_basic.jpg',
+                        'theme' => 'Business',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Basic Business Consulting',
+                            'quick_description' => 'Introduction to business consulting.',
+                            'description' => 'Learn the fundamentals of consulting for business.',
+                            'feature_1' => 'Consulting techniques',
+                            'feature_2' => 'Business analysis',
+                            'feature_3' => 'Client interaction'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'WRITING | CONTENT WRITING',
+                'image' => 'content_writing.jpg',
+                'programs' => [
+                    [
+                        'image' => 'content_writing_intro.jpg',
+                        'theme' => 'Creative Writing',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to Content Writing',
+                            'quick_description' => 'Learn the basics of content writing.',
+                            'description' => 'This course covers key aspects of writing engaging content.',
+                            'feature_1' => 'Writing techniques',
+                            'feature_2' => 'SEO basics',
+                            'feature_3' => 'Content strategy'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'MARKETING | DIGITAL MARKETING',
+                'image' => 'digital_marketing.jpg',
+                'programs' => [
+                    [
+                        'image' => 'digital_marketing_basic.jpg',
+                        'theme' => 'Marketing',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Digital Marketing Essentials',
+                            'quick_description' => 'Introduction to digital marketing strategies.',
+                            'description' => 'Explore key digital marketing techniques and tools.',
+                            'feature_1' => 'SEO and SEM',
+                            'feature_2' => 'Social media marketing',
+                            'feature_3' => 'Content marketing'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'E-COMMERCE | ONLINE BUSINESS',
+                'image' => 'ecommerce.jpg',
+                'programs' => [
+                    [
+                        'image' => 'ecommerce_intro.jpg',
+                        'theme' => 'Business',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to E-commerce',
+                            'quick_description' => 'Learn how to start and manage an online store.',
+                            'description' => 'This course covers the fundamentals of e-commerce.',
+                            'feature_1' => 'E-commerce platforms',
+                            'feature_2' => 'Payment gateways',
+                            'feature_3' => 'Customer management'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'ENGINEERING | SOFTWARE ENGINEERING',
+                'image' => 'software_engineering.jpg',
+                'programs' => [
+                    [
+                        'image' => 'software_engineering_intro.jpg',
+                        'theme' => 'Engineering',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to Software Engineering',
+                            'quick_description' => 'Learn the basics of software engineering.',
+                            'description' => 'Explore software development methodologies and practices.',
+                            'feature_1' => 'Software development life cycle',
+                            'feature_2' => 'Project management',
+                            'feature_3' => 'Quality assurance'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'DESIGN | GRAPHIC DESIGN',
+                'image' => 'graphic_design.jpg',
+                'programs' => [
+                    [
+                        'image' => 'graphic_design_intro.jpg',
+                        'theme' => 'Design',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to Graphic Design',
+                            'quick_description' => 'Basics of graphic design principles.',
+                            'description' => 'Learn the fundamentals of creating visual content.',
+                            'feature_1' => 'Design principles',
+                            'feature_2' => 'Typography',
+                            'feature_3' => 'Color theory'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'TECH | MOBILE APP DEVELOPMENT',
+                'image' => 'mobile_app_development.jpg',
+                'programs' => [
+                    [
+                        'image' => 'mobile_app_development_intro.jpg',
+                        'theme' => 'Technology',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to Mobile App Development',
+                            'quick_description' => 'Learn how to develop mobile applications.',
+                            'description' => 'This course covers mobile app development for iOS and Android.',
+                            'feature_1' => 'Mobile development platforms',
+                            'feature_2' => 'User interface design',
+                            'feature_3' => 'App deployment'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'LANGUAGE | TRANSLATION',
+                'image' => 'translation.jpg',
+                'programs' => [
+                    [
+                        'image' => 'translation_intro.jpg',
+                        'theme' => 'Language',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to Translation',
+                            'quick_description' => 'Basics of translation and interpretation.',
+                            'description' => 'Learn techniques for translating various types of content.',
+                            'feature_1' => 'Translation methods',
+                            'feature_2' => 'Cultural nuances',
+                            'feature_3' => 'Translation tools'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'MEDIA | VIDEO MONTAGE',
+                'image' => 'video_montage.jpg',
+                'programs' => [
+                    [
+                        'image' => 'video_montage_intro.jpg',
+                        'theme' => 'Media',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to Video Montage',
+                            'quick_description' => 'Learn the basics of video editing.',
+                            'description' => 'This course covers techniques for editing and montaging videos.',
+                            'feature_1' => 'Editing software',
+                            'feature_2' => 'Cutting and trimming',
+                            'feature_3' => 'Adding effects'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'VOICE | VOICE OVER',
+                'image' => 'voice_over.jpg',
+                'programs' => [
+                    [
+                        'image' => 'voice_over_intro.jpg',
+                        'theme' => 'Voice',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to Voice Over',
+                            'quick_description' => 'Basics of voice-over techniques and recording.',
+                            'description' => 'Learn how to effectively use your voice for various applications.',
+                            'feature_1' => 'Voice techniques',
+                            'feature_2' => 'Recording equipment',
+                            'feature_3' => 'Voice editing'
+                        ]
+                    ],
+                ],
+            ],
+            [
+                'name' => 'WEB | WEB DEVELOPMENT',
+                'image' => 'web_development.jpg',
+                'programs' => [
+                    [
+                        'image' => 'web_development_intro.jpg',
+                        'theme' => 'Technology',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Introduction to Web Development',
+                            'quick_description' => 'Learn the fundamentals of web development.',
+                            'description' => 'This course covers basic and advanced web development techniques.',
+                            'feature_1' => 'HTML and CSS',
+                            'feature_2' => 'JavaScript and frameworks',
+                            'feature_3' => 'Backend development'
+                        ]
+                    ],
+                ],
+            ],
+        ];
+
+        foreach ($categories as $category) {
+            $cat = TrainingProgramCategory::create([
+                getCurrentLocale() => [
+                    'name' => $category['name'],
+                ],
+                'image' => $category['image'],
+            ]);
+
+            foreach ($category['programs'] as $program) {
+                $course = TrainingProgram::create([
+                    'category_id' => $cat->id,
+                    'image' => $program['image'],
+                    'theme' => TrainingProgramThemeEnum::RemoteFreelancingPlatform->value,
+                    'status' => $program['status'],
+                    'show_in_home' => $program['show_in_home'],
+                    getCurrentLocale() => $program['translations'],
+                ]);
+            }
+        }
+
     }
 }

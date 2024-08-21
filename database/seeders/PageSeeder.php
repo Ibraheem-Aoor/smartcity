@@ -416,6 +416,42 @@ class PageSeeder extends Seeder
                 'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
                 'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
             ],
+            [
+                'title' => 'Startup Support Services',
+                'slug' => 'startup-support-services',
+                'content' => file_get_contents(public_path('html/startup-support-services.html')),
+                'meta_title' => 'Startup Support Services',
+                'meta_description' => 'Comprehensive services including business plan development, mentorship, access to funding, networking, and workspace.',
+                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'parent_id' => Page::whereSlug('smart-incubators')->first()->id,
+            ],
+            [
+                'title' => 'Technology Development',
+                'slug' => 'technology-development',
+                'content' => file_get_contents(public_path('html/technology-development.html')),
+                'meta_title' => 'Technology Development',
+                'meta_description' => 'Support for research, prototyping, and intellectual property protection.',
+                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'parent_id' => Page::whereSlug('smart-incubators')->first()->id,
+            ],
+            [
+                'title' => 'Market Access',
+                'slug' => 'market-access',
+                'content' => file_get_contents(public_path('html/market-access.html')),
+                'meta_title' => 'Market Access',
+                'meta_description' => 'Assistance with market entry, expansion, and global networking.',
+                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'parent_id' => Page::whereSlug('smart-incubators')->first()->id,
+            ],
+            [
+                'title' => 'Scaling Up',
+                'slug' => 'scaling-up',
+                'content' => file_get_contents(public_path('html/scaling-up.html')),
+                'meta_title' => 'Scaling Up',
+                'meta_description' => 'Guidance on scaling businesses and achieving sustainable growth.',
+                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'parent_id' => Page::whereSlug('smart-incubators')->first()->id,
+            ],
             //---- END SMART CONSULTING PAGES ---
 
         ];

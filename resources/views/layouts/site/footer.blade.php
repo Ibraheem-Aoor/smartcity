@@ -1,19 +1,18 @@
   <!-- Subscribe Start -->
-  <div class="container-fluid subscribe py-5" style="background-image: url(https://img.freepik.com/premium-photo/business-woman-show-smart-city-technology-mobile-phone_35927-428.jpg?ga=GA1.1.1266518853.1715856292&semt=ais_hybrid);">
+  <div class="container-fluid subscribe py-5"
+      style="background-image: url(https://img.freepik.com/free-photo/certified-warranty-guarantee-insurance-assurance-concept_53876-127744.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid);">
       <div class="container text-center py-5">
           <div class="mx-auto text-center" style="max-width: 900px;">
-              <h5 class="subscribe-title px-3">Subscribe</h5>
-              <h1 class="text-white mb-4">Our Newsletter</h1>
-              <p class="text-white mb-5">Stay updated with the latest news, exclusive offers, and insightful content
-                  delivered straight to your inbox. Our newsletter brings you valuable updates and tips you won’t want
-                  to miss. Join our community today and be the first to know about new releases, special promotions, and
-                  much more. Subscribe now to stay connected!
+              <h5 class="subscribe-title px-3 text-dark">Get internationally</h5>
+              <h1 class="text-dark mb-4">accredited certificates.
+              </h1>
+              <p class="text-dark mb-5">Write down the certificate number to verify its authenticity immediately
               </p>
               <div class="position-relative mx-auto">
                   <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                      placeholder="Your email">
+                      placeholder="Enter SN">
                   <button type="button"
-                      class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                      class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Check Your Code Now</button>
               </div>
           </div>
       </div>

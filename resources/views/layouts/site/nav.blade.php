@@ -2,6 +2,10 @@
 @php
     $activeTheme = isset($page) ? $page->theme : (isset($theme) ? $theme : ''); // Get the theme from the page if it exists
     $currentSlug = request()->route('slug') ?? (isset($slug) ? $slug : request()->route('theme')); // Get the current route slug
+    view()->share([
+        'activeTheme' => $activeTheme,
+        'currentSlug' => $currentSlug,
+    ]);
 @endphp
 
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
@@ -68,7 +72,7 @@
                             class="dropdown-item {{ $currentSlug === 'smart-consultancies' ? 'active' : '' }}">SMART
                             Consultancies</a>
                         <a href="{{ route('page', 'smart-incubators') }}"
-                            class="dropdown-item {{ $currentSlug === 'smart-incubators' ? 'active' : '' }}">SMART
+                            class="dropdown-item {{ $currentSlug === 'smart-incubators' ? 'active' : '' }}">SMART Business
                             Incubators</a>
                     </div>
                 </div>

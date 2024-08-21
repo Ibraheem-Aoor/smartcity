@@ -6,7 +6,7 @@
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselId" da ta-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
@@ -16,24 +16,63 @@
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The
-                                FUTURE</h4>
-                            <h1 class="display-2 text-capitalize text-white mb-4">Unite for a Smarter Tomorrow</h1>
-                            <p class="mb-5 fs-5">Welcome to The British Smart Academic City, where innovation drives excellence.
-                                We advance education, support entrepreneurship, and build global connections to shape the
-                                future.
+                                FUTURE
+                            </h4>
+                            <h1 class="display-2 text-capitalize text-white mb-4">Unite for a Smarter Tomorrow
+                            </h1>
+                            <p class="mb-5 fs-5">Welcome to The British Smart Academic City, where innovation drives excellence. We advance education, support entrepreneurship, and build global connections to shape the future.
+
+
                             </p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5"
-                                    href="#services">Discover Now</a>
+                                    href="#">Discover Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/premium-photo/businessman-working-with-ai-robot-business-technology-data-network-adapt-implement-new-policies-technology-effectively_1028938-128490.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid" class="img-fluid" alt="Smart Academic City">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Academic and Research Hub</h4>
+                            <h1 class="display-2 text-capitalize text-white mb-4">Empowering Future Innovators</h1>
+                            <p class="mb-5 fs-5">Join our state-of-the-art Smart Academic City, where cutting-edge technology meets world-class education. Pioneering research, smart learning environments, and global collaboration are at the heart of our city.</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/premium-photo/businessman-holds-magnifying-glass-light-is-projected-from-light-bulb-icon-representing-insight-innovation-finding-business-solutions_854723-34988.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid" class="img-fluid" alt="Business Innovation Ecosystem">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Business & Innovation Ecosystem</h4>
+                            <h1 class="display-2 text-capitalize text-white mb-4">Driving Sustainable Growth</h1>
+                            <p class="mb-5 fs-5">Our city fosters a dynamic business environment, where innovation and sustainability go hand in hand. Explore opportunities for growth, collaboration, and success in a thriving smart ecosystem.</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Discover Opportunities</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
     <!-- Carousel End -->
 @endsection
+
 @section('content')
 
     <!-- About Start -->
@@ -193,8 +232,8 @@
                 <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
 
                     <li class="nav-item">
-                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill active" data-bs-toggle="pill"
-                            href="#InternationalTab-2">
+                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill active"
+                            data-bs-toggle="pill" href="#InternationalTab-2">
                             <span class="text-dark" style="width: 250px;">International Universities</span>
                         </a>
                     </li>
