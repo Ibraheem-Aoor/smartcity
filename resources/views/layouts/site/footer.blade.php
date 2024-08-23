@@ -1,6 +1,6 @@
   <!-- Subscribe Start -->
   <div class="container-fluid subscribe py-5"
-      style="background-image: url(https://img.freepik.com/free-photo/certified-warranty-guarantee-insurance-assurance-concept_53876-127744.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid);">
+      style="background-image: url(https://img.freepik.com/premium-photo/quality-assurance-business-services-businessman-hand-shows-sign-top-service-quality-assurance-black-background-guarantee-standards-iso-certification-standardization-concept_162459-4487.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid);">
       <div class="container text-center py-5">
           <div class="mx-auto text-center" style="max-width: 900px;">
               <h5 class="subscribe-title px-3 text-dark">Get internationally</h5>

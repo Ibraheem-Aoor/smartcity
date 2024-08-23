@@ -93,7 +93,7 @@ class PageSeeder extends Seeder
                 'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
             ],
             [
-                'title' => 'SMART Incubators',
+                'title' => 'SMART Business Incubators',
                 'slug' => 'smart-incubators',
                 'content' => file_get_contents(public_path('html/smart-incubators.html')),
                 'meta_title' => 'SMART Incubators',
