@@ -24,56 +24,56 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'acc100.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/business-finance-man-calculating-budget-numbers-invoices-financial-adviser-working_1423-119.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'ACC 100 Principles of Financial Accounting', 'quick_description' => 'Introduction to Financial Accounting.', 'description' => 'This course covers the basics of financial accounting...', 'feature_1' => 'Understand financial statements', 'feature_2' => 'Learn accounting principles', 'feature_3' => 'Practical applications of accounting']
                     ],
                     [
-                        'image' => 'acc200.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept_1423-127.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ACC 200 Principles of Managerial Accounting', 'quick_description' => 'Introduction to Managerial Accounting.', 'description' => 'This course provides an overview of managerial accounting...', 'feature_1' => 'Cost behavior analysis', 'feature_2' => 'Budgeting techniques', 'feature_3' => 'Decision-making processes']
                     ],
                     [
-                        'image' => 'acc210.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/business-man-partnership-using-calculator-review-balance-sheet-annual-with-holding-pen-using-laptop-computer-calculating-budget-audit-check-integrity-before-investment-concept_89286-83.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ACC 210 Cost Accounting', 'quick_description' => 'Introduction to Cost Accounting.', 'description' => 'This course provides an overview of cost accounting...', 'feature_1' => 'Cost concepts', 'feature_2' => 'Cost-volume-profit analysis', 'feature_3' => 'Cost management strategies']
                     ],
                     [
-                        'image' => 'acc350.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/close-up-office-supplies-desk_1048944-1656057.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ACC 350 Taxation', 'quick_description' => 'Introduction to Taxation.', 'description' => 'This course covers the principles of taxation...', 'feature_1' => 'Tax regulations', 'feature_2' => 'Tax planning strategies', 'feature_3' => 'Tax compliance']
                     ],
                     [
-                        'image' => 'acc410.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/business-corporate-workplace-team-plan-project_1418-45.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ACC 410 Advanced Accounting', 'quick_description' => 'Advanced concepts in Accounting.', 'description' => 'This course delves into advanced accounting topics...', 'feature_1' => 'Complex accounting standards', 'feature_2' => 'Financial reporting', 'feature_3' => 'Consolidation of financial statements']
                     ],
                     [
-                        'image' => 'acc420.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/revenue-operations-concept_23-2150902406.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ACC 420 Auditing I', 'quick_description' => 'Introduction to Auditing.', 'description' => 'This course provides an overview of auditing principles...', 'feature_1' => 'Audit procedures', 'feature_2' => 'Internal controls', 'feature_3' => 'Audit evidence']
                     ],
                     [
-                        'image' => 'acc440.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/financial-investment-make-money-concept-businessman-hand-drawing-virtual-increase-graph-with-money-coins-stacking-business-growth-chart-profits-from-business-fund-stock-dividend-save-money_708636-1802.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ACC 440 International Accounting', 'quick_description' => 'Accounting principles in an international context.', 'description' => 'This course covers international accounting standards...', 'feature_1' => 'International Financial Reporting Standards (IFRS)', 'feature_2' => 'Global accounting practices', 'feature_3' => 'Cross-border transactions']
                     ],
                     [
-                        'image' => 'acc500.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/arrangement-finances-elements-graph_23-2148793737.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => true,
@@ -87,91 +87,91 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'bus100.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Global Business',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'BUS 100 Global Dimensions of Business', 'quick_description' => 'Introduction to global business.', 'description' => 'This course explores the global dimensions of business...', 'feature_1' => 'Global market strategies', 'feature_2' => 'International trade practices', 'feature_3' => 'Cross-cultural management']
                     ],
                     [
-                        'image' => 'bus110.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/businessman-pointing-graphs-symbols_1232-917.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Communication',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 110 Business Communication', 'quick_description' => 'Effective communication in business.', 'description' => 'This course focuses on communication strategies in business...', 'feature_1' => 'Professional writing skills', 'feature_2' => 'Verbal communication techniques', 'feature_3' => 'Presentation skills']
                     ],
                     [
-                        'image' => 'bus200.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/businessman-pointing-graphs-symbols_1232-917.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Entrepreneurship',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 200 Business Entrepreneurship', 'quick_description' => 'Introduction to Entrepreneurship.', 'description' => 'This course covers the fundamentals of starting and managing a business...', 'feature_1' => 'Business planning', 'feature_2' => 'Startup strategies', 'feature_3' => 'Risk management']
                     ],
                     [
-                        'image' => 'bus300.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/aerial-view-business-data-analysis-graph_53876-146152.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Ethics',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 300 Business Ethics', 'quick_description' => 'Ethical considerations in business.', 'description' => 'This course addresses ethical issues in business...', 'feature_1' => 'Ethical decision-making', 'feature_2' => 'Corporate social responsibility', 'feature_3' => 'Ethics in leadership']
                     ],
                     [
-                        'image' => 'bus310.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/double-exposure-image-business-people-handshake-city-office-building-showing-partnership_31965-7590.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Law',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 310 Business Law', 'quick_description' => 'Legal aspects of business.', 'description' => 'This course covers legal principles affecting businesses...', 'feature_1' => 'Contract law', 'feature_2' => 'Business regulations', 'feature_3' => 'Legal dispute resolution']
                     ],
                     [
-                        'image' => 'bus320.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/close-up-businessman-with-digital-tablet_1098-549.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'International Business',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 320 Business International Business', 'quick_description' => 'International business practices.', 'description' => 'This course focuses on international business practices...', 'feature_1' => 'Global market strategies', 'feature_2' => 'Cross-cultural negotiations', 'feature_3' => 'International trade regulations']
                     ],
                     [
-                        'image' => 'bus330.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/directly-shot-business-people-shaking-hands-documents-office-desk_1048944-18908589.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'E-Commerce',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'BUS 330 E-Commerce', 'quick_description' => 'Business in the digital age.', 'description' => 'This course covers e-commerce strategies and technologies...', 'feature_1' => 'Online business models', 'feature_2' => 'Digital marketing', 'feature_3' => 'E-commerce platforms']
                     ],
                     [
-                        'image' => 'bus400.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/business-man-working-office-desktop_23-2148174109.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Strategy',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'BUS 400 Business Strategy and Policy', 'quick_description' => 'Developing and implementing business strategies.', 'description' => 'This course focuses on business strategy formulation...', 'feature_1' => 'Strategic planning', 'feature_2' => 'Policy development', 'feature_3' => 'Competitive analysis']
                     ],
                     [
-                        'image' => 'bus540.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/business-meeting-with-professionals-focused-discussions-strategy-formulation-modern-offi_1110022-1225.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Law',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 540 Business Law for Managers', 'quick_description' => 'Business law concepts for managers.', 'description' => 'This course covers business law topics relevant to managers...', 'feature_1' => 'Legal issues in management', 'feature_2' => 'Contract management', 'feature_3' => 'Risk management']
                     ],
                     [
-                        'image' => 'bus590.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/group-busy-business-people-working-office-top-view_93675-13069.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Strategy',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 590 Business Strategy', 'quick_description' => 'Strategic management in business.', 'description' => 'This course covers advanced topics in business strategy...', 'feature_1' => 'Strategic decision-making', 'feature_2' => 'Strategic analysis', 'feature_3' => 'Implementation and control']
                     ],
                     [
-                        'image' => 'bus590k.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/double-exposure-image-business-profit-growth_31965-3022.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Operations',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 590K Operations Strategy', 'quick_description' => 'Strategies for operations management.', 'description' => 'This course focuses on operational strategies for businesses...', 'feature_1' => 'Operations planning', 'feature_2' => 'Process optimization', 'feature_3' => 'Supply chain management']
                     ],
                     [
-                        'image' => 'bus680.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/business-people-casual-meeting_53876-101882.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Innovation',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'BUS 680 Sustainability and Innovation', 'quick_description' => 'Innovative practices for sustainability.', 'description' => 'This course explores sustainable business practices...', 'feature_1' => 'Sustainability strategies', 'feature_2' => 'Innovation management', 'feature_3' => 'Sustainable development']
                     ],
                     [
-                        'image' => 'bus860.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/business-brainstorming-graph-chart-report-data-concept_53876-31213.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Ethics',
                         'status' => true,
                         'show_in_home' => false,
@@ -185,14 +185,14 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'com100.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/aerial-view-business-team_53876-124515.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Mass Communication',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'COM 100 Mass Communication', 'quick_description' => 'Introduction to mass communication.', 'description' => 'This course provides an overview of mass communication...', 'feature_1' => 'Media channels', 'feature_2' => 'Communication theories', 'feature_3' => 'Media effects']
                     ],
                     [
-                        'image' => 'com500.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/businessman-holding-glowing-earth-globe-with-network-connections_833104-22524.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Public Speaking',
                         'status' => true,
                         'show_in_home' => false,
@@ -255,7 +255,7 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'eng100.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/english-dictionary-pencils-view_23-2149440501.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Composition',
                         'status' => true,
                         'show_in_home' => true,
@@ -263,13 +263,13 @@ class TrainingProgramCategorySeeder extends Seeder
                     ],
                     [
                         'image' => 'eng110.jpg',
-                        'theme' => 'Academic Writing',
+                        'theme' => 'https://img.freepik.com/free-photo/top-view-hand-correcting-grammar-mistakes_23-2150171443.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ENG 110 Undergraduate Academic Writing/APA', 'quick_description' => 'Academic writing and APA style.', 'description' => 'This course covers academic writing principles and APA style...', 'feature_1' => 'Research papers', 'feature_2' => 'APA formatting', 'feature_3' => 'Academic integrity']
                     ],
                     [
-                        'image' => 'eng300.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/young-student-tired-exhausted-preparing-chemistry-exam_85869-9162.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Critical Thinking',
                         'status' => true,
                         'show_in_home' => false,
@@ -283,35 +283,35 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'fin440.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/arrangement-finances-elements-graph_23-2148793737.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Financial Analysis',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'FIN 440 Financial Statement Analysis', 'quick_description' => 'Analyzing financial statements.', 'description' => 'This course covers the analysis of financial statements...', 'feature_1' => 'Financial ratios', 'feature_2' => 'Statement analysis', 'feature_3' => 'Financial forecasting']
                     ],
                     [
-                        'image' => 'fin500.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/glasses-pen-report_23-2148148367.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Financial Management',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'FIN 500 Financial Management', 'quick_description' => 'Managing financial resources.', 'description' => 'This course covers financial management principles...', 'feature_1' => 'Financial planning', 'feature_2' => 'Investment decisions', 'feature_3' => 'Capital budgeting']
                     ],
                     [
-                        'image' => 'fin530.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/front-view-girl-taking-notes-writing-down-notes-front-table-with-schedules-graphics-laptop-job-business-activity_140725-16038.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'International Finance',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'FIN 530 International Financial Management', 'quick_description' => 'International financial management.', 'description' => 'This course covers principles of international financial management...', 'feature_1' => 'Foreign exchange markets', 'feature_2' => 'International investments', 'feature_3' => 'Global financial strategies']
                     ],
                     [
-                        'image' => 'fin540.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/business-man-working-office_23-2148179141.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Markets & Institutions',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'FIN 540 Financial Markets & Institutions', 'quick_description' => 'Financial markets and institutions.', 'description' => 'This course focuses on financial markets and institutions...', 'feature_1' => 'Market structures', 'feature_2' => 'Institutional functions', 'feature_3' => 'Regulatory environment']
                     ],
                     [
-                        'image' => 'fin550.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/businessman-holding-tablet-with-statistical-data_1098-3942.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Mergers & Acquisitions',
                         'status' => true,
                         'show_in_home' => false,
@@ -325,14 +325,14 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'hca510.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/law-concept-judge-law-medical-pharmacy_36325-82.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Healthcare Law',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'HCA 510 Health Care Law and Ethics', 'quick_description' => 'Legal and ethical issues in healthcare.', 'description' => 'This course covers legal and ethical issues in healthcare...', 'feature_1' => 'Healthcare regulations', 'feature_2' => 'Ethical dilemmas', 'feature_3' => 'Legal compliance']
                     ],
                     [
-                        'image' => 'hca520.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/crop-doctor-writing-notebook_23-2147796579.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Leadership',
                         'status' => true,
                         'show_in_home' => false,
@@ -340,7 +340,7 @@ class TrainingProgramCategorySeeder extends Seeder
                     ],
                     [
                         'image' => 'hca530.jpg',
-                        'theme' => 'Human Resource Management',
+                        'theme' => 'https://img.freepik.com/free-photo/recruitment-hiring-career-job-emplyment-concept_53876-133836.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'HCA 530 Healthcare Human Resource Management', 'quick_description' => 'HR management in healthcare.', 'description' => 'This course covers HR management principles in healthcare...', 'feature_1' => 'HR practices', 'feature_2' => 'Employee relations', 'feature_3' => 'Compliance issues']
@@ -353,21 +353,21 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'htt500.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/colleagues-working-indoors-while-wearing-medical-masks_23-2148693121.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Global Hospitality',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'HTT 500 Global Hospitality & Tourism', 'quick_description' => 'Global perspectives in hospitality.', 'description' => 'This course covers global perspectives in hospitality and tourism...', 'feature_1' => 'Global trends', 'feature_2' => 'Tourism management', 'feature_3' => 'Hospitality services']
                     ],
                     [
-                        'image' => 'htt505.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/tourist-giving-passport-receptionist_482257-90700.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Hotel Operations',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'HTT 505 Hotel Operations Management', 'quick_description' => 'Managing hotel operations.', 'description' => 'This course focuses on managing hotel operations...', 'feature_1' => 'Hotel management', 'feature_2' => 'Operational efficiency', 'feature_3' => 'Guest services']
                     ],
                     [
-                        'image' => 'htt510.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/people-stands-looks-documents_1157-45822.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Restaurant Management',
                         'status' => true,
                         'show_in_home' => false,
@@ -381,70 +381,70 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'mgt320.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/brand-branding-high-quality-exclusive-concept_53876-132313.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Organizational Theory',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'MGT 320 Organizational Theory and Behavior', 'quick_description' => 'Theories of organizational behavior.', 'description' => 'This course explores theories of organizational behavior...', 'feature_1' => 'Organizational structures', 'feature_2' => 'Behavioral theories', 'feature_3' => 'Motivation']
                     ],
                     [
-                        'image' => 'mgt400.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041850.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Operations Management',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'MGT 400 Operations Management', 'quick_description' => 'Managing operations in organizations.', 'description' => 'This course covers principles of operations management...', 'feature_1' => 'Operations strategies', 'feature_2' => 'Process improvement', 'feature_3' => 'Resource management']
                     ],
                     [
-                        'image' => 'mgt500.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Organizational Behavior',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'MGT 500 Organizational Behavior and Leadership', 'quick_description' => 'Behavior and leadership in organizations.', 'description' => 'This course covers organizational behavior and leadership...', 'feature_1' => 'Leadership styles', 'feature_2' => 'Behavioral analysis', 'feature_3' => 'Change management']
                     ],
                     [
-                        'image' => 'mgt510.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/startup-small-business-entrepreneurcheck-sales-check-business_1253175-171.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Human Resource Management',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'MGT 510 Human Resource Management', 'quick_description' => 'Human resource management practices.', 'description' => 'This course focuses on human resource management practices...', 'feature_1' => 'Recruitment', 'feature_2' => 'Employee development', 'feature_3' => 'Performance management']
                     ],
                     [
-                        'image' => 'mgt600.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595836.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Organizational Theory & Design',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'MGT 600 Organizational Theory & Design', 'quick_description' => 'Organizational design and theory.', 'description' => 'This course focuses on organizational design and theory...', 'feature_1' => 'Organizational structures', 'feature_2' => 'Design principles', 'feature_3' => 'Organizational change']
                     ],
                     [
-                        'image' => 'mgt605.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/standard-quality-control-collage_23-2149631015.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Materials Management',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'MGT 605 Materials Management', 'quick_description' => 'Managing materials and inventory.', 'description' => 'This course focuses on materials management and inventory control...', 'feature_1' => 'Inventory management', 'feature_2' => 'Procurement', 'feature_3' => 'Supply chain integration']
                     ],
                     [
-                        'image' => 'mgt620.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/businessman-hand-working-with-new-modern-computer-business-success-as-concept_488220-62185.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Operations and Supply Chain',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'MGT 620 Operations Management and Supply Chain', 'quick_description' => 'Managing operations and supply chains.', 'description' => 'This course covers operations management and supply chain principles...', 'feature_1' => 'Supply chain strategies', 'feature_2' => 'Operations efficiency', 'feature_3' => 'Supply chain analytics']
                     ],
                     [
-                        'image' => 'mgt620k.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/man-holding-business-elements-icons-screen_488220-11921.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Operations and Supply Chain',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'MGT 620K Operations Management and Supply Chain', 'quick_description' => 'Advanced operations and supply chain management.', 'description' => 'This course focuses on advanced topics in operations management and supply chain...', 'feature_1' => 'Advanced supply chain strategies', 'feature_2' => 'Process optimization', 'feature_3' => 'Global supply chains']
                     ],
                     [
-                        'image' => 'mgt630.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/strategy-plan-is-help-business-development_53876-133861.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Quality Management',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'MGT 630 Quality Management in Supply Chain', 'quick_description' => 'Quality management in supply chains.', 'description' => 'This course focuses on quality management in supply chains...', 'feature_1' => 'Quality control', 'feature_2' => 'Continuous improvement', 'feature_3' => 'Supplier quality management']
                     ],
                     [
-                        'image' => 'mgt650k.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/project-planning-software-modish-business-project-management_31965-110811.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Consumer Management',
                         'status' => true,
                         'show_in_home' => false,
@@ -493,7 +493,7 @@ class TrainingProgramCategorySeeder extends Seeder
                 'image' => 'accounting.jpg',
                 'programs' => [
                     [
-                        'image' => 'acc100.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/operations-manager-develops-sales-strategies-targets_482257-90826.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Finance',
                         'status' => true,
                         'show_in_home' => true,
@@ -514,7 +514,7 @@ class TrainingProgramCategorySeeder extends Seeder
                 'image' => 'consulting.jpg',
                 'programs' => [
                     [
-                        'image' => 'consulting_basic.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/chief-executive-officer-evaluating-opportunities-business-expansion_482257-91052.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Business',
                         'status' => true,
                         'show_in_home' => true,
@@ -534,7 +534,7 @@ class TrainingProgramCategorySeeder extends Seeder
                 'image' => 'content_writing.jpg',
                 'programs' => [
                     [
-                        'image' => 'content_writing_intro.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/crop-hand-writing-notebook-near-computer_23-2147863504.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Creative Writing',
                         'status' => true,
                         'show_in_home' => true,
@@ -551,10 +551,10 @@ class TrainingProgramCategorySeeder extends Seeder
             ],
             [
                 'name' => 'MARKETING | DIGITAL MARKETING',
-                'image' => 'digital_marketing.jpg',
+                'image' => 'https://img.freepik.com/free-photo/three-young-colleagues-sitting-while-work-with-laptops-desk_171337-16935.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                 'programs' => [
                     [
-                        'image' => 'digital_marketing_basic.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/three-young-colleagues-sitting-while-work-with-laptops-desk_171337-16935.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Marketing',
                         'status' => true,
                         'show_in_home' => true,
@@ -574,7 +574,7 @@ class TrainingProgramCategorySeeder extends Seeder
                 'image' => 'ecommerce.jpg',
                 'programs' => [
                     [
-                        'image' => 'ecommerce_intro.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/business-online-concept-closeup-landing-page-laptop-screen-background-comfortable-working-place-modern-office-blurred-toned-image_226262-1904.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Business',
                         'status' => true,
                         'show_in_home' => true,
@@ -591,10 +591,10 @@ class TrainingProgramCategorySeeder extends Seeder
             ],
             [
                 'name' => 'ENGINEERING | SOFTWARE ENGINEERING',
-                'image' => 'software_engineering.jpg',
+                'image' => 'https://img.freepik.com/free-photo/man-working-energy-innovations_23-2148820171.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                 'programs' => [
                     [
-                        'image' => 'software_engineering_intro.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/man-working-energy-innovations_23-2148820171.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Engineering',
                         'status' => true,
                         'show_in_home' => true,
@@ -611,10 +611,10 @@ class TrainingProgramCategorySeeder extends Seeder
             ],
             [
                 'name' => 'DESIGN | GRAPHIC DESIGN',
-                'image' => 'graphic_design.jpg',
+                'image' => 'https://img.freepik.com/free-photo/photo-editor-working-independent-production-company-using-professional-graphic-tablet-photographer-adjusting-white-balance-overexposed-pictures-touchscreen-device-using-stylus-close-up_482257-73691.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                 'programs' => [
                     [
-                        'image' => 'graphic_design_intro.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/photo-editor-working-independent-production-company-using-professional-graphic-tablet-photographer-adjusting-white-balance-overexposed-pictures-touchscreen-device-using-stylus-close-up_482257-73691.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Design',
                         'status' => true,
                         'show_in_home' => true,
@@ -631,10 +631,10 @@ class TrainingProgramCategorySeeder extends Seeder
             ],
             [
                 'name' => 'TECH | MOBILE APP DEVELOPMENT',
-                'image' => 'mobile_app_development.jpg',
+                'image' => 'https://img.freepik.com/free-photo/unrecognizable-african-man-holding-yellow-pencil-pointing-it-blank-screen-smart-phone-his-hand_273609-9436.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                 'programs' => [
                     [
-                        'image' => 'mobile_app_development_intro.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/unrecognizable-african-man-holding-yellow-pencil-pointing-it-blank-screen-smart-phone-his-hand_273609-9436.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Technology',
                         'status' => true,
                         'show_in_home' => true,
@@ -651,10 +651,10 @@ class TrainingProgramCategorySeeder extends Seeder
             ],
             [
                 'name' => 'LANGUAGE | TRANSLATION',
-                'image' => 'translation.jpg',
+                'image' => 'https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769995.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                 'programs' => [
                     [
-                        'image' => 'translation_intro.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769995.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Language',
                         'status' => true,
                         'show_in_home' => true,
@@ -671,10 +671,10 @@ class TrainingProgramCategorySeeder extends Seeder
             ],
             [
                 'name' => 'MEDIA | VIDEO MONTAGE',
-                'image' => 'video_montage.jpg',
+                'image' => 'https://img.freepik.com/premium-photo/interactive-media-designer-creating-engaging-content_1280275-168232.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                 'programs' => [
                     [
-                        'image' => 'video_montage_intro.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/interactive-media-designer-creating-engaging-content_1280275-168232.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Media',
                         'status' => true,
                         'show_in_home' => true,
@@ -694,7 +694,7 @@ class TrainingProgramCategorySeeder extends Seeder
                 'image' => 'voice_over.jpg',
                 'programs' => [
                     [
-                        'image' => 'voice_over_intro.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/man-with-microphone-headphones-running-podcast-studio_23-2149434273.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Voice',
                         'status' => true,
                         'show_in_home' => true,
@@ -711,10 +711,10 @@ class TrainingProgramCategorySeeder extends Seeder
             ],
             [
                 'name' => 'WEB | WEB DEVELOPMENT',
-                'image' => 'web_development.jpg',
+                'image' => 'https://img.freepik.com/free-photo/programming-script-text-coding-word_53876-64939.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                 'programs' => [
                     [
-                        'image' => 'web_development_intro.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/programming-script-text-coding-word_53876-64939.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Technology',
                         'status' => true,
                         'show_in_home' => true,
