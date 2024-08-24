@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\HomePageTestmonial;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,6 +17,7 @@ class HomePageTestmonialFactory extends Factory
      */
     public function definition(): array
     {
+        HomePageTestmonial::query()->delete();
         return [
             'image' => '2',
             'name' => fake()->userName(),

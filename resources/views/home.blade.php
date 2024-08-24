@@ -209,7 +209,7 @@
                 </div>
                 <div class="col-12">
                     <div class="text-center">
-                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="/core-services">Service More</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2 d-none" href="/core-services">Service More</a>
                     </div>
                 </div>
             </div>
