@@ -43,12 +43,12 @@ function deleteImage($oldImage)
  */
 function getImageUrl($image)
 {
-    if (is_null($image)) {
-        return asset('assets/common/product-placeholder.webp');
-    }
     if(isValidUrl($image))
     {
         return $image;
+    }
+    if (is_null($image)) {
+        return asset('assets/common/product-placeholder.webp');
     }
     $exists = Storage::disk('public')->exists($image);
     if ($exists) {

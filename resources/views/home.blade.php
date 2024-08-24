@@ -223,9 +223,8 @@
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Explore Tour</h5>
                 <h1 class="mb-4">The World</h1>
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto
-                    doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti
-                    eum cum repellat a laborum quasi.
+                <p class="mb-0">    Discover a world of opportunities with our international universities. Offering a diverse range of programs, these institutions provide the perfect platform for academic excellence, global networking, and cultural enrichment. Join a community of scholars and professionals who are shaping the future across borders and disciplines.
+
                 </p>
             </div>
             <div class="tab-class text-center">
