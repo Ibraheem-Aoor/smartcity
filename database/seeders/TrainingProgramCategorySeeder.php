@@ -206,42 +206,42 @@ class TrainingProgramCategorySeeder extends Seeder
 
                 'programs' => [
                     [
-                        'image' => 'ecn200.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/stack-five-rows-coins_1150-17745.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Microeconomics',
                         'status' => true,
                         'show_in_home' => true,
                         'translations' => ['name' => 'ECN 200 Microeconomics', 'quick_description' => 'Introduction to microeconomics.', 'description' => 'This course covers the fundamentals of microeconomics...', 'feature_1' => 'Supply and demand', 'feature_2' => 'Market structures', 'feature_3' => 'Consumer behavior']
                     ],
                     [
-                        'image' => 'ecn210.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/piles-coin-money-with-drawn-arrow_23-2148445423.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Macroeconomics',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ECN 210 Macroeconomics', 'quick_description' => 'Introduction to macroeconomics.', 'description' => 'This course covers the fundamentals of macroeconomics...', 'feature_1' => 'Economic growth', 'feature_2' => 'Inflation and unemployment', 'feature_3' => 'Fiscal and monetary policy']
                     ],
                     [
-                        'image' => 'ecn300.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/flat-lay-financial-instruments-with-glasses_23-2148285322.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Money and Banking',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ECN 300 Money and Banking', 'quick_description' => 'Money and banking systems.', 'description' => 'This course focuses on money and banking systems...', 'feature_1' => 'Banking operations', 'feature_2' => 'Monetary policy', 'feature_3' => 'Financial institutions']
                     ],
                     [
-                        'image' => 'ecn500.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/top-view-coins-paper-money-laptop_23-2148285359.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Managerial Economics',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ECN 500 Managerial Economics', 'quick_description' => 'Economic analysis for managerial decisions.', 'description' => 'This course focuses on applying economic principles to managerial decisions...', 'feature_1' => 'Demand analysis', 'feature_2' => 'Cost analysis', 'feature_3' => 'Pricing strategies']
                     ],
                     [
-                        'image' => 'ecn510.jpg',
+                        'image' => 'https://img.freepik.com/premium-photo/stack-books-shelf-against-white-background_1048944-20603857.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'International Economics',
                         'status' => true,
                         'show_in_home' => false,
                         'translations' => ['name' => 'ECN 510 International Economics', 'quick_description' => 'International trade and finance.', 'description' => 'This course covers international trade and finance...', 'feature_1' => 'Trade theories', 'feature_2' => 'Exchange rates', 'feature_3' => 'Global financial markets']
                     ],
                     [
-                        'image' => 'ecn520.jpg',
+                        'image' => 'https://img.freepik.com/free-photo/business-man-counting-dollar-banknote-online-business-concept_1150-6406.jpg?uid=R95899825&ga=GA1.2.1266518853.1715856292&semt=ais_hybrid',
                         'theme' => 'Money, Banking & Financial Systems',
                         'status' => true,
                         'show_in_home' => false,
