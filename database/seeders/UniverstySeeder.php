@@ -35,7 +35,7 @@ class UniverstySeeder extends Seeder
             ],
             [
                 getCurrentLocale() => [
-                    'name' => 'International Birtish University',
+                    'name' => 'International Birtish Universities',
                     'description' => fake()->paragraph(3),
                 ],
                 'image' => 'https://img.freepik.com/free-photo/vertical-shot-radcliffe-camera-oxford-england_181624-2116.jpg?t=st=1724527183~exp=1724530783~hmac=c7af16c95d1a244f4914450e30608a0c6bc0bbec50a09d6be56b4772a4905210&w=360',

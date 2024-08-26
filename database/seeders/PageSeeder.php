@@ -454,6 +454,45 @@ class PageSeeder extends Seeder
             ],
             //---- END SMART CONSULTING PAGES ---
 
+            //---- START Academic Programs Sub PAGES ---
+            [
+                'title' => 'Diploma Programs',
+                'slug' => 'diploma-programs',
+                'content' => file_get_contents(public_path('html/diploma-programs.html')),
+                'meta_title' => 'Diploma Programs',
+                'meta_description' => 'Explore our diverse range of diploma programs that prepare you for a successful career.',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('academic-programs')->first()->id,
+            ],
+            [
+                'title' => 'Bachelor Programs',
+                'slug' => 'bachelor-programs',
+                'content' => file_get_contents(public_path('html/bachelor-programs.html')),
+                'meta_title' => 'Bachelor Programs',
+                'meta_description' => 'Find your ideal bachelor’s degree program that fits your career aspirations.',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('academic-programs')->first()->id,
+            ],
+            [
+                'title' => 'Master Programs',
+                'slug' => 'master-programs',
+                'content' => file_get_contents(public_path('html/master-programs.html')),
+                'meta_title' => 'Master Programs',
+                'meta_description' => 'Advance your career with our master’s degree programs designed for professional growth.',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('academic-programs')->first()->id,
+            ],
+            [
+                'title' => 'PhD Programs',
+                'slug' => 'phd-programs',
+                'content' => file_get_contents(public_path('html/phd-programs.html')),
+                'meta_title' => 'PhD Programs',
+                'meta_description' => 'Engage in cutting-edge research and contribute to your field with our PhD programs.',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('academic-programs')->first()->id,
+            ],
+            //---- END Academic Programs Sub PAGES ---
+
         ];
     }
 }

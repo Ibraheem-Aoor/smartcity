@@ -40,6 +40,7 @@ Route::prefix('site')->as('site.')->group(function () {
         Route::prefix('british-fam-college')->as('fam_college.')->group(function () {
             Route::get('/exellence-center', [AcademicAndResearchController::class, 'exellenceCenter'])->name('exellence_center');
             Route::get('/academic-programs', [AcademicAndResearchController::class, 'academicPrograms'])->name('academic_programs');
+            Route::get('/academic-programs/{category}', [AcademicAndResearchController::class, 'academicDegreesPrograms'])->name('academic_degrees_programs');
         });
     });
 

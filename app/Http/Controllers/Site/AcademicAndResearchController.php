@@ -33,21 +33,21 @@ class AcademicAndResearchController extends BaseSiteController
         $data['branches'] = $this->branch_service->get(
             paginate: 0,
             conditions: [['status', '=', '1']],
-            relations:['country'],
+            relations: ['country'],
         );
         $data['page'] = Page::query()->select(['intro_image', 'title', 'theme'])->whereSlug($theme)->first();
-        return view($this->base_view_path.'.branch.index', $data);
+        return view($this->base_view_path . '.branch.index', $data);
     }
     public function univisities(Request $request, $theme): View
     {
         $data['universities'] = $this->university_service->get(
             paginate: 0,
-            conditions: [['status', '=', '1'] , ['type' , '=', $theme]],
+            conditions: [['status', '=', '1'], ['type', '=', $theme]],
         );
         $data['page'] = Page::query()->select(['intro_image', 'title', 'theme'])->whereSlug($theme)->first();
-        return view($this->base_view_path.'.university.index', $data);
+        return view($this->base_view_path . '.university.index', $data);
     }
-     /**
+    /**
      * British Fam Center Exellence Center
      */
     public function exellenceCenter(Request $request, $slug = 'exellence-center')
@@ -59,7 +59,7 @@ class AcademicAndResearchController extends BaseSiteController
         $data['page'] = $this->getPageModel($slug);
         return view($this->base_view_path . '.fam.exellence_center.index', $data);
     }
-     /**
+    /**
      * British Fam Center Academic Programs
      */
     public function academicPrograms(Request $request, $slug = 'academic-programs')
@@ -71,4 +71,18 @@ class AcademicAndResearchController extends BaseSiteController
         $data['page'] = $this->getPageModel($slug);
         return view($this->base_view_path . '.fam.academic_programs.index', $data);
     }
+    /**
+     * British Fam Center Academic Degrre's Programs
+     */
+    public function academicDegreesPrograms(Request $request, $category)
+    {
+        $data['programs_categories'] = $this->program_category_service->get(
+            paginate: 0,
+            conditions: [['status', '=', '1']],
+        );
+        $data['page'] = $this->getPageModel($category);
+        return view($this->base_view_path . '.fam.academic_programs.degrees_programs', $data);
+    }
+
+
 }

@@ -317,8 +317,10 @@
                 <div class="modal-body">
 
                     <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="http://127.0.0.1:8080/assets/common/fam_bim.mp4"
-                            id="video" allowfullscreen="" allowscriptaccess="always" allow="autoplay"></iframe>
+                        <video id="video" class="embed-responsive-item" controls>
+                            <source src="http://127.0.0.1:8080/assets/common/fam_bim.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
