@@ -116,8 +116,7 @@
                             class="dropdown-item {{ $currentSlug === 'remote-freelancing-platform' ? 'active' : '' }}">Remote
                             Freelancing Platform</a>
                         <a href="{{ route('site.smart_training.index', 'smart-training-development') }}"
-                            class="dropdown-item {{ $currentSlug === 'smart-training-development' ? 'active' : '' }}">SMART
-                            Training and Development</a>
+                            class="dropdown-item {{ $currentSlug === 'smart-training-development' ? 'active' : '' }}">SMART  Development</a>
                     </div>
                 </div>
             </div>

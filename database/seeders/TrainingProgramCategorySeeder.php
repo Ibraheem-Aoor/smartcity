@@ -466,7 +466,7 @@ class TrainingProgramCategorySeeder extends Seeder
                 $course = TrainingProgram::create([
                     'category_id' => $cat->id,
                     'image' => $program['image'],
-                    'theme' => TrainingProgramThemeEnum::ProfessionalTraining->value,
+                    'theme' => TrainingProgramThemeEnum::AccreditedTraining->value,
                     'status' => $program['status'],
                     'show_in_home' => $program['show_in_home'],
                 ]);
@@ -488,27 +488,7 @@ class TrainingProgramCategorySeeder extends Seeder
 
 
         $categories = [
-            [
-                'name' => 'ACC | ACCOUNTING',
-                'image' => 'accounting.jpg',
-                'programs' => [
-                    [
-                        'image' => 'https://img.freepik.com/free-photo/operations-manager-develops-sales-strategies-targets_482257-90826.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
-                        'theme' => 'Finance',
-                        'status' => true,
-                        'show_in_home' => true,
-                        'translations' => [
-                            'name' => 'ACC 100 Principles of Financial Accounting',
-                            'quick_description' => 'Introduction to Financial Accounting.',
-                            'description' => 'This course covers the basics of financial accounting...',
-                            'feature_1' => 'Understand financial statements',
-                            'feature_2' => 'Learn accounting principles',
-                            'feature_3' => 'Practical applications of accounting'
-                        ]
-                    ],
-                    // Add other accounting programs here
-                ],
-            ],
+            
             [
                 'name' => 'CONSULTING | BUSINESS CONSULTING',
                 'image' => 'consulting.jpg',
@@ -751,5 +731,150 @@ class TrainingProgramCategorySeeder extends Seeder
             }
         }
 
+        $this->seedProfissionalTrainingPrograms();
+    }
+
+    private function seedProfissionalTrainingPrograms()
+    {
+        $categories = [
+            [
+                'name' => 'Profissional Training ',
+                'image' => 'accounting.jpg',
+                'programs' => [
+                    [
+                        'image' => 'https://img.freepik.com/free-photo/senior-businessman-discussing-paper-with-his-colleague-office_23-2147923436.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Certified Internal Auditor (CIA)',
+                            'quick_description' => 'Professional certification for internal auditors.',
+                            'description' => 'The CIA designation is the only globally recognized certification for internal auditors...',
+                            'feature_1' => 'Recognized globally',
+                            'feature_2' => 'Key auditing techniques',
+                            'feature_3' => 'Ethical and professional standards'
+                        ]
+                    ],
+                    [
+                        'image' => 'https://img.freepik.com/free-photo/multitasking-handsome-young-man-working-with-touchpad-while-sitting-couch-office-financial-statistic-graph_1423-117.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Certified Financial Analyst (CFA)',
+                            'quick_description' => 'A designation for finance and investment professionals.',
+                            'description' => 'The CFA program is a globally recognized credential for investment and financial professionals...',
+                            'feature_1' => 'Comprehensive finance education',
+                            'feature_2' => 'Global recognition',
+                            'feature_3' => 'Networking opportunities'
+                        ]
+                    ],
+                    [
+                        'image' => 'https://img.freepik.com/free-photo/business-man-working-office-desktop_23-2148194719.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Certified Management Accountant (CMA)',
+                            'quick_description' => 'Credential in management accounting and financial management.',
+                            'description' => 'The CMA certification offers critical skills in financial planning, analysis, control, and decision support...',
+                            'feature_1' => 'Strategic management skills',
+                            'feature_2' => 'Global credential',
+                            'feature_3' => 'Professional growth'
+                        ]
+                    ],
+                    [
+                        'image' => 'https://img.freepik.com/premium-photo/bookkeeper-female-financial-inspector-making-report-calculating-checking-balance-internal-revenue-service-checking-financial-document-audit-concept_665183-3444.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Certified Public Accountant (CPA)',
+                            'quick_description' => 'Designation for accounting professionals.',
+                            'description' => 'The CPA designation is the standard of excellence in the accounting profession...',
+                            'feature_1' => 'Widely recognized credential',
+                            'feature_2' => 'High earning potential',
+                            'feature_3' => 'Comprehensive knowledge'
+                        ]
+                    ],
+                    [
+                        'image' => 'https://img.freepik.com/premium-photo/international-business-trade-concept_928112-979.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Global Financial Compliance',
+                            'quick_description' => 'Course on global financial regulations and compliance.',
+                            'description' => 'This course covers key aspects of global financial regulations and compliance, including anti-money laundering, and more...',
+                            'feature_1' => 'Understand global regulations',
+                            'feature_2' => 'Ensure compliance',
+                            'feature_3' => 'Minimize financial risks'
+                        ]
+                    ],
+                    [
+                        'image' => 'https://img.freepik.com/premium-photo/hammer-money-court_391052-1257.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Combating Financial Crime',
+                            'quick_description' => 'Strategies for detecting and preventing financial crime.',
+                            'description' => 'This program provides the knowledge and tools necessary to combat financial crime, including fraud, money laundering, and terrorism financing...',
+                            'feature_1' => 'Detect financial crime',
+                            'feature_2' => 'Implement prevention strategies',
+                            'feature_3' => 'Legal and ethical considerations'
+                        ]
+                    ],
+                    [
+                        'image' => 'https://img.freepik.com/free-photo/business-proposal-purchase-hands-holding-money_53876-128955.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'International Certificate in Wealth & Investment Management (ICWIM)',
+                            'quick_description' => 'Certification in wealth management and investment.',
+                            'description' => 'The ICWIM qualification offers insight into global wealth management, investment management, and client advisory services...',
+                            'feature_1' => 'Global wealth management',
+                            'feature_2' => 'Client advisory skills',
+                            'feature_3' => 'Investment management'
+                        ]
+                    ],
+                    [
+                        'image' => 'https://img.freepik.com/free-photo/risk-assessment-graph-chart-spreadsheet-table-word_53876-121237.jpg?uid=R95899825&ga=GA1.1.1266518853.1715856292&semt=ais_hybrid',
+                        'theme' => 'Finance',
+                        'status' => true,
+                        'show_in_home' => true,
+                        'translations' => [
+                            'name' => 'Risk in Financial Services',
+                            'quick_description' => 'Understanding risk management in financial services.',
+                            'description' => 'This program covers the essentials of risk management in the financial services industry, including identifying and mitigating risks...',
+                            'feature_1' => 'Identify financial risks',
+                            'feature_2' => 'Mitigate potential risks',
+                            'feature_3' => 'Risk management strategies'
+                        ]
+                    ],
+                ],
+            ],
+            // Additional categories can be added here
+        ];
+        foreach ($categories as $category) {
+            $cat = TrainingProgramCategory::create([
+                getCurrentLocale() => [
+                    'name' => $category['name'],
+                ],
+                'image' => $category['image'],
+            ]);
+
+            foreach ($category['programs'] as $program) {
+                $course = TrainingProgram::create([
+                    'category_id' => $cat->id,
+                    'image' => $program['image'],
+                    'theme' => TrainingProgramThemeEnum::ProfessionalTraining->value,
+                    'status' => $program['status'],
+                    'show_in_home' => $program['show_in_home'],
+                    getCurrentLocale() => $program['translations'],
+                ]);
+            }
+        }
     }
 }

@@ -109,7 +109,7 @@ class PageSeeder extends Seeder
                 'theme' => 'SMART TRAINING',
             ],
             [
-                'title' => 'SMART Training and Development',
+                'title' => 'Training and Development',
                 'slug' => 'smart-training-development',
                 'content' => file_get_contents(public_path('html/smart-training-development.html')),
                 'meta_title' => 'SMART Training and Development',
@@ -241,7 +241,7 @@ class PageSeeder extends Seeder
                 'theme' => 'ABOUT',
             ],
             [
-                'title' => 'International British Universities',
+                'title' => 'British Universities',
                 'slug' => 'international-british-universities',
                 'content' => file_get_contents(public_path('html/international-british-universities.html')),
                 'meta_title' => 'International British Universities',
@@ -249,8 +249,8 @@ class PageSeeder extends Seeder
                 'theme' => 'ACADEMIC AND RESEARCH HUB',
             ],
             [
-                'title' => 'International American Universities',
-                'slug' => 'international-american-universities',
+                'title' => 'American Universitiy',
+                'slug' => 'international-american-universitiy',
                 'content' => file_get_contents(public_path('html/international-american-universities.html')),
                 'meta_title' => 'International american Universities',
                 'meta_description' => 'International American Universities',
@@ -492,6 +492,45 @@ class PageSeeder extends Seeder
                 'parent_id' => Page::whereSlug('academic-programs')->first()->id,
             ],
             //---- END Academic Programs Sub PAGES ---
+
+            //---- START Internation british universirties sub pages ---
+            [
+                'title' => 'University of London',
+                'slug' => 'university-of-london',
+                'content' => file_get_contents(public_path('html/university-of-london.html')),
+                'meta_title' => 'University of London',
+                'meta_description' => 'Explore business, healthcare, and finance programs at the University of London.',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('international-british-universities')->first()->id,
+            ],
+            [
+                'title' => 'University of Edinburgh',
+                'slug' => 'university-of-edinburgh',
+                'content' => file_get_contents(public_path('html/university-of-edinburgh.html')),
+                'meta_title' => 'University of Edinburgh',
+                'meta_description' => 'Discover global and entrepreneurship programs at the University of Edinburgh.',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('international-british-universities')->first()->id,
+            ],
+            [
+                'title' => 'University of Oxford',
+                'slug' => 'university-of-oxford',
+                'content' => file_get_contents(public_path('html/university-of-oxford.html')),
+                'meta_title' => 'University of Oxford',
+                'meta_description' => 'Pursue technology and data science programs at the University of Oxford.',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('international-british-universities')->first()->id,
+            ],
+            [
+                'title' => 'University of Cambridge',
+                'slug' => 'university-of-cambridge',
+                'content' => file_get_contents(public_path('html/university-of-cambridge.html')),
+                'meta_title' => 'University of Cambridge',
+                'meta_description' => 'Specialize in engineering and AI programs at the University of Cambridge.',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('international-british-universities')->first()->id,
+            ],
+            //---- END Internation british universirties sub pages ---
 
         ];
     }
