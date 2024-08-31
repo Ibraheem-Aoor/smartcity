@@ -249,14 +249,22 @@ class PageSeeder extends Seeder
                 'theme' => 'ACADEMIC AND RESEARCH HUB',
             ],
             [
-                'title' => 'American Universitiy',
-                'slug' => 'international-american-universitiy',
+                'title' => 'American Universities',
+                'slug' => 'international-american-universities',
                 'content' => file_get_contents(public_path('html/international-american-universities.html')),
                 'meta_title' => 'International american Universities',
                 'meta_description' => 'International American Universities',
                 'theme' => 'ACADEMIC AND RESEARCH HUB',
             ],
-
+            [
+                'title' => 'Academic Programs',
+                'slug' => 'academic-programs',
+                'content' => file_get_contents(public_path('html/academic-programs.html')),
+                'meta_title' => 'Spaces',
+                'meta_description' => 'Discover The British FAM Academic Programs',
+                'theme' => 'british-fam-college',
+                'parent_id' => Page::whereSlug('british-fam-college')->first()->id,
+            ],
         ];
     }
 
@@ -272,15 +280,7 @@ class PageSeeder extends Seeder
                 'theme' => 'british-fam-college',
                 'parent_id' => Page::whereSlug('british-fam-college')->first()->id,
             ],
-            [
-                'title' => 'Academic Programs',
-                'slug' => 'academic-programs',
-                'content' => file_get_contents(public_path('html/academic-programs.html')),
-                'meta_title' => 'Spaces',
-                'meta_description' => 'Discover The British FAM Academic Programs',
-                'theme' => 'british-fam-college',
-                'parent_id' => Page::whereSlug('british-fam-college')->first()->id,
-            ],
+
             // --- START GLOBAL ENGAGEMENT RELATED PAGES ----
             [
                 'title' => 'International Business Development',

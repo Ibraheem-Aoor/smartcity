@@ -69,6 +69,7 @@ class HomeController extends Controller
     public function page(Request $request, $slug)
     {
         $data['page'] = Page::query()->whereSlug($slug)->first();
+
         return view('site.page', $data);
     }
 
