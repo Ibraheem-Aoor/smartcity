@@ -27,7 +27,7 @@
     <link href="{{ asset('assets/site/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{ asset('assets/site/css/style.css') }}?v=0.07" rel="stylesheet">
+    <link href="{{ asset('assets/site/css/style.css') }}?v=0.08" rel="stylesheet">
     @stack('css')
 </head>
 
@@ -117,6 +117,7 @@
 
 
 
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
             class="fa fa-arrow-up"></i></a>
@@ -132,7 +133,7 @@
 
 
     <!-- Template Javascript -->
-    <script src="{{ asset('assets/site/js/main.js') }}"></script>
+    <script src="{{ asset('assets/site/js/main.js') }}?v=0.01"></script>
 
     @stack('js')
 </body>

@@ -52,6 +52,8 @@ Route::prefix('site')->as('site.')->group(function () {
     });
     // Smart Training
     Route::prefix('smart-training')->as('smart_training.')->group(function () {
+        Route::get('/apply', [SmartTrainingController::class, 'apply'])->name('apply');
+        Route::post('/apply/submit', [SmartTrainingController::class, 'applySubmit'])->name('apply_submit');
         Route::get('/{theme}', [SmartTrainingController::class, 'index'])->name('index');
     });
 

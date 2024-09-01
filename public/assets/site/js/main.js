@@ -333,3 +333,20 @@ $(document).on('change', '#master-checkbox', function () {
         checkbox.checked = isChecked;
     });
 });
+
+
+$(document).on('change', '#categorySelect', function () {
+    const selectedValue = this.value;
+    const selectedOption = this.selectedOptions[0];
+    const programs = JSON.parse(selectedOption.getAttribute('data-programs'));
+
+    const programSelect = document.querySelector('#programSelect');
+    programSelect.innerHTML = '';
+    programs.forEach(program => {
+        const option = document.createElement('option');
+        option.value = program.id;
+        option.text = program.name;
+        programSelect.appendChild(option);
+    });
+
+});

@@ -116,6 +116,14 @@ class PageSeeder extends Seeder
                 'meta_description' => 'Find out more about our SMART Training and Development programs.',
                 'theme' => 'SMART TRAINING',
             ],
+            [
+                'title' => 'SMART TRAINING APPLY',
+                'slug' => 'smart-training-apply',
+                'content' => "",
+                'meta_title' => 'APPLY FOR SMART Training and Development',
+                'meta_description' => 'APPLY  FOR SMART Training and Development programs.',
+                'theme' => 'SMART TRAINING',
+            ],
             // GLOBAL ENGAGEMENT Dropdown
             [
                 'title' => 'Business Partnerships',
