@@ -36,6 +36,9 @@ Route::prefix('site')->as('site.')->group(function () {
         });
         Route::prefix('univisities')->as('university.')->group(function () {
             Route::get('/{theme}', [AcademicAndResearchController::class, 'univisities'])->name('index');
+            Route::get('/university-details/{id}', [AcademicAndResearchController::class, 'subUniversities'])->name('details');
+            Route::get('/university-details/category/{id}', [AcademicAndResearchController::class, 'categoryPrograms'])->name('category_programs');
+            Route::get('/university-details/program/{id}', [AcademicAndResearchController::class, 'program'])->name('program');
         });
         Route::prefix('british-fam-college')->as('fam_college.')->group(function () {
             Route::get('/exellence-center', [AcademicAndResearchController::class, 'exellenceCenter'])->name('exellence_center');

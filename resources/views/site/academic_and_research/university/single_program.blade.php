@@ -100,50 +100,69 @@
     <!-- Header End -->
 @endsection
 @section('content')
-    <div class="container-fluid service overflow-hidden py-5">
-        <div class="container">
-            <div class="mx-auto text-center" style="max-width: 900px;">
-                <h5 class="section-title px-3">{{ $page->title }}</h5>
-                <h1 class="mb-4">Explore Our {{ $page->title }}</h1>
-            </div>
+    <div class="container-fluid py-5">
+        <div class="container py-5">
             <div class="row g-4">
-                @foreach ($universities as $university)
-                    <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.5s"
-                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="{{ getImageUrl($university->image) }}" class="img-fluid w-100 rounded"
-                                        alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">{{ $university->name }}</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4 d-none"
-                                            href="#">Explore
-                                            More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="#">
-                                            <h4 class="text-white mb-4 py-3">{{ $university->name }}</h4>
-                                        </a>
-                                        <div class="px-4">
-                                            <p class="mb-4">{{ $university->description }}</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
-                                                href="{{ route('site.academic_and_research.university.details', encrypt($university->id)) }}">Explore
-                                                More</a>
-                                        </div>
-                                    </div>
+                <div class="col-lg-7 col-xl-8 mt-0">
+                    <div class="position-relative overflow-hidden rounded">
+                        <img src="{{ getImageUrl($program->image) }}" class="img-fluid rounded img-zoomin w-100" alt="">
+                        {{-- <div class="d-flex justify-content-center px-4 position-absolute flex-wrap"
+                            style="bottom: 10px; left: 0;">
+                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-clock"></i> 06 minute
+                                read</a>
+                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-eye"></i> 3.5k Views</a>
+                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-comment-dots"></i> 05
+                                Comment</a>
+                            <a href="#" class="text-white link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                        </div> --}}
+                    </div>
+                    <div class="border-bottom py-3">
+                        <a href="#" class="display-4 text-dark mb-0 link-hover">{{ $program->name }}</a>
+                    </div>
+                    <p class="mt-3 mb-4">{{ $program->description }}
+                    </p>
+                </div>
+                <div class="col-lg-5 col-xl-4">
+                    <div class="bg-light rounded p-4 pt-0">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/news-3.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
                                 </div>
                             </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <a href="#" class="h4 mb-2">Related Programs</a>
+                                </div>
+                            </div>
+                            @foreach ($related_programs as $related_program)
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="{{ getImageUrl($related_program->image) }}" class="img-zoomin img-fluid rounded w-100"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="{{ route('site.academic_and_research.university.program', encrypt($related_program->id)) }}" class="h6">{{ $related_program->name }}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
-                @endforeach
-
+                </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
 
 @endsection

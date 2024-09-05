@@ -16,12 +16,12 @@ class PageSeeder extends Seeder
                 'slug' => $page['slug'],
             ], $page);
         }
-        $sub_pages = $this->getSubPages();
-        foreach ($sub_pages as $page) {
-            Page::updateOrCreate([
-                'slug' => $page['slug'],
-            ], $page);
-        }
+        // $sub_pages = $this->getSubPages();
+        // foreach ($sub_pages as $page) {
+        //     Page::updateOrCreate([
+        //         'slug' => $page['slug'],
+        //     ], $page);
+        // }
     }
 
     protected function getDataToSeed(): array
@@ -264,15 +264,15 @@ class PageSeeder extends Seeder
                 'meta_description' => 'International American Universities',
                 'theme' => 'ACADEMIC AND RESEARCH HUB',
             ],
-            [
-                'title' => 'Academic Programs',
-                'slug' => 'academic-programs',
-                'content' => file_get_contents(public_path('html/academic-programs.html')),
-                'meta_title' => 'Spaces',
-                'meta_description' => 'Discover The British FAM Academic Programs',
-                'theme' => 'british-fam-college',
-                'parent_id' => Page::whereSlug('british-fam-college')->first()->id,
-            ],
+            // [
+            //     'title' => 'Academic Programs',
+            //     'slug' => 'academic-programs',
+            //     'content' => file_get_contents(public_path('html/academic-programs.html')),
+            //     'meta_title' => 'Spaces',
+            //     'meta_description' => 'Discover The British FAM Academic Programs',
+            //     'theme' => 'british-fam-college',
+            //     'parent_id' => Page::whereSlug('british-fam-college')->first()->id,
+            // ],
         ];
     }
 

@@ -100,48 +100,25 @@
     <!-- Header End -->
 @endsection
 @section('content')
-    <div class="container-fluid service overflow-hidden py-5">
-        <div class="container">
-            <div class="mx-auto text-center" style="max-width: 900px;">
-                <h5 class="section-title px-3">{{ $page->title }}</h5>
-                <h1 class="mb-4">Explore Our {{ $page->title }}</h1>
+    <!-- University Cards -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px">Explore {{ $university->name }}</h5>
+                <h1>Explore {{ $university->name }} Offered Categories</h1>
             </div>
-            <div class="row g-4">
-                @foreach ($universities as $university)
-                    <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.5s"
-                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="{{ getImageUrl($university->image) }}" class="img-fluid w-100 rounded"
-                                        alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">{{ $university->name }}</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4 d-none"
-                                            href="#">Explore
-                                            More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="#">
-                                            <h4 class="text-white mb-4 py-3">{{ $university->name }}</h4>
-                                        </a>
-                                        <div class="px-4">
-                                            <p class="mb-4">{{ $university->description }}</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
-                                                href="{{ route('site.academic_and_research.university.details', encrypt($university->id)) }}">Explore
-                                                More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="row">
+                @foreach ($categories as $category)
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                            <img loading="lazy" class="img-fluid" src="{{ getImageUrl($category->image) }}"
+                                alt="{{ $category->name }}" />
+                            <a class="cat-overlay text-white text-decoration-none"  href="{{ route('site.academic_and_research.university.category_programs', encrypt($category->id)) }}">
+                                <h4 class="text-white font-weight-medium">{{ $category->name }}</h4>
+                            </a>
                         </div>
                     </div>
                 @endforeach
-
             </div>
         </div>
     </div>

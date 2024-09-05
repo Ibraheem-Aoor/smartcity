@@ -7,6 +7,8 @@ use App\Http\Requests\Site\ContactRequest;
 use App\Models\Contact;
 use App\Models\FamProject;
 use App\Models\Page;
+use App\Models\UniversityProgram;
+use App\Models\UniversityProgramCategory;
 use App\Services\Academic\BranchService;
 use App\Services\Academic\UniversityService;
 use App\Services\FAM\FamProjectService;
@@ -42,11 +44,53 @@ class AcademicAndResearchController extends BaseSiteController
     {
         $data['universities'] = $this->university_service->get(
             paginate: 0,
-            conditions: [['status', '=', '1'], ['type', '=', $theme]],
+            conditions: [['status', '=', '1'], ['type', '=', $theme], ['parent_id', '=', null]],
         );
         $data['page'] = Page::query()->select(['intro_image', 'title', 'theme'])->whereSlug($theme)->first();
         return view($this->base_view_path . '.university.index', $data);
     }
+
+
+    public function subUniversities($id)
+    {
+        $university = $this->university_service->find(decrypt($id), relations: ['subUniversities']);
+        $universities = $university->subUniversities;
+        $data = [
+            'university' => $university,
+            'universities' => $universities
+        ];
+        $data['page'] = $this->getPageModel($university->name);
+        if($universities->isEmpty())
+        {
+            $data['categories'] = UniversityProgramCategory::query()->whereHas('programs' , function($programs)use($university){
+                $programs->where('university_id' , $university->id);
+            })->get();
+            return view($this->base_view_path . '.university.program_categories', $data);
+        }
+        return view($this->base_view_path . '.university.list', $data);
+    }
+    public function categoryPrograms($id)
+    {
+        $category = UniversityProgramCategory::query()->with('programs')->find(decrypt($id));
+        $programs = $category->programs;
+        $data = [
+            'category' => $category,
+            'programs' => $programs
+        ];
+        $data['page'] = $this->getPageModel($category->name);
+
+        return view($this->base_view_path . '.university.programs', $data);
+
+    }
+    public function program($id)
+    {
+        $data['program'] = UniversityProgram::query()->findOrFail(decrypt($id));
+        $data['related_programs'] = $data['program']->relatedPrograms();
+        $data['page'] = $this->getPageModel($data['program']->name);
+        return view($this->base_view_path . '.university.single_program', $data);
+    }
+
+
     /**
      * British Fam Center Exellence Center
      */

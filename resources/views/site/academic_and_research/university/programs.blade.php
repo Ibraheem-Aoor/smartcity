@@ -100,50 +100,39 @@
     <!-- Header End -->
 @endsection
 @section('content')
-    <div class="container-fluid service overflow-hidden py-5">
+
+
+    <div class="container-xxl py-5">
         <div class="container">
-            <div class="mx-auto text-center" style="max-width: 900px;">
-                <h5 class="section-title px-3">{{ $page->title }}</h5>
-                <h1 class="mb-4">Explore Our {{ $page->title }}</h1>
-            </div>
-            <div class="row g-4">
-                @foreach ($universities as $university)
-                    <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.5s"
-                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="{{ getImageUrl($university->image) }}" class="img-fluid w-100 rounded"
-                                        alt="Image">
+            <div class="row">
+                @foreach ($programs as $program)
+                    <!-- Doctor of Management Program -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="course-item bg-light">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="{{ getImageUrl($program->image) }}"
+                                    alt="Doctor of Management Program" />
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                    <a href="{{ route('site.academic_and_research.university.program', encrypt($program->id)) }}" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                        style="border-radius: 30px 0 0 30px">Read More</a>
+                                    <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                        style="border-radius: 0 30px 30px 0">Join Now</a>
                                 </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">{{ $university->name }}</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4 d-none"
-                                            href="#">Explore
-                                            More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="#">
-                                            <h4 class="text-white mb-4 py-3">{{ $university->name }}</h4>
-                                        </a>
-                                        <div class="px-4">
-                                            <p class="mb-4">{{ $university->description }}</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
-                                                href="{{ route('site.academic_and_research.university.details', encrypt($university->id)) }}">Explore
-                                                More</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="text-center p-4 pb-0">
+                                <h3 class="mb-0 d-none">$149.00</h3>
+                                <h5 class="mb-4 p-4">{{ $program->name }}</h5>
                             </div>
                         </div>
                     </div>
                 @endforeach
-
             </div>
         </div>
     </div>
+
+
+
+
+
 
 @endsection

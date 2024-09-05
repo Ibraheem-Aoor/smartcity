@@ -9,6 +9,7 @@ use Astrotomic\Translatable\Contracts\Translatable;
 use Astrotomic\Translatable\Translatable as TranslatableTriat;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class University extends Model implements Translatable
 {
@@ -29,4 +30,9 @@ class University extends Model implements Translatable
         'university_id',
         'locale'
     ];
+
+    public function subUniversities() : HasMany
+    {
+        return $this->hasMany(University::class, 'parent_id');
+    }
 }
