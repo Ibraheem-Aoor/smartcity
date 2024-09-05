@@ -22,10 +22,10 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $data = [
-        //     'admin_sidebar_pages' => Page::query()->pluck('slug' , 'title')->toArray(),
-        //     'team_categories' => TeamMemberCategory::query()->status(1)->get(),
-        // ];
-        // View::share($data);
+        $data = [
+            'admin_sidebar_pages' => Page::query()->pluck('slug' , 'title')->toArray(),
+            'team_categories' => TeamMemberCategory::query()->status(1)->get(),
+        ];
+        View::share($data);
     }
 }
