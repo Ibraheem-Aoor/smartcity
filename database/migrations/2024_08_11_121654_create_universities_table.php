@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('universities', function (Blueprint $table) {
             $table->id();
-            $table->string('image');
+            $table->text('image');
             $table->boolean('status')->default(1);
             $table->boolean('show_in_home')->default(1);
             $table->string('type')->comment('local and international');
